@@ -1,0 +1,102 @@
+// Buttons
+.btn {
+    text-decoration: none !important;
+    border-radius: .2rem;
+    @include vendor-prefix(transition-property, 'color, background, box-shadow');
+    @include vendor-prefix(transition-duration, .2s);
+    @include vendor-prefix(transition-timing-function, ease-in);
+}
+.btn:visited, .btn:active, .btn:hover, .btn:focus {outline: none;}
+
+.btn-full {width: 100%;}
+
+.btn-big {padding: 0.8rem 2.3rem; font-family: 'HelveticaNeue'; font-size: $text-big;}
+.btn-small {padding: 1rem 0.5rem; font-family: 'ArialBold'; font-size: $text-small;}
+.btn.bg-pink:hover {color: $white; background: shade($pink, 15%);}
+.btn.bg-pink:active, .btn.bg-pink:focus {color: $white; background: shade($pink, 25%);}
+.btn.bg-blue:hover, .btn.bg-blue:active, .btn.bg-blue:focus {color: $white; background: shade($blue, 25%);}
+
+.btn-outline-dark {padding: 0.6rem 2.2rem; color: $black; background: transparent; border: 1px solid $black;}
+.btn-outline-dark:hover {color: $black; background: darken($white, 15%);}
+.btn-outline-dark:active, .btn-outline-dark:focus {color: $black; background: darken($white, 25%);}
+
+.btn-outline-white {padding: 0.6rem 2.2rem; background: transparent; border: 1px solid $white;}
+.btn-outline-white:hover {background: rgba(255, 255, 255, 0.25);}
+.btn-outline-white:active, .btn-outline-white:focus {background: rgba(255, 255, 255, 0.5);}
+
+.btn-round {padding: 0.15rem 1rem 0.20rem; background: $white; border-radius: 2rem;}
+.btn-oval {padding: 0.3rem 1.2rem 0.35rem; border-radius: 1.8rem;}
+
+// Forms
+button {
+    &:focus, &:active {outline: none;}
+}
+
+input[type="submit"] {
+    padding: 0.65rem 2.3rem;
+    color: $white;
+    font-family: 'HelveticaNeue';
+    font-size: 1em;
+    //background: $blue;
+    background: $pink-dark;
+    border: none;
+    border-radius: 0.2rem;
+    &:focus, &:active {outline: none;}
+}
+input[type=checkbox], input[type=radio] {
+    position: absolute;
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+input[type=checkbox] + label, input[type=radio] + label {
+    display: inline-block;
+    min-height: 20px;
+    padding: 0 0 0 30px;
+    font-size: $text-normal;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+input[type=checkbox] + label {background-image: url('../images/ico-check.svg');}
+input[type=radio] + label {background-image: url('../images/ico-radio.svg');}
+input[type=checkbox]:checked + label {background-image: url('../images/ico-check-selected.svg');}
+input[type=radio]:checked + label {background-image: url('../images/ico-radio-selected.svg');}
+input[type=number] {padding: 0.75rem;}
+
+select {
+    min-width: 270px;
+    appearance: none;
+    font-size: $text-bigger;
+    padding: 0.75rem 2.1rem 0.7rem 1.4rem;
+    background: $white url('../images/ico-arrow-down.svg') no-repeat 90% center;
+    background-size: 10px 13px;
+    border: 1px solid $grey-normal;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+}
+select::-ms-expand {display: none;}
+
+input[type="text"],
+input[type="password"] {
+    padding: 0.5rem 0.6rem;
+    &:focus, &:active {outline: none;}
+}
+
+textarea {
+    padding: 0.5rem 0.6rem;
+    border-color: $grey-normal;
+    &:focus, &:active {outline: none;}
+}
+
+form.form-login input[type="text"], form.form-login input[type="password"] {min-width: 430px; padding: 0.8rem 5rem 0.8rem 1.2rem;}
+form.form-login label {display: block; font-size: $text-small;}
+
+// Bootstrap overrides
+.form-group {margin-bottom: 1.5rem;}

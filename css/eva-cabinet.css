@@ -1,0 +1,385 @@
+.row-product--detail.hidden
+{
+	display:none;
+}
+.user_orders_img{
+	max-height:200px;
+}
+
+.datepicker.datepicker-dropdown.dropdown-menu{
+	margin-bottom: -210px!important;
+	position: relative!important;
+    top: 10px!important;
+}
+.smodal-body {
+    border-radius: 4px;
+    border: 1px solid #712b8f;
+	padding-bottom:50px;
+}
+
+.container_cabinet{
+	margin-top:50px;
+}
+
+.cabinet_small_box{
+	width:100%;
+	max-width:380px;
+	padding: 10px 30px 30px;
+}
+
+ul.user_cab_panel, ul.user_cab_panel.fadeout {
+    opacity: 1!important;
+    display: block!important;
+    animation: none!important;
+    z-index: 90!important;
+	margin: 0!important;
+}
+
+ul.usermenu li.expanded ul.user_cab_panel li a {
+    padding-bottom: 1rem!important;
+    padding-top: 0.8rem!important;
+}
+
+.col-user-gender .form-type-radio {
+    text-align: center;
+    display: inline-block!important;
+}
+
+.container_cabinet .profile-body {
+    margin-top: 20px;
+}
+
+.msg-info-box {
+    text-align: center;
+    color: red;
+    margin: 0 auto;
+}
+
+.btn_box_user_form{
+	width: 50%;
+    margin: 0 auto;
+}
+
+.col-user-gender input[type=radio] + label,
+.smodal input[type=radio] + label {
+    background-image: url(../images/reg-radio-no.png);
+}
+
+.col-user-gender input[type=radio]:checked + label ,
+.smodal input[type=radio]:checked + label {
+    background-image: url(../images/reg-radio-ok.png);
+}
+
+ul.usermenu li.expanded:hover ul.fadeout {
+    display: block;
+	animation:none;
+}
+
+.cabinet_small_box{
+	text-align:center;
+}
+
+#sdatebirth, #datepicker{
+	background-image: url(../images/date_input_logo.png);
+    background-repeat: no-repeat;
+    background-position: 95% 7px;
+	border: 1px solid darkgrey;
+}
+
+.col-user-flat>div{
+	float:right;
+}
+
+.container_cabinet h2{
+    margin-bottom: 8px;
+	text-align:center;
+	font-family: 'HelveticaNeueThin';
+}
+
+.message.center_pos {
+    text-align: center;
+}
+
+.reg_error_msg{
+	margin: -25px 0;
+    padding-top: 5px;
+}
+
+@media (max-width:768px){
+	.reg_error_msg{
+		margin: 0!important;	
+	}	
+	.container-new-pass h2 {
+	    font-size: 2em!important;
+	}
+	.container-new-pass.col-wrapper-modal{
+		padding:0!important;
+	}
+}
+
+
+.cabinet_center{
+	margin:0 auto;
+}
+.cabinet_item{
+	margin: 11px 0;
+}
+
+
+.cabinet_item input{
+	width:100%!important;
+}
+
+.cabinet_item .form-submit{
+	margin-top:10px;
+}
+
+.smodal-container.container.confirmcode-modal {
+    width: 100%;
+    max-width: 630px;
+}
+
+.pink_txt{
+	color:#712b90;
+}
+
+.smodal-container.container.confirmcode-modal label{
+	font-size: 14px;
+    font-weight: normal;
+}
+
+.smodal-container.container.confirmcode-modal #scode{
+	max-width:300px;
+	margin: 20px auto 5px;
+}
+
+.smodal-container.container.confirmcode-modal .form-item{
+	margin-bottom:0;
+}
+
+.trigger-confirmcode{
+	max-width:300px;
+	text-align:center;
+	margin: 0 auto;
+}
+
+.smodal-container.container.new-login-modal {
+    width: 100%;
+    max-width: 710px;
+}
+
+.smodal-container.container.new-reg-modal {
+    width: 100%;
+    max-width: 890px;
+}
+
+p#countdown {
+    margin-bottom: 25px;
+}
+
+.reg_box_l_r{
+	max-width:320px;
+	margin:0 auto;
+}
+
+.container-new-login{
+
+}
+.container-new-login.col-wrapper-modal, .container-new-pass.col-wrapper-modal {
+	max-width:500px;
+    margin: 20px auto 0;
+    text-align: center;
+	padding: 0 1em;
+}
+
+.container-new-pass input{
+    height: 43px;
+    margin-bottom: 20px;
+}
+
+p.back_reg {
+    margin: 10px auto 0;
+    border-bottom: 1px solid #712b8f;
+}
+
+.container-new-user.col-wrapper-modal {
+	max-width:890px;
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+	padding: 0 1em;
+}
+
+form#user-register-form {
+    padding-top: 20px;
+}
+
+#user-register-form .gender_par.error input[type=radio] + label {
+    background-image: url(../images/ico-radio-red.svg);
+}
+
+.container-new-user input{
+	font-size:14px;
+    height: 43px;
+}
+
+/*.collapse.in{
+	display:block!important;
+}*/
+
+.star_info{
+	margin-top:10px;
+    font-size: 14px;
+    color: #c1c1c1;
+    text-align: left;
+}
+
+.container-new-user.col-wrapper-modal .form-item.form-item-house,
+.container-new-user.col-wrapper-modal .form-item.form-item-flat{
+	margin:0;
+}
+
+.small-login-box, .small-new-pass-box{
+	max-width: 300px;
+    width: 100%;
+    margin: 0 auto;	
+    margin: 28px auto 10px;	
+}
+
+.small-login-box input {
+    height: 43px;
+    font-size: 14px;
+	font-family: Arial;
+	padding-left: 25px!important;
+}
+
+.form-item input.error {
+    border: 1px solid #e452a7;
+    background: #fdf3f9;
+}
+.form-item input.error::-webkit-input-placeholder,
+.form-item input.error::-moz-placeholder,
+.form-item input.error:-moz-placeholder,
+.form-item input.error:-ms-input-placeholder,
+.form-item input.error {color:#e452a7;}
+
+.container-new-login h2, .container-new-user h2, .container-new-pass h2{
+	font-size: 2.8em;
+    text-transform: initial;
+    font-family: 'HelveticaNeueThin';
+	margin-bottom: 15px;
+}
+
+.container-new-login h3{
+	font-size: 25px;
+    text-transform: capitalize;
+    font-family: 'HelveticaNeueThin';
+	font-weight: normal;
+	/* margin-bottom: 15px; */
+}
+
+.container-new-login p{
+	font-size: 14px;
+    font-family: Arial;
+}
+
+.container-new-login .login_down_in{
+	text-align:left;
+	padding-left:15px;
+}
+
+ .container-new-login ul.login_down{
+    padding: 0.5rem 0 1rem!important;
+}
+
+.form-group.type-checkbox.form-item-rules {
+    text-align: left;
+}
+
+ .container-new-login ul.login_down li{
+    font-size: 14px;
+ 	padding-left: 15px;
+    font-family: Arial;
+ 	list-style-image: url(/sites/all/themes/bp_pink/images/li_img.png)!important; 
+ 	text-align:left;
+	margin: 5px 0 12px;
+}
+@media (min-width:768px){
+	.smodal .close {
+	    position: absolute;
+	    top: -2.3rem;
+	    right: -0.5rem;
+	    color: #e4e0e0;
+	    font-size: 2rem;
+	    position: absolute;
+	}
+	
+	.right_reg_box{
+		position:initial;
+	}
+	.btn_reg_box{
+		bottom: 120px;
+	    position: absolute;
+	    width: 100%;
+	    max-width: 300px;
+	}
+		
+}
+
+.second_code_send.hidden{
+	display:none;
+}
+
+.see_pass{
+    cursor: pointer;
+    width: 31px;
+    height: 16px;
+    float: right;
+    margin: -29px 15px 0 0;
+    background-image: url(../images/pass_eye.png);
+    background-repeat: no-repeat;
+	
+}
+
+.smodal-backdrop {
+	top:0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+    overflow: auto;	
+}
+.user-register-form{
+	padding-top:20px;
+}
+.smodal input[type=checkbox] + label{
+	background-position-y: 0px;
+}
+
+.smodal input[type=checkbox] + label.error{
+	background-image: url(../images/error_box.png);
+}
+
+
+.indicator_catalog{
+    position: absolute;
+    bottom: 12px;
+    left: 9px;
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 1.5;
+    background: #712b90;
+    border-radius: 50%;
+    -webkit-animation: scaleUpControls 0.25s ease-out;
+    -moz-animation: scaleUpControls 0.25s ease-out;
+    -ms-animation: scaleUpControls 0.25s ease-out;
+    -o-animation: scaleUpControls 0.25s ease-out;
+    animation: scaleUpControls 0.25s ease-out;
+}
+
+.node-product .icon-big.icon-cross-slim.button-back{
+	display:none;
+}

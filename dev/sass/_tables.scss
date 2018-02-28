@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+    tr {
+        &.odd, &.even {
+            background: transparent;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            padding: 0.6rem;
+            font-weight: normal;
+            text-align: center;
+            border-bottom: 1px solid $grey-faint;
+        }
+        td {
+            padding: 0.6rem;
+            &.active {background: #f7f7f7;}
+        }
+    }
+    a {
+        color: $pink;
+        &:hover {
+            color: $pink;
+            text-decoration: none;
+        }
+    }
+}

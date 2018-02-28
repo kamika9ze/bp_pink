@@ -1,0 +1,121 @@
+.fadein {opacity: 0; @include vendor-prefix(animation, fadein .1s linear forwards .15s);}
+.fadeout {opacity: 1; @include vendor-prefix(animation, fadeout .1s linear forwards);}
+.growin {opacity: 1; @include vendor-prefix(animation, growin .1s linear forwards);}
+.growout {opacity: 1; @include vendor-prefix(animation, growout .1s linear forwards);}
+.rolldown {opacity: 0; @include vendor-prefix(animation, rolldown .25s ease-in-out forwards); backface-visibility: hidden;}
+.rollup {opacity: 1; @include vendor-prefix(animation, rollup .25s ease-in-out forwards); backface-visibility: hidden;}
+.showCartPreview {display: block !important; @include vendor-prefix(animation, showCartPreview .25s ease-out forwards);}
+.showRating {display: block !important; @include vendor-prefix(animation, showRating .25s ease-out forwards);}
+.hamburgerIn {@include vendor-prefix(animation, hamburgerIn .25s ease-out forwards);}
+.hamburgerOut {@include vendor-prefix(animation, hamburgerOut .25s ease-out forwards);}
+.searchIn {@include vendor-prefix(animation, searchIn .25s ease-out forwards);}
+.searchOut {@include vendor-prefix(animation, searchOut .25s ease-out forwards);}
+
+@include keyframes(fadein) {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@include keyframes(fadeout) {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+@include keyframes(growin) {
+    from {height: 0;}
+    to {height: 434px;}
+}
+@include keyframes(growout) {
+    from {height: 434px;}
+    to {height: 0;}
+}
+@include keyframes(showCartPreview) {
+    from {top: 20px; opacity: 0;}
+    to {top: -10px; opacity: 1;}
+}
+@include keyframes(showRating) {
+    from {top: 40px; opacity: 0;}
+    to {top: 20px; opacity: 1;}
+}
+@include keyframes(hamburgerIn) {
+    from {left: -60rem;}
+    to {left: -1.875rem;}
+}
+@include keyframes(hamburgerOut) {
+    from {left: -1.875rem;}
+    to {left: -60rem;}
+}
+@include keyframes(searchIn) {
+    from {top: -$header-height;}
+    to {top: 0;}
+}
+@include keyframes(searchOut) {
+    from {top: 0;}
+    to {top: -$header-height;}
+}
+
+@-webkit-keyframes rolldown {
+    from {-webkit-transform: translateY(-$header-height); opacity: 0;}
+    to {-webkit-transform: translateY(0); opacity: 1;}
+}
+@-moz-keyframes rolldown {
+    from {-moz-transform: translateY(-$header-height); opacity: 0;}
+    to {-moz-transform: translateY(0); opacity: 1;}
+}
+@-ms-keyframes rolldown {
+    from {-ms-transform: translateY(-$header-height); opacity: 0;}
+    to {-ms-transform: translateY(0); opacity: 1;}
+}
+@-o-keyframes rolldown {
+    from {-o-transform: translateY(-$header-height); opacity: 0;}
+    to {-o-transform: translateY(0); opacity: 1;}
+}
+@keyframes rolldown {
+    from {transform: translateY(-$header-height); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+@-webkit-keyframes rollup {
+    from {-webkit-transform: translateY(0); opacity: 1;}
+    to {-webkit-transform: translateY(-$header-height); opacity: 0;}
+}
+@-moz-keyframes rollup {
+    from {-moz-transform: translateY(0); opacity: 1;}
+    to {-moz-transform: translateY(-$header-height); opacity: 0;}
+}
+@-ms-keyframes rollup {
+    from {-ms-transform: translateY(0); opacity: 1;}
+    to {-ms-transform: translateY(-$header-height); opacity: 0;}
+}
+@-o-keyframes rollup {
+    from {-o-transform: translateY(0); opacity: 1;}
+    to {-o-transform: translateY(-$header-height); opacity: 0;}
+}
+@keyframes rollup {
+    from {transform: translateY(0); opacity: 1;}
+    to {transform: translateY(-$header-height); opacity: 0;}
+}
+
+@keyframes scaleUpControls {
+    from {opacity: 0; transform: translate3d(0, -50%, 0) scale(.85);}
+    to {opacity: 1; transform: translate3d(0, -50%, 0) scale(1);}
+}
+
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotate(0);}
+    to {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+    from {-moz-transform: rotate(0);}
+    to {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+    from {-ms-transform: rotate(0);}
+    to {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+    from {-o-transform: rotate(0);}
+    to {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}

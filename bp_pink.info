@@ -1,0 +1,44 @@
+name = Black Pearl Pink
+description = Theme for Black Pearl official website
+version = 1.0.0
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = 'css/bootstrap.min.css'
+
+stylesheets[all][] = 'css/slick.css'
+stylesheets[all][] = 'css/jquery.mCustomScrollbar.min.css'
+stylesheets[all][] = 'css/styles.css'
+stylesheets[all][] = 'css/jquery.formstyler.css'
+stylesheets[all][] = 'css/eva-styles.css'
+stylesheets[all][] = 'css/eva-cabinet.css'
+//stylesheets[all][] = 'css/bootstrap-datetimepicker.css'
+stylesheets[all][] = 'css/tempusdominus-bootstrap-4.min.css'
+
+scripts[] = 'js/util.js'
+scripts[] = 'js/modal.js'
+scripts[] = 'js/slick.min.js'
+scripts[] = 'js/jquery.formstyler.js'
+scripts[] = 'js/jquery.mCustomScrollbar.concat.min.js'
+scripts[] = 'js/jquery.easings.min.js'
+scripts[] = 'js/scrolloverflow.js'
+scripts[] = 'js/jquery.fullPage.min.js'
+scripts[] = 'js/chosen.jquery.js'
+//scripts[] = 'js/scrollpane.js'
+scripts[] = 'js/script.js'
+scripts[] = 'js/cart.js'
+scripts[] = 'js/socials.js'
+scripts[] = 'js/sellers.js'
+scripts[] = 'js/bootstrap.js'
+scripts[] = 'js/moment.min.js'
+//scripts[] = 'js/bootstrap-datetimepicker.js'
+scripts[] = 'js/tempusdominus-bootstrap-4.min.js'
+scripts[] = 'js/bootstrap-datepicker.ru.min.js'
+scripts[] = 'js/ga_event.js'
+
+regions[bp-products-carousel]   = Products Carousel
+regions[content]                = Content
+regions[slider-top]             = Slider Top full width
+regions[slider-bottom]          = Slider Bottom full width
+regions[hits]                   = Region for Hits and Golden Rules
+regions[bp-modal-login]         = Modal Login

@@ -1,0 +1,31 @@
+// MIXINS
+@mixin font-face($name, $font, $weight, $style) {
+    font-family: $name;
+    src: url('../fonts/#{$font}.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/#{$font}.woff') format('woff'),
+         url('../fonts/#{$font}.ttf') format('truetype'),
+         url('../fonts/#{$font}.svg##{$font}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+}
+@mixin vendor-prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
+}
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+    @-o-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}

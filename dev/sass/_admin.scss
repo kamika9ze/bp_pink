@@ -1,0 +1,96 @@
+/*========= MAINTENANCE PAGE STYLES =========*/
+body.maint {height: auto;}
+
+/*========= HELPER STYLES =========*/
+.edit-button-wrapper {position: absolute; top: 15px; margin-left: 5px; z-index: 200;}
+
+/*========= ADMIN TABS STYLES =========*/
+.console-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 105, 195, .6);
+    z-index: 501;
+}
+#console {
+    width: 500px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    background: #fff;
+    z-index: 500;
+    @include vendor-prefix(border-radius, 12px);
+    @include vendor-prefix(box-shadow, 1px 30px 80px rgba(26, 52, 119, .75));
+    @include vendor-prefix(transform, translateX(-50%));
+}
+#console .close-console-cross {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.console-inner {padding: 60px;}
+.close-console-cross {float: right; margin: 5px;}
+div.messages {padding: 0px; font-size: $text-normal; text-align: left;}
+div.messages.error {display: block;}
+.admin div.messages.error {display: block;}
+#console div.messages {text-align: center;}
+div.status, table tr.ok {color: $blue; background: none; border: none;}
+div.error, table tr.error {background: none; border: none;}
+div.error {color: $black;}
+div.error a {text-decoration: underline;}
+.debugger {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px 20px;
+    padding: 20px 50px;
+    color: #333;
+    font-size: 1.5em;
+    background: #fff;
+    border: 1px solid #999;
+}
+ul.tabs.primary {position: absolute; margin: 10px 0; padding-left: 0; border-bottom: none; z-index: 100;}
+.node-type-product ul.tabs.primary {position: absolute; right: 30px; z-index: 100;}
+ul.tabs.primary li a {
+    padding: 3px 6px;
+    color: #EEE;
+    font-size: 12px;
+    text-decoration: none;
+    background: #424242;
+    border-radius: 2px;
+    border: none;
+}
+ul.tabs.primary li a.active, ul.tabs.primary li a:hover {background:#0F0F0F;}
+#toolbar {
+    margin: 0;
+    padding: 0;
+    z-index: 1033;
+    box-shadow: none;
+    border-bottom: 1px solid #222222;
+}
+a.contextual-links-trigger {margin-top: 2px; @include vendor-prefix(transition, display 1s ease-in)}
+@media (max-width: 1200px) {
+  #toolbar-user .account {display: none;}
+}
+@media (max-width: 992px) {
+    #toolbar-user .account {display:none;}
+    #toolbar-menu li a {width:15px;margin:0 5px;}
+    div#toolbar div.toolbar-shortcuts ul {overflow: hidden; padding-bottom: 30px; font-size: .9em;}
+    div#toolbar div.toolbar-shortcuts ul li a {margin-right:0;}
+    #edit-shortcuts {display: none;}
+    #toolbar-menu a {text-indent: -9999px; background: url('../images/icon-dashboard.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-dashboard {background:url('../images/toolbar/icon-dashboard.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-content {background:url('../images/toolbar/icon-content.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-structure {background:url('../images/toolbar/icon-structure.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-appearance {background:url('../images/toolbar/icon-appearance.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-people {background:url('../images/toolbar/icon-people.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-modules {background:url('../images/toolbar/icon-modules.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-config {background:url('../images/toolbar/icon-config.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-reports {background:url('../images/toolbar/icon-reports.png') no-repeat center center;}
+    #toolbar-menu a#toolbar-link-admin-help {background:url('../images/toolbar/icon-help.png') no-repeat center center;}
+}
