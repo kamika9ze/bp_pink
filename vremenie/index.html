@@ -1,69 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Главная</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+  <link rel="stylesheet" type="text/css" href="css/style-page-promo.css"/>
   <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-  <style>
-    .container {
-      width: 1500px;
-      margin: 0 auto;
-    }
-    .slider-for div:first-child {
-      background: #ccc;
-    }
-    .slider-for div:last-child {
-      background: #000;
-    }
-    div.slider{
-        overflow:hidden; 
-        width: 100%;  
-        position: relative;
-    }
-    #Blocks{
-        width: 100%; 
-        height: 495px;
-    }
-    div.Block {
-       width: 50%; 
-        height: 495px; 
-        float: left;
-        position: relative;
-          overflow: hidden;
-    }
-    div.Block img {
-      position: absolute;
-      width: 1432px;
-      height: 495px;
-      display: inline-block;
-    }
-    div.Block1 img {
-      left: 0;
-    }
-    div.Block1 button {
-      right: 20px;
-    }
-    div.Block2 button {
-      left: 20px;
-    }
-    div.Block2 img {
-      right: 0;
-    }
-    button {
-      border: 1px solid #000!important;
-      position: absolute;
-      bottom: 10px;
-    }
-  </style>
 
         
 
-	</head>
-	<body>
+  </head>
+  <body>
     <div class="container">
       <!-- <div class="slider-for">
       <div>your content1</div>
@@ -78,6 +27,12 @@
       </div>      
     </div> -->
     <div class="slider">
+      <div class="slider-top">
+        <div class="slider-face_name"><span>Полина Гагарина</span>, амабассадор бренда, певица</div>
+        <div class="slider-top-title"><span class="kovichki">“</span>Секрет красоты моей кожи – очищение <br>2 раза в день, без сухости<span class="kovichki">“</span></div>
+        <a href="#" class="slider-top-btn-next">Продолжить</a>
+        <a href="#" class="slider-top-btn-video">Смотреть видео</a>
+      </div>
       <div id="Blocks" style="" class="Blocks1">
         <div class ="Block Block1" id = "1" style="background-color:red;">
           <img src="./images/Lines_new_promo-_08.jpg" alt=""> 
@@ -87,19 +42,19 @@
           <img src="./images/Lines_new_promo-_09.jpg" alt=""> 
           <button class="slick-btn slick-next slick-arrow" aria-label="next" type="button" style="display: block;">Next</button>
         </div>
-        
-         
       </div>
     </div>
   </div>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function(){
-      // до первого нажатия
+      $('.slider-top-btn-next').click(function(eventObject){
+        $('.slider-top').fadeOut('400', function() {});
+      });
       $('.slick-next').click(function(eventObject){
         if ($(this).hasClass('slick-btn')) {
+          // до первого нажатия
           $('#2').delay(30).animate({
               width: '-=45%'
           }, 2000, function () {
@@ -153,5 +108,5 @@
     });
 
   </script>
-	</body>
+  </body>
 </html>
