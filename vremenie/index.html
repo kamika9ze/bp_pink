@@ -5,7 +5,7 @@
     <title>Главная</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/style-page-promo.css"/>
   <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 
@@ -13,10 +13,10 @@
 
   </head>
   <body>
-    <div class="container">
+    <div class="container-promo">
     <div class="slider">
       <div class="box-video">
-        <div class="player-btn-close"></div>
+        <a href="#" class="player-btn-close"></a>
         <div id="player"></div>        
       </div>
       <div class="slider-top">
@@ -56,13 +56,113 @@
         </div>
       </div>
       <div class="want-morning-evening">
-        <div class="want-morning"></div>
-        <div class="want-evening"></div>
+        <div class="want-morning">
+          <div class="box-want-morning">
+            <div class="want-title">Выбери, чего твоей коже <br>хочется утром!</div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Мативирование</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Нежность</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Свежесть</a>
+              </li>
+            </ul>
+          </div>
+          <div class="box-want-morning-product tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+              <div class="box-want-product-title">Мативирование</div>
+              <div class="box-want-product-info">Для нормальной и комбинированной</div>
+              <div class="box-want-product-items">
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                  <img src="./images/morning-product1.png" alt="">
+                </div>   
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                  <img src="./images/morning-product2.png" alt="">
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="box-want-product-title">Нежность</div>
+              <div class="box-want-product-info">Для нормальной и комбинированной</div>
+              <div class="box-want-product-items">
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="box-want-product-title">Свежесть</div>
+              <div class="box-want-product-info">Для нормальной и комбинированной</div>
+              <div class="box-want-product-items">
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="want-evening">
+          <div class="box-want-evening">
+            <div class="want-title">Отметь вечерние <br>потребности твоей кожи!</div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true">Мативирование</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false">Нежность</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact" aria-selected="false">Свежесть</a>
+              </li>
+            </ul>
+          </div>
+          <div class="box-want-morning-product tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+              <div class="box-want-product-title">Мативирование</div>
+              <div class="box-want-product-info">Для нормальной и комбинированной</div>
+              <div class="box-want-product-items">
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                  <img src="./images/morning-product1.png" alt="">
+                </div>   
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                  <img src="./images/morning-product2.png" alt="">
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="box-want-product-title">Нежность</div>
+              <div class="box-want-product-info">Для нормальной и комбинированной</div>
+              <div class="box-want-product-items">
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                </div>                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="box-want-product-title">Свежесть</div>
+              <div class="box-want-product-info">Для нормальной и комбинированной</div>
+              <div class="box-want-product-items">
+                <div class="box-want-product-item">
+                  <a href="#"></a>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -117,7 +217,7 @@
       });
       // Убираем первую подложку
       $('.slider-top-btn-next').click(function(eventObject){
-        $('.slider-top').fadeOut('400', function() {});
+        $(".slider-top").fadeOut('400');
       });
       $('.slick-next').click(function(eventObject){
         if ($(this).hasClass('slick-btn')) {
