@@ -2,6 +2,7 @@
   width: 1500px;
   width: 100vw;
   margin: 0 auto;
+  padding-bottom: 500px;
 }
 .slider-for div:first-child {
   background: #ccc;
@@ -10,22 +11,22 @@
   background: #000;
 }
 div.slider{
-	overflow:hidden; 
-	width: 100%;  
-	position: relative;
+  overflow:hidden; 
+  width: 100%;  
+  position: relative;
 }
 #Blocks{
-	width: 100%; 
-	height: 495px;
+  width: 100%; 
+  height: 495px;
   height: 33vw;
 }
 div.Block {
    width: 50%; 
   height: 495px; 
   height: 33vw;
-	float: left;
-	position: relative;
-	  overflow: hidden;
+  float: left;
+  position: relative;
+    overflow: hidden;
 }
 div.Block img {
   position: absolute;
@@ -89,7 +90,7 @@ button {
 .skin-type {
   width: 100%;
   padding: 60px 0;
-  background: url('../images/bg-skin-type.jpg');
+  background: url('../images/ochishchenie/bg-skin-type.jpg');
   background-size: cover;
 }
 .skin-type-title {
@@ -125,6 +126,7 @@ button {
 .want-morning-evening {
   width: 100%;
   display: none;
+  overflow: hidden;
 }
 .want-morning-evening .nav-tabs {
   display: table;
@@ -157,7 +159,7 @@ button {
 .want-morning-evening .want-morning {
 }
 .want-morning-evening .want-morning .box-want-morning {
-  background: url(../images/want-morning.jpg);
+  background: url(../images/ochishchenie/want-morning.jpg);
   padding-left: 155px;
   padding-left: 10.333vw;
   padding-right: 55px;  
@@ -166,7 +168,7 @@ button {
 .want-evening {
 }
 .want-morning-evening .want-evening .box-want-evening {
-  background: url(../images/want-evening.jpg);
+  background: url(../images/ochishchenie/want-evening.jpg);
   padding-left: 55px;
   padding-left: 3.66vw;
   padding-right: 155px;  
@@ -200,7 +202,7 @@ button {
   height: 60px;
   border-radius: 50%;
   display: inline-block;
-  background: url('../images/ico-btn-want-morning-evening.png') center no-repeat;
+  background: url('../images/ochishchenie/ico-btn-want-morning-evening.png') center no-repeat;
 }
 .want-morning .box-want-product-item a {
   background-color: rgba(255,146,191,0.6);
