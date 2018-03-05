@@ -90,6 +90,7 @@ button {
   width: 100%;
   padding: 60px 0;
   background: url('../images/bg-skin-type.jpg');
+  background-size: cover;
 }
 .skin-type-title {
   width: 100%;
@@ -123,6 +124,17 @@ button {
 /*want-morning-evening*/
 .want-morning-evening {
   width: 100%;
+  display: none;
+}
+.want-morning-evening .nav-tabs {
+  display: table;
+  width: 100%;
+  border: 0;
+}
+.want-morning-evening .nav-tabs li {
+  width: 50%;
+  display: inline-block;
+  float: left;
 }
 .want-morning-evening .want-title {
   font-size: 30px;
@@ -130,12 +142,12 @@ button {
   padding: 0;
   line-height: 1.167;
 }
-.want-morning-evening div {
+.want-morning-evening > div {
   width: 50%;
   display: inline-block;
   float: left;
 }
-.want-morning-evening div div {
+.want-morning-evening .want-morning .box-want-morning, .want-morning-evening .want-evening .box-want-evening {
   width: 100%;
   display: inline-block;
   padding: 50px 0 70px;
@@ -144,15 +156,55 @@ button {
 }
 .want-morning-evening .want-morning {
 }
-.want-morning-evening .box-want-morning {
+.want-morning-evening .want-morning .box-want-morning {
   background: url(../images/want-morning.jpg);
   padding-left: 155px;
+  padding-left: 10.333vw;
   padding-right: 55px;  
+  padding-right: 3.66vw;  
 }
 .want-evening {
 }
-.want-morning-evening .box-want-evening {
+.want-morning-evening .want-evening .box-want-evening {
   background: url(../images/want-evening.jpg);
   padding-left: 55px;
+  padding-left: 3.66vw;
   padding-right: 155px;  
+  padding-right: 10.333vwvw;  
+}
+.box-want-morning-product {
+  padding: 45px 20px 55px 155px;
+  padding: 3vw 1.333vw 3.66vw 10.333vw;
+}
+.box-want-evening-product {
+  padding: 45px 20px 55px 55px;
+  padding: 3vw 1.333vw 3.66vw 3.66vw;
+}
+.box-want-product-title {
+  font-size: 30px;
+}
+.box-want-product-info {
+  font-size: 16px;
+}
+.box-want-product-items {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-left: -53px;
+}
+.box-want-product-item {
+  display: inline-block;
+}
+.box-want-product-item a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  background: url('../images/ico-btn-want-morning-evening.png') center no-repeat;
+}
+.want-morning .box-want-product-item a {
+  background-color: rgba(255,146,191,0.6);
+}
+.want-evening .box-want-product-item a {
+  background-color: rgba(104,105,161,0.6);
 }
