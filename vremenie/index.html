@@ -78,7 +78,7 @@
                 <div class="box-want-product-items">
                   <div class="box-want-product-item">
                     <a href="#"></a>
-                    <img src="./images/ochishchenie/morning-product1.png" alt="">
+                    <img src="./images/ochishchenie/morning-product1.png" alt="" style="margin-top: 31px;">
                   </div>   
                   <div class="box-want-product-item">
                     <a href="#"></a>
@@ -127,11 +127,11 @@
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>
                 <div class="box-want-product-items">
                   <div class="box-want-product-item">
-                    <a href="#"></a>
-                    <img src="./images/ochishchenie/morning-product1.png" alt="">
+                    <a href="javascript:void(0);"></a>
+                    <img src="./images/ochishchenie/morning-product1.png" alt="" style="margin-top: 31px;">
                   </div>   
                   <div class="box-want-product-item">
-                    <a href="#"></a>
+                    <a href="javascript:void(0);"></a>
                     <img src="./images/ochishchenie/morning-product2.png" alt="">
                   </div>                
                 </div>
@@ -141,7 +141,7 @@
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>
                 <div class="box-want-product-items">
                   <div class="box-want-product-item">
-                    <a href="#"></a>
+                    <a href="javascript:void(0);"></a>
                   </div>                
                 </div>
               </div>
@@ -150,7 +150,7 @@
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>
                 <div class="box-want-product-items">
                   <div class="box-want-product-item">
-                    <a href="#"></a>
+                    <a href="javascript:void(0);"></a>
                   </div>                
                 </div>
               </div>
@@ -179,11 +179,11 @@
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>
                 <div class="box-want-product-items">
                   <div class="box-want-product-item">
-                    <a href="#"></a>
-                    <img src="/../images/ochishchenie/morning-product1.png" alt="">
+                    <a href="javascript:void(0);"></a>
+                    <img src="./images/ochishchenie/morning-product1.png" alt="" style="margin-top: 31px;">
                   </div>   
                   <div class="box-want-product-item">
-                    <a href="#"></a>
+                    <a href="javascript:void(0);"></a>
                     <img src="./images/ochishchenie/morning-product2.png" alt="">
                   </div>                
                 </div>
@@ -229,11 +229,11 @@
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>
                 <div class="box-want-product-items">
                   <div class="box-want-product-item">
-                    <a href="#"></a>
-                    <img src="./images/ochishchenie/morning-product1.png" alt="">
+                    <a href="javascript:void(0);"></a>
+                    <img src="./images/ochishchenie/morning-product1.png" alt="" style="margin-top: 31px;">
                   </div>   
                   <div class="box-want-product-item">
-                    <a href="#"></a>
+                    <a href="javascript:void(0);"></a>
                     <img src="./images/ochishchenie/morning-product2.png" alt="">
                   </div>                
                 </div>
@@ -308,6 +308,10 @@
   </script>
   <script type="text/javascript">
     $(document).ready(function(){
+      $(document).on('click', '.box-want-product-item a', function() {
+        console.log('asdasd12312');
+        $('.tab-content').addClass('popap');
+      });
       $(document).on('click', '.btn-norm', function() {
         $('.skin-type').slideUp('400', function() {});
         $('.want-morning-evening-norm').slideDown('400', function() {});

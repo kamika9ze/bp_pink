@@ -193,20 +193,44 @@ button {
   width: 100%;
   text-align: center;
   margin-left: -53px;
+  /*height: 360px;*/
+  /*--Высоту лучше вычислять--*/
 }
 .box-want-product-item {
   display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  position: relative;
+  /*width: 200px;*/
 }
+/*.box-want-product-item img {
+  position: absolute;
+  bottom: 0;
+}*/
 .box-want-product-item a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   display: inline-block;
   background: url('../images/ochishchenie/ico-btn-want-morning-evening.png') center no-repeat;
+  position: absolute;
 }
 .want-morning .box-want-product-item a {
   background-color: rgba(255,146,191,0.6);
 }
 .want-evening .box-want-product-item a {
   background-color: rgba(104,105,161,0.6);
+}
+.tab-content {
+  position: relative;
+}
+.tab-content.popap:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);  
+  z-index: 5;
 }
