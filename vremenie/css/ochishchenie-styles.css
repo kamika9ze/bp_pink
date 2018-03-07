@@ -200,7 +200,7 @@ button {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
-  position: relative;
+  /*position: relative;*/
   /*width: 200px;*/
 }
 /*.box-want-product-item img {
@@ -233,4 +233,14 @@ button {
   left: 0;
   background: rgba(0,0,0,0.5);  
   z-index: 5;
+}
+.tab-pane {
+  position: relative;
+}
+.box-want-product-item-popap {
+  display: none;
+  position: absolute;
+  z-index: 50;
+  background: #fff;
+  top: 0;
 }

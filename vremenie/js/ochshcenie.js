@@ -39,6 +39,12 @@
     player.stopVideo();
   }
 $(document).ready(function(){
+  $(document).on('click', '.box-want-product-item a', function() {
+      console.log('asdasd12312');
+      $('.tab-content').addClass('popap');
+      // console.log($(this).parents('.box-want-product-item'));
+      $(this).parents('.box-want-product-item').find('.box-want-product-item-popap').show();
+    });
   $(document).on('click', '.btn-norm', function() {
     $('.skin-type').slideUp('400', function() {});
     $('.want-morning-evening-norm').slideDown('400', function() {});
