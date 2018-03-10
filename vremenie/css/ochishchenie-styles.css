@@ -48,7 +48,7 @@ div.Block2 button {
 div.Block2 img {
   right: 0;
 }
-button {
+#Blocks button {
   border: 1px solid #000!important;
   position: absolute;
   bottom: 10px;
@@ -60,6 +60,64 @@ button {
   position: absolute;
   z-index: 2;
   background: rgba(38,44,62,0.73);
+  text-align: center;
+  padding-top: 42px;
+}
+.slider-face_name {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+}
+.slider-face_name span {
+  color: rgb(168, 170, 223);
+}
+.slider-top-title {
+  font-size: 21.641px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 26px;
+}
+.kovichki {
+  font-size: 65px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+}
+.slider-top-btn-next {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 4px;
+  width: 203px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: rgba(143, 98, 166, 0.5);
+  cursor: pointer;
+  clear: both;
+}
+.slider-top-btn-video {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  margin-left: -59px;
+}
+.slider-top-btn-video:before {
+  content: "";
+  width: 29px;
+  height: 29px;
+  background: url(../images/ochishchenie/ico-play-video.png);
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  margin-left: -14px;
 }
 .box-video {
     display: none;
@@ -92,6 +150,19 @@ button {
   padding: 60px 0;
   background: url('../images/ochishchenie/bg-skin-type.jpg');
   background-size: cover;
+  position: relative;
+}
+.skin-type:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -21.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 21.5px 0 21.5px;
+  border-color: #ffffff transparent transparent transparent;
 }
 .skin-type-title {
   width: 100%;
@@ -108,6 +179,9 @@ button {
 .skin-type-item {
   display: inline-block;
   padding: 0 80px;
+  text-decoration: none;
+}
+.btn-norm {
   text-decoration: none;
 }
 .skin-type-item span {
@@ -127,6 +201,19 @@ button {
   width: 100%;
   display: none;
   overflow: hidden;
+  position: relative;
+}
+.want-morning-evening:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -22px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 21.5px 0 21.5px;
+  border-color: #ffffff transparent transparent transparent;
 }
 .want-morning-evening .nav-tabs {
   display: table;
@@ -143,6 +230,15 @@ button {
   margin: 0 0 25px;
   padding: 0;
   line-height: 1.167;
+  color: #fff;
+  font-weight: 300;
+}
+.want-morning-evening .nav-item {
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+.want-morning .want-title {
+  color: rgb(187, 57, 145);
 }
 .want-morning-evening > div {
   width: 50%;
@@ -178,15 +274,70 @@ button {
   padding: 45px 20px 55px 155px;
   padding: 3vw 1.333vw 3.66vw 10.333vw;
 }
+.box-want-morning .nav-tabs .nav-link {
+  border-radius: 4px;
+  background: rgba(255,245,249,0.5);
+  font-size: 16px;
+  color: rgb(113, 76, 101);
+  line-height: 60px;
+  padding: 0 20px;
+  border: 0;
+}
+.box-want-morning .nav-tabs .nav-link.active {
+  border-radius: 4px;
+  background: #e8aac6;
+  color: #fff;
+}
+.box-want-evening .nav-tabs .nav-link {
+  border-radius: 4px;
+  background: rgba(9,10,39,0.4);
+  font-size: 16px;
+  color: rgb(168, 170, 223);
+  line-height: 60px;
+  padding: 0 20px;
+  border: 0;
+}
+.box-want-evening .nav-tabs .nav-link.active {
+  border-radius: 4px;
+  background: rgba(139,143,241,0.4);
+  color: #fff;
+}
+.box-want-morning-product:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -21.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 21.5px 0 21.5px;
+  border-color: #e5dbe1 transparent transparent transparent;
+  z-index: 6;
+}
 .box-want-evening-product {
   padding: 45px 20px 55px 55px;
   padding: 3vw 1.333vw 3.66vw 3.66vw;
+}
+.box-want-evening-product:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -21.5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 18px 21.5px 0 21.5px;
+  border-color: #202138 transparent transparent transparent;
+  z-index: 6;
 }
 .box-want-product-title {
   font-size: 30px;
 }
 .box-want-product-info {
   font-size: 16px;
+  margin-bottom: 50px;
 }
 .box-want-product-items {
   display: inline-block;
@@ -224,7 +375,7 @@ button {
 .tab-content {
   position: relative;
 }
-.tab-content.popap:before {
+.tab-content.popap:after {
   content: "";
   position: absolute;
   width: 100%;

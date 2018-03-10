@@ -45,6 +45,10 @@ $(document).ready(function(){
       // console.log($(this).parents('.box-want-product-item'));
       $(this).parents('.box-want-product-item').find('.box-want-product-item-popap').show();
     });
+  $(document).on('click', '.product-popap-close', function() {
+    $(this).parents('.box-want-product-item-popap').hide();
+    $('.tab-content').removeClass('popap');
+  });
   $(document).on('click', '.btn-norm', function() {
     $('.skin-type').slideUp('400', function() {});
     $('.want-morning-evening-norm').slideDown('400', function() {});
