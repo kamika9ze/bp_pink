@@ -282,6 +282,8 @@ div.Block2 img {
   line-height: 60px;
   padding: 0 20px;
   border: 0;
+  display: inline-block;
+  width: 100%;
 }
 .box-want-morning .nav-tabs .nav-link.active {
   border-radius: 4px;
@@ -296,6 +298,8 @@ div.Block2 img {
   line-height: 60px;
   padding: 0 20px;
   border: 0;
+  display: inline-block;
+  width: 100%;
 }
 .box-want-evening .nav-tabs .nav-link.active {
   border-radius: 4px;
