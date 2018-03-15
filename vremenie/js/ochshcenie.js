@@ -69,15 +69,18 @@ $(document).ready(function(){
   // Убираем первую подложку
   $('.slider-top-btn-next').click(function(eventObject){
     $(".slider-top").fadeOut('400');
+    $(".slider-block2").fadeIn('400');    
   });
   $('.slick-next').click(function(eventObject){
     if ($(this).hasClass('slick-btn')) {
+      $(".slider-block2").fadeOut('400');  
       // до первого нажатия
       $('#2').delay(30).animate({
           width: '-=45%'
       }, 2000, function () {
         $(".slick-next").fadeOut();
         $(".Block button").removeClass('slick-btn');
+        $('.img-morning').fadeIn();
       });
       $('#1').delay(30).animate({
           width: '+=45%'
@@ -86,10 +89,12 @@ $(document).ready(function(){
     }
     else {
       $('.slick-next').fadeOut();
+        $('.img-evening').fadeOut();
       $('#2').delay(30).animate({
           width: '-=90%'
       }, 2000, function () {
         $('.slick-prev').show();
+        $('.img-morning').fadeIn();
       });
       $('#1').delay(30).animate({
           width: '+=90%'
@@ -99,10 +104,12 @@ $(document).ready(function(){
   });
   $('.slick-prev').click(function(eventObject){
     if ($(this).hasClass('slick-btn')) {
+      $(".slider-block2").fadeOut('400');  
       $('#1').delay(30).animate({
           width: '-=45%'
       }, 2000, function () {
         $('.slick-prev').fadeOut();
+        $('.img-evening').fadeIn();
         $(".Block button").removeClass('slick-btn');
       });
       $('#2').delay(30).animate({
@@ -112,10 +119,12 @@ $(document).ready(function(){
     }
     else {
       $('.slick-prev').fadeOut();
+      $('.img-morning').fadeOut();
       $('#1').delay(30).animate({
           width: '-=90%'
       }, 2000, function () {
         $('.slick-next').show();
+        $('.img-evening').fadeIn();
       });
       $('#2').delay(30).animate({
           width: '+=90%'

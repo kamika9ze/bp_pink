@@ -1,6 +1,8 @@
 .container-promo {
   width: 1500px;
-  width: 100vw;
+  width: 98.8666vw;
+  width: 98.879vw;
+  /*width: 100vw;*/
   margin: 0 auto;
   padding-bottom: 500px;
 }
@@ -32,6 +34,8 @@ div.Block img {
   position: absolute;
   width: 1432px;
   width: 95.4666vw;
+  /*width: 100vw;*/
+  width: 98.879vw;
   height: 495px;
   height: 33vw;
   display: inline-block;
@@ -40,18 +44,31 @@ div.Block1 img {
   left: 0;
 }
 div.Block1 button {
-  right: 20px;
+  right: -2px;
 }
 div.Block2 button {
-  left: 20px;
+  left: -2px;
 }
 div.Block2 img {
   right: 0;
 }
 #Blocks button {
-  border: 1px solid #000!important;
+  border: 0;
   position: absolute;
-  bottom: 10px;
+  bottom: -5px;
+  font-size: 0;
+  outline: none;
+  cursor: pointer;
+}
+#Blocks .slick-prev {
+  background: url('../images/ochishchenie/btn-slider-left.png') no-repeat;
+  width: 65px;
+  height: 65px;
+}
+#Blocks .slick-next {
+  background: url('../images/ochishchenie/btn-slider-right.png') no-repeat;
+  width: 65px;
+  height: 65px;
 }
 .slider-top {
   width: 100%;
@@ -109,6 +126,11 @@ div.Block2 img {
   bottom: 25px;
   margin-left: -59px;
 }
+.slider-top-btn-video:hover {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 .slider-top-btn-video:before {
   content: "";
   width: 29px;
@@ -118,6 +140,73 @@ div.Block2 img {
   left: 50%;
   top: -30px;
   margin-left: -14px;
+}
+div.Block .img-morning {
+  display: none;
+}
+div.Block .img-morning-left {
+  width: 258px;
+  height: 453px;
+  position: absolute;
+  left: 165px;
+  top: 63px;
+  right: inherit;
+}
+div.Block .img-morning-right {
+  width: 507px;
+  height: 481px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: inherit;
+}
+div.Block .img-evening {
+  display: none;
+}
+div.Block .img-evening-left {
+  width: 507px;
+  height: 481px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  left: inherit;
+}
+div.Block .img-evening-right {
+  width: 246px;
+  height: 385px;
+  position: absolute;
+  left: 165px;
+  top: 63px;
+  right: inherit;
+}
+.slider-block2 {
+  display: none;
+  position: absolute;
+  left: 158px;
+  top: 80px;
+}
+.slider-block2-min-text {
+  font-size: 30px;
+  color: rgb(187, 57, 145);
+  line-height: 1.2;
+  text-align: left;
+}
+.slider-block2-min-text span {
+  font-size: 123px;
+  color: rgb(187, 57, 145);
+  line-height: 100px;
+  text-align: center;
+  padding-right: 32px;
+  float: left;
+}
+.slider-block2-max-text {
+  font-size: 30px;
+  color: rgb(187, 57, 145);
+  line-height: 1.2;
+  text-align: left;
+  display: table;
+  clear: both;
+  padding-top: 16px;
 }
 .box-video {
     display: none;
@@ -272,7 +361,7 @@ div.Block2 img {
 }
 .box-want-morning-product {
   padding: 45px 20px 55px 155px;
-  padding: 3vw 1.333vw 3.66vw 10.333vw;
+  padding: 3vw 0.4vw 3.66vw 10.333vw;
 }
 .box-want-morning .nav-tabs .nav-link {
   border-radius: 4px;
@@ -362,7 +451,7 @@ div.Block2 img {
   position: absolute;
   bottom: 0;
 }*/
-.box-want-product-item a {
+.box-want-product-item > a {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -370,10 +459,10 @@ div.Block2 img {
   background: url('../images/ochishchenie/ico-btn-want-morning-evening.png') center no-repeat;
   position: absolute;
 }
-.want-morning .box-want-product-item a {
+.want-morning .box-want-product-item > a {
   background-color: rgba(255,146,191,0.6);
 }
-.want-evening .box-want-product-item a {
+.want-evening .box-want-product-item > a {
   background-color: rgba(104,105,161,0.6);
 }
 .tab-content {
@@ -397,5 +486,79 @@ div.Block2 img {
   position: absolute;
   z-index: 50;
   background: #fff;
-  top: 0;
+  top: 12%;
+  left: 0;
+  width: 100%;
+  padding: 37px 50px 30px 0;
+  border-radius: 10px;
+}
+.product-popap-close {
+  background: url('../images/ochishchenie/btn-close.png') no-repeat;
+  width: 20px;
+  height: 21px;
+  right: -20px;
+  top: -28px;
+  position: absolute;
+}
+.box-want-product-item-popap > div {
+  display: inline-block;
+  float: left;  
+}
+.product-popap-img {
+  width: 41%;
+}
+.product-popap-text {
+  width: 59%;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: left;
+}
+.product-popap-title {
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.product-popap-text ul {
+  width: 100%;
+  padding: 0;
+}
+.product-popap-text ul li {
+  margin-bottom: 20px;
+  list-style: none;
+  display: table;
+  width: 100%;
+}
+.product-popap-text ul li span {}
+.product-popap-text ul li img {
+  float: left;
+  margin-right: 20px;
+}
+.popap-more-product {
+  font-size: 16px;
+  color: rgb(112, 44, 142);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  position: relative;
+}
+.popap-more-product:hover {
+  font-size: 16px;
+  color: rgb(112, 44, 142);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  position: relative;
+}
+.popap-more-product:before {
+  content: "";
+  background: url("../images/ochishchenie/popap-next-product.png") no-repeat;
+  width: 7px;
+  height: 13px;
+  position: absolute;
+  right: -17px;
+  top: 5px;
 }
