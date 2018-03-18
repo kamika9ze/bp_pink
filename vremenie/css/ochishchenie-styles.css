@@ -23,12 +23,12 @@ div.slider{
   height: 33vw;
 }
 div.Block {
-   width: 50%; 
+  width: 50%; 
   height: 495px; 
   height: 33vw;
   float: left;
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
 }
 div.Block img {
   position: absolute;
@@ -84,6 +84,7 @@ div.Block2 img {
   font-size: 16px;
   color: #fff;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 .slider-face_name span {
   color: rgb(168, 170, 223);
@@ -95,11 +96,44 @@ div.Block2 img {
   text-align: center;
   margin-bottom: 26px;
 }
-.kovichki {
-  font-size: 65px;
+.box-slider-top-title {
+  display: inline-block;
+  position: relative;
+  font-size: 21.641px;
   color: rgb(255, 255, 255);
-  line-height: 1.2;
+  line-height: 31px;
   text-align: center;
+}
+.box-slider-top-title:after {
+  content: "";
+  width: 156px;
+  height: 106px;
+  background: url('../images/ochishchenie/signature.png') no-repeat;
+  position: absolute;
+  right: -106px;
+  bottom: -116px;
+}
+.kovichki {
+  /*font-size: 65px;*/
+  color: rgb(255, 255, 255);
+  /*line-height: 1.2;*/
+  text-align: center;
+  width: 13px;
+  height: 15px;
+  background: url('../images/ochishchenie/quotes.png') no-repeat;
+  display: inline-block;
+  position: absolute;
+  left: -30px;
+  top: -7px;
+}
+.kovichki2 {
+  right: -30px;
+  left: inherit;
+  -moz-transform: rotate(180deg); /* Для Firefox */
+  -ms-transform: rotate(180deg); /* Для IE */
+  -webkit-transform: rotate(180deg); /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg); /* Для Opera */
+  transform: rotate(180deg);
 }
 .slider-top-btn-next {
   font-size: 16px;
@@ -112,7 +146,7 @@ div.Block2 img {
   width: 203px;
   height: 36px;
   border-radius: 4px;
-  background-color: rgba(143, 98, 166, 0.5);
+  background-color: rgba(83, 85, 138, 0.5);
   cursor: pointer;
   clear: both;
 }
@@ -218,9 +252,9 @@ div.Block .img-evening-right {
     height: 100%;
 }
 .player-btn-close {
-    background: red;
+    background: url('../images/ochishchenie/btn-close.png') no-repeat;
     width: 20px;
-    height: 20px;
+    height: 21px;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -313,6 +347,25 @@ div.Block .img-evening-right {
   width: 50%;
   display: inline-block;
   float: left;
+}
+.want-morning-evening li .nav-link img {
+  display: inline-block;
+  margin-right: 15px;
+}
+.want-morning-evening li .nav-link .img-hover-want-morning-evening {
+  display: none;
+}
+.want-morning-evening li .nav-link:hover .img-want-morning-evening {
+  display: none;
+}
+.want-morning-evening li .nav-link:hover .img-hover-want-morning-evening {
+  display: inline-block;
+}
+.want-morning-evening li .nav-link.active .img-want-morning-evening {
+  display: none;
+}
+.want-morning-evening li .nav-link.active .img-hover-want-morning-evening {
+  display: inline-block;
 }
 .want-morning-evening .want-title {
   font-size: 30px;
@@ -561,4 +614,7 @@ div.Block .img-evening-right {
   position: absolute;
   right: -17px;
   top: 5px;
+}
+.promo-catalog-carousel {
+  margin: 0;
 }
