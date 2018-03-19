@@ -618,3 +618,17 @@ div.Block .img-evening-right {
 .promo-catalog-carousel {
   margin: 0;
 }
+.ochishchenie-product-filter {
+  display: inline-block;
+}
+.ochishchenie-product-filter li {
+  display: inline-block;
+  float: left;
+  margin: 0 15px;
+}
+.ochishchenie-product-filter li a {
+  padding: 10px 20px;
+}
+.ochishchenie-product-filter li a img {
+  margin-right: 15px;
+}
