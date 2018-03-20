@@ -3,6 +3,7 @@
   width: 98.8666vw;
   width: 98.879vw;
   /*width: 100vw;*/
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 500px;
 }
@@ -180,15 +181,21 @@ div.Block .img-morning {
 }
 div.Block .img-morning-left {
   width: 258px;
+  width: 17.2vw;
   height: 453px;
+  height: 30.2vw;
   position: absolute;
   left: 165px;
+  left: 11vw;
   top: 63px;
+  top: 4.2vw;
   right: inherit;
 }
 div.Block .img-morning-right {
   width: 507px;
+  width: 33.8vw;
   height: 481px;
+  height: 32.066vw;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -199,7 +206,9 @@ div.Block .img-evening {
 }
 div.Block .img-evening-left {
   width: 507px;
+  width: 33.8vw;
   height: 481px;
+  height: 32.066vw;
   position: absolute;
   right: 0px;
   top: 0px;
@@ -207,10 +216,14 @@ div.Block .img-evening-left {
 }
 div.Block .img-evening-right {
   width: 246px;
+  width: 16.4vw;
   height: 385px;
+  height: 25.666vw;
   position: absolute;
   left: 165px;
+  left: 11vw;
   top: 63px;
+  top: 4.2vw;
   right: inherit;
 }
 .slider-block2 {
@@ -342,15 +355,20 @@ div.Block .img-evening-right {
   display: table;
   width: 100%;
   border: 0;
+  padding: 0;
 }
 .want-morning-evening .nav-tabs li {
   width: 50%;
   display: inline-block;
   float: left;
+  max-width: 265px;
 }
 .want-morning-evening li .nav-link img {
   display: inline-block;
   margin-right: 15px;
+  margin-right: 1vw;
+  height: 40px;
+  height: 2.666vw;
 }
 .want-morning-evening li .nav-link .img-hover-want-morning-evening {
   display: none;
@@ -410,7 +428,7 @@ div.Block .img-evening-right {
   padding-left: 55px;
   padding-left: 3.66vw;
   padding-right: 155px;  
-  padding-right: 10.333vwvw;  
+  padding-right: 10.333vw;  
 }
 .box-want-morning-product {
   padding: 45px 20px 55px 155px;
@@ -420,9 +438,12 @@ div.Block .img-evening-right {
   border-radius: 4px;
   background: rgba(255,245,249,0.5);
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(113, 76, 101);
   line-height: 60px;
+  line-height: 4vw;
   padding: 0 20px;
+  padding: 0 1.3333vw;
   border: 0;
   display: inline-block;
   width: 100%;
@@ -436,9 +457,12 @@ div.Block .img-evening-right {
   border-radius: 4px;
   background: rgba(9,10,39,0.4);
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(168, 170, 223);
   line-height: 60px;
+  line-height: 4vw;
   padding: 0 20px;
+  padding: 0 1.3333vw;
   border: 0;
   display: inline-block;
   width: 100%;
@@ -620,15 +644,38 @@ div.Block .img-evening-right {
 }
 .ochishchenie-product-filter {
   display: inline-block;
+  padding: 0;
 }
 .ochishchenie-product-filter li {
   display: inline-block;
   float: left;
-  margin: 0 15px;
+  margin: 0 35px;
 }
 .ochishchenie-product-filter li a {
-  padding: 10px 20px;
+  line-height: 40px;
+  min-width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 1px 12px 0px rgba(34, 34, 34, 0.2);
+  -moz-box-shadow:    0px 1px 12px 0px rgba(34, 34, 34, 0.2);
+  box-shadow:         0px 1px 12px 0px rgba(34, 34, 34, 0.2);
+  border-radius: 3px;
 }
 .ochishchenie-product-filter li a img {
   margin-right: 15px;
+  margin-top: -4px;
+}
+.container-promo #bg-carousel-wrapper {
+  text-align: center;
+}
+.slick-dots {
+  top: inherit!important;
+  position: relative!important;
+}
+#bg-carousel-wrapper {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 40px 0px rgba(55, 55, 55, 0.17);
+}
+#bg-carousel-wrapper .teasers-wrapper {
+  padding-bottom: 10px;
 }

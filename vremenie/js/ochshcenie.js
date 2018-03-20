@@ -74,14 +74,14 @@ $(document).ready(function(){
       $(".slider-block2").fadeOut('400');  
       // до первого нажатия
       $('#2').delay(30).animate({
-          width: '-=45%'
+          width: (($('#2').width())-(($('#2').width())/100*90))
       }, 2000, function () {
         $(".slick-next").fadeOut();
         $(".Block button").removeClass('slick-btn');
         $('.img-morning').fadeIn();
       });
       $('#1').delay(30).animate({
-          width: '+=45%'
+          width: (($('#2').width())+(($('#2').width())/100*90))
       }, 2000, function () {
       });
     }
@@ -103,16 +103,16 @@ $(document).ready(function(){
   $('.slick-prev').click(function(eventObject){
     if ($(this).hasClass('slick-btn')) {
       $(".slider-block2").fadeOut('400');  
+      $('#2').delay(30).animate({
+          width: (($('#2').width())+(($('#2').width())/100*90))
+      }, 2000, function () {
+      });
       $('#1').delay(30).animate({
-          width: '-=45%'
+          width: (($('#2').width())-(($('#2').width())/100*90))
       }, 2000, function () {
         $('.slick-prev').fadeOut();
         $('.img-evening').fadeIn();
         $(".Block button").removeClass('slick-btn');
-      });
-      $('#2').delay(30).animate({
-          width: '+=45%'
-      }, 2000, function () {
       });
     }
     else {
@@ -130,105 +130,53 @@ $(document).ready(function(){
       });
     }
   });
-    // jQuery('.ochishchenie-new-product').click(function(){
-  //   jQuery('#bp-carousel-new .slick-track > div ').hide();
-  //   jQuery('#bp-carousel-new .slick-track .new-product-teaser').show();
-  //   $('#bp-carousel-new').slick({
-  //       dots: true, 
-  //       arrows: true, 
-  //       slidesToShow: 3, 
-  //       slidesToScroll: 1, 
-  //       infinite: false, 
-  //       responsive:[
-  //       {
-  //           breakpoint: 1200,
-  //           settings: {
-  //               slidesToShow: 3,
-  //               slidesToScroll: 3,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       },
-  //       {
-  //           breakpoint: 992,
-  //           settings: {
-  //               slidesToShow: 2,
-  //               slidesToScroll: 2,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       },
-  //       {
-  //           breakpoint: 767,
-  //           settings: {
-  //               slidesToShow: 1,
-  //               slidesToScroll: 1,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       },
-  //       {
-  //           breakpoint: 568,
-  //           settings: {
-  //               slidesToShow: 1,
-  //               slidesToScroll: 1,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       }
-  //   ]});
-  // });
-  // jQuery('.ochishchenie-all-product').click(function(){
-  //   jQuery('#bp-carousel-new .slick-track > div ').show();
-  //   $('#bp-carousel-new').slick({
-  //       dots: true, 
-  //       arrows: true, 
-  //       slidesToShow: 3, 
-  //       slidesToScroll: 1, 
-  //       infinite: false, 
-  //       responsive:[
-  //       {
-  //           breakpoint: 1200,
-  //           settings: {
-  //               slidesToShow: 3,
-  //               slidesToScroll: 3,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       },
-  //       {
-  //           breakpoint: 992,
-  //           settings: {
-  //               slidesToShow: 2,
-  //               slidesToScroll: 2,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       },
-  //       {
-  //           breakpoint: 767,
-  //           settings: {
-  //               slidesToShow: 1,
-  //               slidesToScroll: 1,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       },
-  //       {
-  //           breakpoint: 568,
-  //           settings: {
-  //               slidesToShow: 1,
-  //               slidesToScroll: 1,
-  //               dots: true,
-  //               arrows: true
-  //           }
-  //       }
-  //   ]});
-  // });
-  var filtered = false;
+  $('#bp-carousel-new').slick({
+        dots: true, 
+        arrows: true, 
+        slidesToShow: 3, 
+        slidesToScroll: 1, 
+        infinite: false, 
+        responsive:[
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+                arrows: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true,
+                arrows: true
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true
+            }
+        },
+        {
+            breakpoint: 568,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true
+            }
+        }
+    ]});
 
   jQuery('.ochishchenie-new-product').on('click', function(){
-      jQuery('#bp-carousel-new').slick('slickFilter',':even');
+      jQuery('#bp-carousel-new').slick('slickFilter','.product-carousel-new');
   });
   jQuery('.ochishchenie-all-product').on('click', function(){
       jQuery('#bp-carousel-new').slick('slickUnfilter');
