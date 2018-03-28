@@ -20,7 +20,7 @@ div.slider{
 }
 #Blocks{
   width: 100%; 
-  height: 495px;
+  height: 495px;190
   height: 33vw;
 }
 div.Block {
@@ -30,6 +30,7 @@ div.Block {
   float: left;
   position: relative;
   overflow: hidden;
+  transition: width 2s linear;
 }
 div.Block > img {
   position: absolute;
@@ -198,7 +199,7 @@ div.Block2 > img {
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
   position: absolute;
   left: -23px;
-  top: 5px;
+  top: 2px;
 }
 .slider-top-btn-video {
   font-size: 16px;
@@ -225,7 +226,7 @@ div.Block2 > img {
   position: absolute;
   left: -40px;
   top: 50%;
-  margin-top: -13px;
+  margin-top: -17px;
 }
 .slider-product1 {
   display: none;
@@ -326,6 +327,7 @@ div.Block2 > img {
 .slider-product2 ul li img {
   margin-bottom: 3px;
   margin-left: -4px;
+  width: 65px;
 }
 .slider-product2 ul li span {
   font-size: 14px;
@@ -844,6 +846,8 @@ div.Block .img-evening-right {
 .product-popap-text ul li img {
   float: left;
   margin-right: 20px;
+  width: 35px;
+  width: 2.307185vw;
 }
 .popap-more-product {
   font-size: 16px;
@@ -881,7 +885,7 @@ div.Block .img-evening-right {
 .ochishchenie-product-filter li {
   display: inline-block;
   float: left;
-  margin: 0 35px;
+  margin: 0 35px 15px
 }
 .ochishchenie-product-filter li a {
   line-height: 40px;
@@ -893,10 +897,13 @@ div.Block .img-evening-right {
   box-shadow:         0px 1px 12px 0px rgba(34, 34, 34, 0.2);
   border-radius: 3px;
   font-family: HelveticaNeueBold;
+  color: rgb(105, 26, 131);
 }
 .ochishchenie-product-filter li a img {
   margin-right: 15px;
   margin-top: -4px;
+  height: 21px;
+  height: 1.3843vw;
 }
 .container-promo #bg-carousel-wrapper {
   text-align: center;
@@ -910,4 +917,24 @@ div.Block .img-evening-right {
 }
 #bg-carousel-wrapper .teasers-wrapper {
   padding-bottom: 10px;
+  padding-top: 55px;
+}
+.region-bp-ochishchenie-blocks .slick-initialized .slick-slide {
+  padding: 5px 1.2rem 0.3rem;
+}
+.region-bp-ochishchenie-blocks .slick-initialized .teaser-normal .teaser-inner {
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(37, 37, 37, 0.17); 
+  -moz-box-shadow: 0px 0px 9px 0px rgba(37, 37, 37, 0.17); 
+  box-shadow: 0px 0px 9px 0px rgba(37, 37, 37, 0.17); 
+  padding: 0;
+  height: 430px;
+}
+.region-bp-ochishchenie-blocks .slick-prev.slick-arrow {
+    left: -75px;
+}
+.region-bp-ochishchenie-blocks .slick-next.slick-arrow {
+    right: -75px;
+}
+.region-bp-ochishchenie-blocks .slick-dots li.slick-active button {
+  border: solid 2px #691b83;
 }
