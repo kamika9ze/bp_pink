@@ -88,11 +88,13 @@ jQuery(document).ready(function(){
       jQuery('.slick-next').fadeOut();
       jQuery('.Block2 > div ').fadeOut('400');
         jQuery('.img-evening').fadeOut();
-        jQuery('#2').width('5%');
-          jQuery('.slick-prev').delay(2000).show();
-          jQuery('.img-morning').delay(2000).fadeIn();
-          jQuery('.Block1 > div ').delay(2000).fadeIn('400');
-      jQuery('#1').width('95%');
+        setTimeout(function() {
+          jQuery('#2').width('5%');
+            jQuery('.slick-prev').delay(2000).show();
+            jQuery('.img-morning').delay(2000).fadeIn();
+            jQuery('.Block1 > div ').delay(2000).fadeIn('400');
+          jQuery('#1').width('95%');
+        }, 200);
     }
   });
   jQuery('.slick-prev').click(function(eventObject){
@@ -110,12 +112,14 @@ jQuery(document).ready(function(){
       console.log('slick-prev');
         jQuery('.slick-prev').fadeOut();
         jQuery('.img-morning').fadeOut();
-      jQuery('.Block1 > div ').fadeOut('400');
-      jQuery('#1').width('5%');
-        jQuery('.slick-next').delay(2000).show();
-        jQuery('.img-evening').delay(2000).fadeIn();
-        jQuery('.Block2 > div ').delay(2000).fadeIn('400');
-      jQuery('#2').width('95%');
+        jQuery('.Block1 > div ').fadeOut('400');
+        setTimeout(function() {
+          jQuery('#1').width('5%');
+            jQuery('.slick-next').delay(2000).show();
+            jQuery('.img-evening').delay(2000).fadeIn();
+            jQuery('.Block2 > div ').delay(2000).fadeIn('400');
+          jQuery('#2').width('95%');
+        }, 200);
     }
   });
   jQuery('#bp-carousel-new').slick({

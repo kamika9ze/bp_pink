@@ -20,7 +20,7 @@ div.slider{
 }
 #Blocks{
   width: 100%; 
-  height: 495px;190
+  height: 495px;
   height: 33vw;
 }
 div.Block {
@@ -84,9 +84,11 @@ div.Block2 > img {
 }
 .slider-face_name {
   font-size: 44.7px;
+  font-size: 2.98vw;
   color: #fff;
   line-height: 1;
   margin-bottom: 10px;
+  margin-bottom: 0.666vw;
   position: absolute;
   left: 156px;
   left: 10.4vw;
@@ -98,15 +100,19 @@ div.Block2 > img {
 }
 .slider-face_name span {
   font-size: 35px;
+  font-size: 2.333vw;
   display: inline-block;
   margin-bottom: 20px;
+  margin-bottom: 1.3333vw;
 }
 .slider-top-title {
   font-size: 44.7px;
+  font-size: 2.98vw;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
   margin-bottom: 26px;
+  margin-bottom: 1.733vw;
   position: absolute;
   top: 156px;
   top: 10.4vw;
@@ -119,12 +125,15 @@ div.Block2 > img {
 .slider-face_surname {
   color: rgb(168, 170, 223);
   font-size: 24px;
+  font-size: 1.6vw;
   line-height: 25px;
+  line-height: 1.66vw;
   display: inline-block;
   font-family: HelveticaNeue;
 }
 .slider-top-title span {
   font-size: 35px;
+  font-size: 2.33vw;
   display: table;
   line-height: 1;
 }
@@ -135,19 +144,26 @@ div.Block2 > img {
   display: inline-block;
   position: relative;
   font-size: 21.641px;
+  font-size: 1.44266vw;
   color: rgb(255, 255, 255);
   line-height: 31px;
+  line-height: 2.0666vw;
   text-align: center;
 }
 .slider-top:after {
   content: "";
   width: 156px;
+  width: 10.4vw;
   height: 106px;
+  height: 7.066vw;
   background: url('../images/ochishchenie/signature.png') no-repeat;
+  background-size: 100% 100%;
   position: absolute;
   right: 50%;
   bottom: 48px;
+  bottom: 3.2;
   margin-right: -313px;
+  margin-right: -20.866vw;
 }
 .kovichki {
   /*font-size: 65px;*/
@@ -155,12 +171,16 @@ div.Block2 > img {
   /*line-height: 1.2;*/
   text-align: center;
   width: 13px;
+  width: 0.866vw;
   height: 15px;
+  height: 1vw;
   background: url('../images/ochishchenie/quotes.png') no-repeat;
   display: inline-block;
   position: absolute;
   left: -30px;
+  left: -2vw;
   top: -7px;
+  top: -0.4666vw;
 }
 .kovichki2 {
   right: -30px;
@@ -173,6 +193,7 @@ div.Block2 > img {
 }
 .slider-top-btn-next {
   font-size: 16px;
+  font-size: 1.0666vw;
   color: rgb(255, 255, 255);
   border-width: 0px;
   clear: both;
@@ -193,16 +214,20 @@ div.Block2 > img {
   height: 0;
   border-style: solid;
   border-width: 6px 0 6px 11px;
+  border-width: 0.4vw 0 0.4vw 0.7333vw;
   border-color: transparent transparent transparent #fff;
   line-height: 0px;
   _border-color: #000000 #000000 #000000 #fff;
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
   position: absolute;
   left: -23px;
+  left: -1.533vw;
   top: 2px;
+  top: 0.133vw;
 }
 .slider-top-btn-video {
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
@@ -215,18 +240,24 @@ div.Block2 > img {
 }
 .slider-top-btn-video:hover {
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
 .slider-top-btn-video:before {
   content: "";
   width: 29px;
+  width: 1.933vw;
   height: 29px;
+  height: 1.933vw;
   background: url(../images/ochishchenie/ico-play-video.png);
+  background-size: cover;
   position: absolute;
   left: -40px;
+  left: -2.666vw;
   top: 50%;
   margin-top: -17px;
+  margin-top: -1vw;
 }
 .slider-product1 {
   display: none;
@@ -235,13 +266,16 @@ div.Block2 > img {
   display: none;
   position: absolute;
   text-align: center;
-  top: -77px;
+  top: 0;
+  /*top: -77px;
+  top: -5.133vw;*/
 }
 .slider-morning-right {
   right: 0;
 }
 .slider-evening-right {
   left: -30px;
+  left: -2vw;
 }
 .slider-evening-right.slider-product1 {
   right: 160px;
@@ -262,35 +296,46 @@ div.Block2 > img {
 .slider-evening-right .slider-product-procent {
   color: #fff;
   border-radius: 20px;
+  border-radius: 1.333vw;
   background-color: rgba(211, 212, 234, 0.4);
 }
 .slider-product-procent {
   padding: 20px;
+  padding: 1.333vw;
   font-size: 16px;
+  font-size: 1.0666vw;
   font-weight: 300;
   margin-bottom: 30px;
+  margin-bottom: 2vw;
   display: inline-block;
   border-radius: 20px;
+  border-radius: 1.333vw;
   margin-top: -17px;
+  margin-top: -1.1333vw;
 }
 .slider-product-procent span.proc {
   font-size: 58px;  
+  font-size: 3.866vw;  
   display: inline-block;
   margin-right: 15px;
+  margin-right: 1vw;
   float: left;
   line-height: 43px;
+  line-height: 2.866vw;
   font-family: HelveticaNeueThin;
 }
 .slider-product-procent span.text {
   display: inline-block;
   line-height: 1.2;
   padding-top: 3px;
+  padding-top: 0.2vw;
   text-align: left;
   font-family: HelveticaNeue;
 }
 .slider-product2 ul {
   display: inline-block;
   padding: 0 0 0 19px;
+  padding: 0 0 0 1.2666vw;
 }
 .slider-morning-right ul li {
   color: #bb3991;
@@ -302,8 +347,10 @@ div.Block2 > img {
   display: inline-block;
   float: left;
   margin-right: 34px;
+  margin-right: 2.266vw;
   position: relative;
   width: 90px;
+  width: 6vw;
 }
 .slider-product2 ul li:last-child {
   margin-right: 0;
@@ -312,9 +359,13 @@ div.Block2 > img {
   content: "";
   position: absolute;
   right: -19px;
+  right: -1.2666vw;
   top: 29px;
+  top: 1.933vw;
   width: 6px;
+  width: 0.4vw;
   height: 6px;
+  height: 0.4vw;
   border-radius: 50%;
   background: #fff;
 }
@@ -326,11 +377,15 @@ div.Block2 > img {
 }
 .slider-product2 ul li img {
   margin-bottom: 3px;
+  margin-bottom: 0.2vw;
   margin-left: -4px;
+  margin-left: -0.266vw;
   width: 65px;
+  width: 4.33vw;
 }
 .slider-product2 ul li span {
   font-size: 14px;
+  font-size: 0.933vw;
   line-height: 1.2;
   display: inline-block;
   text-align: center;
@@ -390,10 +445,13 @@ div.Block .img-evening-right {
   display: none;
   position: absolute;
   left: 158px;
+  left: 10.53vw;
   top: 80px;
+  top: 5.333vw;
 }
 .slider-block2-min-text {
   font-size: 30px;
+  font-size: 2vw;
   color: rgb(187, 57, 145);
   line-height: 1.2;
   text-align: left;
@@ -402,18 +460,22 @@ div.Block .img-evening-right {
   font-size: 123px;
   color: rgb(187, 57, 145);
   line-height: 100px;
+  line-height: 6.666vw;
   text-align: center;
   padding-right: 32px;
+  padding-right: 2.133vw;
   float: left;
 }
 .slider-block2-max-text {
   font-size: 30px;
+  font-size: 2vw;
   color: rgb(187, 57, 145);
   line-height: 1.2;
   text-align: left;
   display: table;
   clear: both;
   padding-top: 16px;
+  padding-top: 1.066vw;
 }
 .box-video {
     display: none;
@@ -427,20 +489,31 @@ div.Block .img-evening-right {
 .player-btn-close {
     background: url('../images/ochishchenie/btn-close.png') no-repeat;
     width: 20px;
+    width: 1.333vw;
     height: 21px;
+    height: 1.4vw;
     position: absolute;
     top: 20px;
+    top: 1.333vw;
     right: 20px;
+    right: 1.333vw;
 }
 /*---slider-product---*/
 .slider-product1 {
   height: 405px;
+  height: 27vw;
   position: absolute;
   text-align: center;
 }
 .slider-product1 > img {
   position: absolute;
   bottom: 0;
+  height: 340px;
+  height: 22.66vw;
+}
+.slider-product2 > img {
+  width: 480px;
+  width: 32vw;
 }
 .slider-morning-left {
   left: 170px;
@@ -456,16 +529,22 @@ div.Block .img-evening-right {
 }
 .slider-block-img-title {
   font-size: 55px;
+  font-size: 3.666vw;
   line-height: 50px;
+  line-height: 3.33vw;
   text-align: left;
   position: relative;
   margin-bottom: 27px;
+  margin-bottom: 1.8vw;
   font-weight: 300;
   font-family: HelveticaNeueThin;
 }
 .slider-block-img-title img {
   margin-right: 40px;
+  margin-right: 2.666vw;
   vertical-align: top;
+  height: 48px;
+  height: 3.2vw;
 }
 .slider-morning-left .slider-block-img-text {
   color: #bb3991;
@@ -475,11 +554,14 @@ div.Block .img-evening-right {
 }
 .slider-block-img-text {
   font-size: 30px;
+  font-size: 2vw;
   line-height: 23px;
+  line-height: 1.533vw;
   font-family: HelveticaNeueThin;
 }
 .slider-block-img-text span {
   font-size: 16px;
+  font-size: 1.066vw;
   font-family: HelveticaNeue;
 }
 /*---end-slider-product---*/
@@ -495,12 +577,15 @@ div.Block .img-evening-right {
   width: 100%;
   text-align: center;
   padding: 35px 0;
+  padding: 2.333vw 0;
   font-size: 40px;
+  font-size: 2.666vw;
   font-family: HelveticaNeueThin;
 }
 .skin-type {
   width: 100%;
   padding: 60px 0;
+  padding: 4vw 0;
   background: url('../images/ochishchenie/bg-skin-type.jpg');
   background-size: cover;
   position: relative;
@@ -521,7 +606,9 @@ div.Block .img-evening-right {
   width: 100%;
   text-align: center;
   margin-bottom: 40px;
+  margin-bottom: 2.66vw;
   font-size: 30px;
+  font-size: 2vw;
   color: #fff;
 }
 .skin-type-items {
@@ -532,19 +619,33 @@ div.Block .img-evening-right {
 .skin-type-item {
   display: inline-block;
   padding: 0 80px;
+  padding: 0 5.333vw;
   text-decoration: none;
 }
 .btn-norm {
   text-decoration: none;
 }
+.skin-type-item a:hover span, .skin-type-item a:hover {
+  text-decoration: none;
+}
 .skin-type-item span {
   display: table;
   color: #fff;
+  font-size: 24px;
+  font-size: 1.6vw;
+  font-family: "HelveticaNeueThin";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
 }
 .skin-type-item img {
   margin-bottom: 15px;
+  margin-bottom: 1vw;
   width: 96px;
+  width: 6.4vw;
   height: 96px;
+  height: 6.4vw;
   border-radius: 50%;
   display: inline-block;
   border: 1px solid #fff;
@@ -627,6 +728,7 @@ div.Block .img-evening-right {
   width: 100%;
   display: inline-block;
   padding: 50px 0 70px;
+  padding: 3.333vw 0 4.66vw;
   background-size: cover!important;
   box-sizing: border-box;
 }
@@ -733,11 +835,14 @@ div.Block .img-evening-right {
 }
 .box-want-product-title {
   font-size: 30px;
+  font-size: 2vw;
   font-family: HelveticaNeueThin;
 }
 .box-want-product-info {
   font-size: 16px;
+  font-size: 1.066vw;
   margin-bottom: 50px;
+  margin-bottom: 3.333vw;
   font-family: HelveticaNeue;
 }
 .box-want-product-items {
@@ -745,6 +850,7 @@ div.Block .img-evening-right {
   width: 100%;
   text-align: center;
   margin-left: -53px;
+  margin-left: -3.5333vw;
   /*height: 360px;*/
   /*--Высоту лучше вычислять--*/
 }
@@ -761,7 +867,9 @@ div.Block .img-evening-right {
 }*/
 .box-want-product-item > a {
   width: 60px;
+  width: 4vw;
   height: 60px;
+  height: 4vw;
   border-radius: 50%;
   display: inline-block;
   background: url('../images/ochishchenie/ico-btn-want-morning-evening.png') center no-repeat;
@@ -798,14 +906,20 @@ div.Block .img-evening-right {
   left: 0;
   width: 100%;
   padding: 37px 50px 30px 0;
+  padding: 2.466vw 3.333vw 2vw 0;
   border-radius: 10px;
 }
 .product-popap-close {
   background: url('../images/ochishchenie/btn-close.png') no-repeat;
+  background-size: cover;
   width: 20px;
+  width: 1.333vw;
   height: 21px;
+  height: 1.4vw;
   right: -20px;
+  right: -1.333vw;
   top: -28px;
+  top: -1.866vw;
   position: absolute;
 }
 .box-want-product-item-popap > div {
@@ -815,20 +929,26 @@ div.Block .img-evening-right {
 .product-popap-img {
   width: 41%;
 }
+.product-popap-img img {
+  width: 66%;
+}
 .product-popap-text {
   width: 59%;
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-align: left;
 }
 .product-popap-title {
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
   margin-bottom: 16px;
+  margin-bottom: 1.066vw;
   font-family: HelveticaNeueBold;
 }
 .product-popap-text ul {
@@ -837,6 +957,7 @@ div.Block .img-evening-right {
 }
 .product-popap-text ul li {
   margin-bottom: 20px;
+  margin-bottom: 1.333vw;
   list-style: none;
   display: table;
   width: 100%;
@@ -846,11 +967,13 @@ div.Block .img-evening-right {
 .product-popap-text ul li img {
   float: left;
   margin-right: 20px;
+  margin-right: 1.333vw;
   width: 35px;
   width: 2.307185vw;
 }
 .popap-more-product {
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(112, 44, 142);
   font-weight: bold;
   line-height: 1.2;
@@ -860,6 +983,7 @@ div.Block .img-evening-right {
 }
 .popap-more-product:hover {
   font-size: 16px;
+  font-size: 1.066vw;
   color: rgb(112, 44, 142);
   font-weight: bold;
   line-height: 1.2;
@@ -869,11 +993,16 @@ div.Block .img-evening-right {
 .popap-more-product:before {
   content: "";
   background: url("../images/ochishchenie/popap-next-product.png") no-repeat;
+  background-size: cover;
   width: 7px;
+  width: 0.466vw;
   height: 13px;
+  height: 0.866vw;
   position: absolute;
   right: -17px;
+  right: -1.133vw;
   top: 5px;
+  top: 0.333vw;
 }
 .promo-catalog-carousel {
   margin: 0;
@@ -886,22 +1015,28 @@ div.Block .img-evening-right {
   display: inline-block;
   float: left;
   margin: 0 35px 15px
+  margin: 0 2.33vw 1vw
 }
 .ochishchenie-product-filter li a {
   line-height: 40px;
+  line-height: 2.66vw;
   min-width: 200px;
+  min-width: 13.333vw;
   display: inline-block;
   text-decoration: none;
   -webkit-box-shadow: 0px 1px 12px 0px rgba(34, 34, 34, 0.2);
   -moz-box-shadow:    0px 1px 12px 0px rgba(34, 34, 34, 0.2);
   box-shadow:         0px 1px 12px 0px rgba(34, 34, 34, 0.2);
   border-radius: 3px;
+  border-radius: 0.2vw;
   font-family: HelveticaNeueBold;
   color: rgb(105, 26, 131);
 }
 .ochishchenie-product-filter li a img {
   margin-right: 15px;
+  margin-right: 1vw;
   margin-top: -4px;
+  margin-top: -0.266vw;
   height: 21px;
   height: 1.3843vw;
 }
@@ -917,10 +1052,13 @@ div.Block .img-evening-right {
 }
 #bg-carousel-wrapper .teasers-wrapper {
   padding-bottom: 10px;
+  padding-bottom: 0.666vw;
   padding-top: 55px;
+  padding-top: 3.666vw;
 }
 .region-bp-ochishchenie-blocks .slick-initialized .slick-slide {
   padding: 5px 1.2rem 0.3rem;
+  padding: 0.33vw 1.2rem 0.3rem;
 }
 .region-bp-ochishchenie-blocks .slick-initialized .teaser-normal .teaser-inner {
   -webkit-box-shadow: 0px 0px 9px 0px rgba(37, 37, 37, 0.17); 
@@ -928,13 +1066,17 @@ div.Block .img-evening-right {
   box-shadow: 0px 0px 9px 0px rgba(37, 37, 37, 0.17); 
   padding: 0;
   height: 430px;
+  height: 28.666vw;
 }
 .region-bp-ochishchenie-blocks .slick-prev.slick-arrow {
     left: -75px;
+    left: -5vw;
 }
 .region-bp-ochishchenie-blocks .slick-next.slick-arrow {
     right: -75px;
+    right: -5vw;
 }
 .region-bp-ochishchenie-blocks .slick-dots li.slick-active button {
   border: solid 2px #691b83;
+  border: solid 0.133vw #691b83;
 }
