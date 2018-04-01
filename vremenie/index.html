@@ -19,7 +19,8 @@
           <div id="player"></div>        
         </div>
         <div class="slider-top">
-          <div class="slider-face_name"><span class="slider-face_surname">Полина Гагарина</span><br>СЕКРЕТ КРАСОТЫ <br><span>ОТ ПОЛИНЫ ГАГАРИНОЙ</span></div>
+          <!-- <div class="slider-face_name"><span class="slider-face_surname">Полина Гагарина</span><br>СЕКРЕТ КРАСОТЫ <br><span>ОТ ПОЛИНЫ ГАГАРИНОЙ</span></div> -->
+          <div class="slider-face_name"><br>#ЛАЙФХАК <br><span>ОТ ПОЛИНЫ ГАГАРИНОЙ</span></div>
           <div class="slider-top-title">ОЧИЩЕНИЕ КОЖИ<br><span>2 РАЗА В ДЕНЬ!</span> <span class="slider-top-title2">- и никакой сухости!</span>
           </div>
           <button class="slider-top-btn-next">Продолжить</button>
@@ -30,7 +31,7 @@
             <img src="./images/ochishchenie/baner-morning2.png" alt=""> 
             <!-- <img src="./images/ochishchenie/morning-left.png" alt="" class="img-morning-left img-morning">  -->
             <div class="slider-morning-left slider-product1">
-              <div class="slider-block-img-title"><img src="./images/ochishchenie/slider-star.png" alt="" class="">УТРО</div>
+              <div class="slider-block-img-title"><img src="./images/ochishchenie/sun.png" alt="" class="">УТРО</div>
               <div class="slider-block-img-text">Свежесть лица <br><span>Крем-гель для умывания</span></div>
               <!-- <img src="./images/ochishchenie/крем-гель.png" alt="" class="slider-img-morning-left slider-img-morning" style="left: 0; bottom: -55px;">  -->
               <img src="./images/ochishchenie/крем-гель.png" alt="" class="slider-img-morning-left slider-img-morning" style="left: 3vw;        height: 16.66vw;"> 
@@ -81,6 +82,8 @@
             <!-- <img src="./images/ochishchenie/evening-right.png" alt="" class="img-evening-right img-evening">  -->
             <button class="slick-btn slick-next slick-arrow1" aria-label="next" type="button" style="display: block;">Next</button>
           </div>
+          <!-- если надо полосу по середине -->
+          <!-- <span class="handle"></span> -->
         </div>
       </div>
       <div class="block-ideal-means">
@@ -107,13 +110,15 @@
             <div class="box-want-morning">
               <div class="want-title">Выбери, чего твоей коже <br>хочется утром!</div>
               <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <!-- новая вкладка. нужно соблюдать ссылку в дальнейшем -->
                 <li class="nav-item">
                   <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                     <img src="./images/ochishchenie/want-morning-ico1.png" alt="" class="img-want-morning-evening">
                     <img src="./images/ochishchenie/want-morning-ico12.png" alt="" class="img-hover-want-morning-evening"> 
-                    Мативирование
+                    Матирование
                   </a>
                 </li>
+                <!-- конец новой вкладки -->
                 <li class="nav-item">
                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
                     <img src="./images/ochishchenie/want-morning-ico2.png" alt="" class="img-want-morning-evening">
@@ -131,25 +136,28 @@
               </ul>
             </div>
             <div class="box-want-morning-product tab-content" id="myTabContent">
+              <!-- таб который появляется. надо указать id такой же как ссылка в во вкладке -->
               <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="box-want-product-title">Мативирование</div>
+                <div class="box-want-product-title">Матирование</div>
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>
                 <div class="box-want-product-items">
                   <div class="box-want-product-item">
                     <a href="javascript:void(0);"></a>
-                    <div class="box-want-product-item-popap">
-                      <a href="javascript:void(0);" class="product-popap-close"></a>
-                      <div class="product-popap-img"><img src="./images/ochishchenie/morning-product1.png" alt=""></div>
-                      <div class="product-popap-text">
-                        <div class="product-popap-title">Освежающий гель для умывания <br>для нормальной и комбинированной кожи</div>
-                        <ul>
-                          <li><img src="./images/ochishchenie/ico-ochischenie.png" alt=""><span>Глубоко очищает без сухости;</span></li>
-                          <li><img src="./images/ochishchenie/ico-hours.png" alt=""><span>Матирует на 24 часа благодаря особой формуле сыворотки;</span></li>
-                          <li><img src="./images/ochishchenie/ico-sensation.png" alt=""><span>Ощущение ухода <br>и увлажненности.</span></li>
-                        </ul>
-                        <a href="#" class="popap-more-product">Подробнее о продукте</a>
+                    <!-- блок box-want-product-item-popap - это попап. он срабатывает по классу. уникальных индендификаторов не надо. менять надо только то что внутри-->
+                      <div class="box-want-product-item-popap">
+                        <a href="javascript:void(0);" class="product-popap-close"></a>
+                        <div class="product-popap-img"><img src="./images/ochishchenie/morning-product1.png" alt=""></div>
+                        <div class="product-popap-text">
+                          <div class="product-popap-title">Освежающий гель для умывания <br>для нормальной и комбинированной кожи</div>
+                          <ul>
+                            <li><img src="./images/ochishchenie/ico-ochischenie.png" alt=""><span>Глубоко очищает без сухости;</span></li>
+                            <li><img src="./images/ochishchenie/ico-hours.png" alt=""><span>Матирует на 24 часа благодаря особой формуле сыворотки;</span></li>
+                            <li><img src="./images/ochishchenie/ico-sensation.png" alt=""><span>Ощущение ухода <br>и увлажненности.</span></li>
+                          </ul>
+                          <a href="#" class="popap-more-product">Подробнее о продукте</a>
+                        </div>
                       </div>
-                    </div>
+                    <!-- конец попапа -->
                     <img src="./images/ochishchenie/morning-product1.png" alt="" style="margin-top: 31px;">
                   </div>   
                   <div class="box-want-product-item">
@@ -171,6 +179,7 @@
                   </div>                
                 </div>
               </div>
+              <!-- конец таба -->
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="box-want-product-title">Нежность</div>
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>
@@ -203,6 +212,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#recovery" role="tab" aria-controls="recovery" aria-selected="false">
+                    <img src="./images/ochishchenie/want-evening-ico2.png" alt="" class="img-want-morning-evening">
+                    <img src="./images/ochishchenie/want-evening-ico22.png" alt="" class="img-hover-want-morning-evening"> 
+                    Восстановление
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false">
                     <img src="./images/ochishchenie/want-evening-ico3.png" alt="" class="img-want-morning-evening">
                     <img src="./images/ochishchenie/want-evening-ico32.png" alt="" class="img-hover-want-morning-evening"> 
@@ -219,6 +235,48 @@
               </ul>
             </div>
             <div class="box-want-evening-product tab-content" id="myTabContent">
+              <div class="tab-pane fade" id="recovery" role="tabpanel" aria-labelledby="recovery-tab">
+                <div class="box-want-product-title">Восстановление</div>
+                <div class="box-want-product-info">Для восстановления</div>
+                <div class="box-want-product-items">
+                  <div class="box-want-product-item">
+                    <a href="javascript:void(0);"></a>
+                    <!-- блок box-want-product-item-popap - это попап. он срабатывает по классу. уникальных индендификаторов не надо. менять надо только то что внутри-->
+                      <div class="box-want-product-item-popap">
+                        <a href="javascript:void(0);" class="product-popap-close"></a>
+                        <div class="product-popap-img"><img src="./images/ochishchenie/morning-product1.png" alt=""></div>
+                        <div class="product-popap-text">
+                          <div class="product-popap-title">Освежающий гель для умывания <br>для нормальной и комбинированной кожи</div>
+                          <ul>
+                            <li><img src="./images/ochishchenie/ico-ochischenie.png" alt=""><span>Глубоко очищает без сухости;</span></li>
+                            <li><img src="./images/ochishchenie/ico-hours.png" alt=""><span>Матирует на 24 часа благодаря особой формуле сыворотки;</span></li>
+                            <li><img src="./images/ochishchenie/ico-sensation.png" alt=""><span>Ощущение ухода <br>и увлажненности.</span></li>
+                          </ul>
+                          <a href="#" class="popap-more-product">Подробнее о продукте</a>
+                        </div>
+                      </div>
+                    <!-- конец попапа -->
+                    <img src="./images/ochishchenie/morning-product1.png" alt="" style="margin-top: 31px;">
+                  </div>   
+                  <div class="box-want-product-item">
+                    <a href="javascript:void(0);"></a>
+                    <div class="box-want-product-item-popap">
+                      <a href="javascript:void(0);" class="product-popap-close"></a>
+                      <div class="product-popap-img"><img src="./images/ochishchenie/morning-product2.png" alt=""></div>
+                      <div class="product-popap-text">
+                        <div class="product-popap-title">Освежающий гель для умывания <br>для нормальной и комбинированной кожи2</div>
+                        <ul>
+                          <li><img src="./images/ochishchenie/ico-ochischenie.png" alt=""><span>Глубоко очищает без сухости;</span></li>
+                          <li><img src="./images/ochishchenie/ico-hours.png" alt=""><span>Матирует на 24 часа благодаря особой формуле сыворотки;</span></li>
+                          <li><img src="./images/ochishchenie/ico-sensation.png" alt=""><span>Ощущение ухода <br>и увлажненности.</span></li>
+                        </ul>
+                        <a href="#" class="popap-more-product">Подробнее о продукте</a>
+                      </div>
+                    </div>
+                    <img src="./images/ochishchenie/morning-product2.png" alt="">
+                  </div>                
+                </div>
+              </div>
               <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
                 <div class="box-want-product-title">Снятие макияжа</div>
                 <div class="box-want-product-info">Для нормальной и комбинированной</div>

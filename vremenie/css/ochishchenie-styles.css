@@ -1080,3 +1080,13 @@ div.Block .img-evening-right {
   border: solid 2px #691b83;
   border: solid 0.133vw #691b83;
 }
+.handle { /* Thin line seperator */
+  position:absolute; 
+  left:50%;
+  top:0;
+  bottom:0;
+  width:4px;
+  margin-left:-2px;
+  background: rgba(0,0,0,.5);
+  cursor: ew-resize;
+}
