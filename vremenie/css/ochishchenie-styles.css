@@ -1014,8 +1014,8 @@ div.Block .img-evening-right {
 .ochishchenie-product-filter li {
   display: inline-block;
   float: left;
-  margin: 0 35px 15px
-  margin: 0 2.33vw 1vw
+  margin: 0 35px 15px;
+  margin: 0 2.33vw 1vw;
 }
 .ochishchenie-product-filter li a {
   line-height: 40px;
@@ -1066,7 +1066,7 @@ div.Block .img-evening-right {
   box-shadow: 0px 0px 9px 0px rgba(37, 37, 37, 0.17); 
   padding: 0;
   height: 430px;
-  height: 28.666vw;
+  /*height: 28.666vw;*/
 }
 .region-bp-ochishchenie-blocks .slick-prev.slick-arrow {
     left: -75px;
