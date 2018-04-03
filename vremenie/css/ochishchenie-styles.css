@@ -83,39 +83,40 @@ div.Block2 > img {
   padding-top: 42px;
 }
 .slider-face_name {
-  font-size: 44.7px;
-  font-size: 2.98vw;
+  font-size: 52px;
+  font-size: 3.466vw;
   color: #fff;
-  line-height: 1;
+  line-height: 38px;
+  line-height: 2.533vw;
   margin-bottom: 10px;
   margin-bottom: 0.666vw;
   position: absolute;
   left: 156px;
   left: 10.4vw;
-  top: 104px;
-  top: 6.933vw;
+  top: 125px;
+  top: 8.33vw;
   font-weight: 300;
   text-align: left;
   font-family: HelveticaNeueThin;
 }
 .slider-face_name span {
-  font-size: 35px;
-  font-size: 2.333vw;
+  font-size: 25px;
+  font-size: 1.666vw;
   display: inline-block;
-  margin-bottom: 20px;
-  margin-bottom: 1.3333vw;
+  margin-bottom: 27px;
+  margin-bottom: 1.8vw;
 }
 .slider-top-title {
   font-size: 44.7px;
   font-size: 2.98vw;
   color: rgb(255, 255, 255);
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: center;
   margin-bottom: 26px;
   margin-bottom: 1.733vw;
   position: absolute;
-  top: 156px;
-  top: 10.4vw;
+  top: 104px;
+  top: 6.933vw;
   right: 113px;
   right: 7.533vw;
   font-weight: 300;
@@ -135,7 +136,7 @@ div.Block2 > img {
   font-size: 35px;
   font-size: 2.33vw;
   display: table;
-  line-height: 1;
+  line-height: 1.1;
 }
 .slider-top-title2 {
   padding-left: 65px;  
@@ -197,16 +198,17 @@ div.Block2 > img {
   color: rgb(255, 255, 255);
   border-width: 0px;
   clear: both;
-  display: inline-block;
-  position: absolute;
-  right: 113px;
-  right: 7.533vw;
-  bottom: 45px;
-  bottom: 3vw;
+  display: table;
+  position: relative;
   background: none;
   line-height: 1;
   cursor: pointer;
   font-family: HelveticaNeue;
+  padding: 15px 55px 15px 80px;
+  padding: 1vw 3.666vw 1vw 5.333vw;
+  border-radius: 4px;
+  border-radius: 0.266vw;
+  background: #691a83;
 }
 .slider-top-btn-next:before {
   content: "";
@@ -220,10 +222,10 @@ div.Block2 > img {
   _border-color: #000000 #000000 #000000 #fff;
   _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
   position: absolute;
-  left: -23px;
-  left: -1.533vw;
-  top: 2px;
-  top: 0.133vw;
+  left: 52px;
+  left: 3.4666vw;
+  top: 15px;
+  top: 1vw;
 }
 .slider-top-btn-video {
   font-size: 16px;
