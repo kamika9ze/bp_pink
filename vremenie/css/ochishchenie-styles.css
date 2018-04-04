@@ -110,7 +110,7 @@ div.Block2 > img {
   font-size: 44.7px;
   font-size: 2.98vw;
   color: rgb(255, 255, 255);
-  line-height: 1.4;
+  line-height: 1.4;213
   text-align: center;
   margin-bottom: 26px;
   margin-bottom: 1.733vw;
@@ -124,13 +124,19 @@ div.Block2 > img {
   font-family: HelveticaNeueThin;
 }
 .slider-face_surname {
-  color: rgb(168, 170, 223);
-  font-size: 24px;
-  font-size: 1.6vw;
-  line-height: 25px;
-  line-height: 1.66vw;
+  color: #a8aadf;
+  font-size: 16px;
+  line-height: 1;
   display: inline-block;
   font-family: HelveticaNeue;
+  position: absolute;
+  right: 114px;
+  right: 7.6vw;
+  bottom: 52px;
+  bottom: 3.4666vw;
+}
+.slider-face_surname span {
+  color: #fff;
 }
 .slider-top-title span {
   font-size: 35px;
@@ -224,8 +230,8 @@ div.Block2 > img {
   position: absolute;
   left: 52px;
   left: 3.4666vw;
-  top: 15px;
-  top: 1vw;
+  top: 16px;
+  top: 1.066;
 }
 .slider-top-btn-video {
   font-size: 16px;
