@@ -39,11 +39,16 @@
     player.stopVideo();
   }
 jQuery(document).ready(function(){
+  jQuery(document).on('click', '.btn-reset-filter', function() {
+    jQuery('.skin-type').show();
+    jQuery('.want-morning-evening').hide();
+    jQuery('.btn-reset-filter').hide();
+  });
   jQuery(document).on('click', '.box-want-product-item a', function() {
-      jQuery('.tab-content').addClass('popap');
-      jQuery('.box-want-morning, .box-want-evening').addClass('popap');
-      jQuery(this).parents('.box-want-product-item').find('.box-want-product-item-popap').show();
-    });
+    jQuery('.tab-content').addClass('popap');
+    jQuery('.box-want-morning, .box-want-evening').addClass('popap');
+    jQuery(this).parents('.box-want-product-item').find('.box-want-product-item-popap').show();
+  });
   jQuery(document).on('click', '.product-popap-close', function() {
     jQuery(this).parents('.box-want-product-item-popap').hide();
     jQuery('.box-want-morning, .box-want-evening').removeClass('popap');
@@ -52,10 +57,12 @@ jQuery(document).ready(function(){
   jQuery(document).on('click', '.btn-norm', function() {
     jQuery('.skin-type').slideUp('400', function() {});
     jQuery('.want-morning-evening-norm').slideDown('400', function() {});
+    jQuery('.btn-reset-filter').show();
   });
   jQuery(document).on('click', '.btn-such', function() {
     jQuery('.skin-type').slideUp('400', function() {});
     jQuery('.want-morning-evening-such').slideDown('400', function() {});
+    jQuery('.btn-reset-filter').show();
   });
   // Запуск видео
   jQuery(document).on('click', '.player-btn-close', function() {

@@ -18,6 +18,29 @@ div.slider{
   width: 100%;  
   position: relative;
 }
+.btn-reset-filter {
+  font-size: 17px;
+  font-size: 1.133vw;
+  color: rgb(255, 255, 255);
+  border-width: 0px;
+  clear: both;
+  display: table;
+  position: relative;
+  background: none;
+  line-height: 1;
+  cursor: pointer;
+  font-family: HelveticaNeue;
+  padding: 0;
+  line-height: 45px;
+  line-height: 3vw;
+  border-radius: 4px;
+  border-radius: 0.266vw;
+  background: #691b84;
+  margin: 40px auto 0;
+  width: 230px;
+  margin: 2.66vw auto 2.66vw;
+  display: inline-block;
+}
 #Blocks{
   width: 100%; 
   height: 495px;
@@ -580,6 +603,7 @@ div.Block .img-evening-right {
   box-shadow: 0px 21px 100px 0px rgba(55, 55, 55, 0.17);
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 .ideal-means-title {
   width: 100%;
