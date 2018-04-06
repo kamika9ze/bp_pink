@@ -1135,3 +1135,17 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     width: 100vw;
   }
 }
+
+/*---headeer---*/
+.new-bg {}
+.new-bg .container:before {
+  content: "";
+  width: 100%;
+  height: 60px;
+  background: url("../images/header/header.png") no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+}
+/*---end-headeer---*/
