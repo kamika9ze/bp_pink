@@ -43,6 +43,10 @@ jQuery(document).ready(function(){
     jQuery('.skin-type').show();
     jQuery('.want-morning-evening').hide();
     jQuery('.btn-reset-filter').hide();
+    jQuery('.nav-tabs li a.active').removeClass('active');
+    jQuery('.nav-tabs li a.active').removeClass('show');
+    jQuery('.tab-pane.active').removeClass('active');
+    jQuery('.tab-pane.active').removeClass('show');
   });
   jQuery(document).on('click', '.box-want-product-item a', function() {
     jQuery('.tab-content').addClass('popap');

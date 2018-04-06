@@ -11,10 +11,11 @@ global $base_root;
         </div>
         <div class="slider-top">
           <!-- <div class="slider-face_name"><span class="slider-face_surname">Полина Гагарина</span><br>СЕКРЕТ КРАСОТЫ <br><span>ОТ ПОЛИНЫ ГАГАРИНОЙ</span></div> -->
-          <div class="slider-face_name"><br>#ЛАЙФХАК <br><span>ОТ ПОЛИНЫ ГАГАРИНОЙ</span></div>
+          <div class="slider-face_name">#ЛАЙФХАК <br><span>ОТ ПОЛИНЫ ГАГАРИНОЙ</span>
+          <button class="slider-top-btn-next">Узнать первой</button></div>
           <div class="slider-top-title">ОЧИЩЕНИЕ КОЖИ<br><span>2 РАЗА В ДЕНЬ!</span> <span class="slider-top-title2">- и никакой сухости!</span>
           </div>
-          <button class="slider-top-btn-next">Продолжить</button>
+          <span class="slider-face_surname">Полина Гагарина <span>амбассадор бренда</span></span>
           <a href="#" class="slider-top-btn-video">Смотреть видео</a>
         </div>
         <div id="Blocks" style="" class="Blocks1">
@@ -22,7 +23,7 @@ global $base_root;
             <img src="/<?php print path_to_theme();?>/images/ochishchenie/baner-morning2.png" alt=""> 
             <!-- <img src="/<?php print path_to_theme();?>/images/ochishchenie/morning-left.png" alt="" class="img-morning-left img-morning">  -->
             <div class="slider-morning-left slider-product1">
-              <div class="slider-block-img-title"><img src="/<?php print path_to_theme();?>/images/ochishchenie/sun.png" alt="" class=""> УТРО</div>
+              <div class="slider-block-img-title"><img src="/<?php print path_to_theme();?>/images/ochishchenie/star.png" alt="" class=""> УТРО</div>
               <div class="slider-block-img-text">Свежесть лица <br><span>Крем-гель для умывания</span></div>
               <!-- <img src="./images/ochishchenie/крем-гель.png" alt="" class="slider-img-morning-left slider-img-morning" style="left: 0; bottom: -55px;">  -->
               <img src="/<?php print path_to_theme();?>/images/ochishchenie/крем-гель.png" alt="" class="slider-img-morning-left slider-img-morning" style="left: 3vw;        height: 16.66vw;">
@@ -84,13 +85,13 @@ global $base_root;
         <div class="skin-type-items">
           <div class="skin-type-item col-xs-6">
             <a href="javascript:void(0);" class="btn-norm">
-              <img src="/<?php print path_to_theme();?>/images/ochishchenie/skin-type-item1.png" alt="">
+              <img src="/<?php print path_to_theme();?>/images/ochishchenie/skin-type-item1.2.png" alt="">
               <span>Нормальная <br>и комбинированная</span>
             </a>
           </div>
           <div class="skin-type-item col-xs-6">
             <a href="javascript:void(0);" class="btn-such">
-              <img src="/<?php print path_to_theme();?>/images/ochishchenie/skin-type-item2.png" alt="">
+              <img src="/<?php print path_to_theme();?>/images/ochishchenie/skin-type-item2.2.png" alt="">
               <span>Сухая <br>и чувствительная</span>
             </a>
           </div>
@@ -103,7 +104,7 @@ global $base_root;
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <!-- новая вкладка. нужно соблюдать ссылку в дальнейшем -->
               <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-morning-ico1.png" alt="" class="img-want-morning-evening">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-morning-ico12.png" alt="" class="img-hover-want-morning-evening"> 
                   Матирование
@@ -128,7 +129,7 @@ global $base_root;
           </div>
           <div class="box-want-morning-product tab-content" id="myTabContent">
               <!-- таб который появляется. надо указать id такой же как ссылка в во вкладке -->
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
               <div class="box-want-product-title">Матирование</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -196,7 +197,7 @@ global $base_root;
             <div class="want-title">Отметь вечерние <br>потребности твоей кожи!</div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true">
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="false">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-evening-ico1.png" alt="" class="img-want-morning-evening">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-evening-ico12.png" alt="" class="img-hover-want-morning-evening"> 
                   Снятие макияжа
@@ -268,7 +269,7 @@ global $base_root;
                       </div>
                   </div>
               </div>
-            <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade" id="home1" role="tabpanel" aria-labelledby="home-tab">
               <div class="box-want-product-title">Снятие макияжа</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -309,22 +310,22 @@ global $base_root;
             <div class="want-title">Выбери, чего твоей коже <br>хочется утром!</div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Увлажнение</a>
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#morning1-1" role="tab" aria-controls="home" aria-selected="false">Увлажнение</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#morning1-2" role="tab" aria-controls="profile" aria-selected="false">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-morning-ico2.png" alt="" class="img-want-morning-evening">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-morning-ico22.png" alt="" class="img-hover-want-morning-evening">
                   Нежность
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Деликатный уход</a>
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#morning1-3" role="tab" aria-controls="contact" aria-selected="false">Деликатный уход</a>
               </li>
             </ul>
           </div>
           <div class="box-want-morning-product tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade" id="morning1-" role="tabpanel" aria-labelledby="home-tab">
               <div class="box-want-product-title">Увлажнение</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -338,7 +339,7 @@ global $base_root;
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade" id="morning1-2" role="tabpanel" aria-labelledby="profile-tab">
               <div class="box-want-product-title">Нежность</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -347,7 +348,7 @@ global $base_root;
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tab-pane fade" id="morning1-3" role="tabpanel" aria-labelledby="contact-tab">
               <div class="box-want-product-title">Деликатный уход</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -363,22 +364,22 @@ global $base_root;
             <div class="want-title">Отметь вечерние <br>потребности твоей кожи!</div>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home1" role="tab" aria-controls="home" aria-selected="true">
+                <a class="nav-link" id="home-tab" data-toggle="tab" href="#evening2-1" role="tab" aria-controls="home" aria-selected="false">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-evening-ico1.png" alt="" class="img-want-morning-evening">
                   <img src="/<?php print path_to_theme();?>/images/ochishchenie/want-evening-ico12.png" alt="" class="img-hover-want-morning-evening">
                   Снятие макияжа
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile1" role="tab" aria-controls="profile" aria-selected="false">Нежность</a>
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#evening2-2" role="tab" aria-controls="profile" aria-selected="false">Нежность</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact" aria-selected="false">Деликатный уход</a>
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#evening2-3" role="tab" aria-controls="contact" aria-selected="false">Деликатный уход</a>
               </li>
             </ul>
           </div>
           <div class="box-want-evening-product tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home1" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade" id="evening2-1" role="tabpanel" aria-labelledby="home-tab">
               <div class="box-want-product-title">Снятие макияжа</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -392,7 +393,7 @@ global $base_root;
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="profile1" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade" id="evening2-2" role="tabpanel" aria-labelledby="profile-tab">
               <div class="box-want-product-title">Нежность</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -401,7 +402,7 @@ global $base_root;
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tab-pane fade" id="evening2-3" role="tabpanel" aria-labelledby="contact-tab">
               <div class="box-want-product-title">Деликатный уход</div>
               <div class="box-want-product-info">Для нормальной и комбинированной</div>
               <div class="box-want-product-items">
@@ -413,6 +414,7 @@ global $base_root;
           </div>
         </div>
       </div>
+        <button class="btn-reset-filter" style="display: none;">Сбросить фильтры</button>
     </div>
     <div class="promo-catalog-carousel section-carousel row bp-block-m-t">
       <div id="bg-carousel-wrapper" class="col-12">
