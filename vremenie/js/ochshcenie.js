@@ -39,6 +39,9 @@
     player.stopVideo();
   }
 jQuery(document).ready(function(){
+  jQuery(document).on('click', '.nav-tabs li a', function() {
+    jQuery('.btn-reset-filter').show();
+  });
   jQuery(document).on('click', '.btn-reset-filter', function() {
     jQuery('.skin-type').show();
     jQuery('.want-morning-evening').hide();
@@ -61,12 +64,10 @@ jQuery(document).ready(function(){
   jQuery(document).on('click', '.btn-norm', function() {
     jQuery('.skin-type').slideUp('400', function() {});
     jQuery('.want-morning-evening-norm').slideDown('400', function() {});
-    jQuery('.btn-reset-filter').show();
   });
   jQuery(document).on('click', '.btn-such', function() {
     jQuery('.skin-type').slideUp('400', function() {});
     jQuery('.want-morning-evening-such').slideDown('400', function() {});
-    jQuery('.btn-reset-filter').show();
   });
   // Запуск видео
   jQuery(document).on('click', '.player-btn-close', function() {

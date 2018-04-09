@@ -6,6 +6,7 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: 500px;
+  scroll-behavior: smooth;
 }
 .slider-for div:first-child {
   background: #ccc;
@@ -604,6 +605,7 @@ div.Block .img-evening-right {
   position: relative;
   z-index: 2;
   text-align: center;
+  scroll-behavior: smooth
 }
 .ideal-means-title {
   width: 100%;
@@ -893,6 +895,15 @@ div.Block .img-evening-right {
   /*position: relative;*/
   /*width: 200px;*/
 }
+.box-want-product-item > span {
+  display: table;
+  font-size: 16px;
+  font-family: HelveticaNeue;
+  font-weight: normal;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+}
 /*.box-want-product-item img {
   position: absolute;
   bottom: 0;
@@ -981,7 +992,7 @@ div.Block .img-evening-right {
   text-align: left;
   margin-bottom: 16px;
   margin-bottom: 1.066vw;
-  font-family: HelveticaNeueBold;
+  font-family: HelveticaNeue;
 }
 .product-popap-text ul {
   width: 100%;
@@ -995,7 +1006,10 @@ div.Block .img-evening-right {
   width: 100%;
   font-family: HelveticaNeueRoman;
 }
-.product-popap-text ul li span {}
+.product-popap-text ul li span {
+  font-family: HelveticaNeueRoman;
+  font-weight: normal;
+}
 .product-popap-text ul li img {
   float: left;
   margin-right: 20px;
@@ -1011,7 +1025,7 @@ div.Block .img-evening-right {
   line-height: 1.2;
   text-align: left;
   position: relative;
-  font-family: HelveticaNeueBold;
+  font-family: HelveticaNeue;
 }
 .popap-more-product:hover {
   font-size: 16px;
@@ -1061,7 +1075,8 @@ div.Block .img-evening-right {
   box-shadow:         0px 1px 12px 0px rgba(34, 34, 34, 0.2);
   border-radius: 3px;
   border-radius: 0.2vw;
-  font-family: HelveticaNeueBold;
+  font-family: HelveticaNeue;
+  font-weight: bold;
   color: rgb(105, 26, 131);
 }
 .ochishchenie-product-filter li a img {
@@ -1137,48 +1152,65 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 }
 
 /*---headeer---*/
-.new-bg {
-  position: relative;
-}
-header.new-bg#bp-main-header {
-  box-shadow: none;
-}
-.new-bg #header-wrapper {
-  background: none;
-}
-.new-bg:before {
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: #220535;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.new-bg:after {
-  content: "";
-  width: 50%;
-  height: 100%;
-  background: #380b53;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.new-bg .container {
-  max-width: inherit;
-  width: 1323px;
-  height: 100%;
-  position: relative;
-}
-.new-bg .container:before {
-  content: "";
-  width: 1920px;
-  height: 60px;
-  background: url(../images/header/header.png) no-repeat;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  display: inline-block;
-  margin-left: -960px;
-}
+  .new-bg {
+    position: relative;
+  }
+  header.new-bg#bp-main-header {
+    box-shadow: none;
+  }
+  .new-bg #header-wrapper {
+    background: none;
+  }
+  .new-bg:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: #220535;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .new-bg:after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: #380b53;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .new-bg .container {
+    max-width: inherit;
+    width: 1323px;
+    height: 100%;
+    position: relative;
+  }
+  .new-bg #header-wrapper .container:before {
+    content: "";
+    width: 1920px;
+    height: 60px;
+    background: url(../images/header/header.png) no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: inline-block;
+    margin-left: -960px;
+  }
+  .new-bg ul.mainmenu li a {
+    color: #ffffff;
+  }
+  .new-bg .usermenu.inline-menu li a span:before {
+    color: #fff;
+  }
+  .new-bg #bp-logo img {
+    /*display: none;*/
+  }
+  .new-bg #bp-logo {}
+  .indicator {
+    color: #712b90;
+    background: #fff;
+  }
+  .new-bg .icon-hamburger:before {
+    color: #fff;
+  }
 /*---end-headeer---*/
