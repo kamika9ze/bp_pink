@@ -1137,15 +1137,48 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 }
 
 /*---headeer---*/
-.new-bg {}
-.new-bg .container:before {
+.new-bg {
+  position: relative;
+}
+header.new-bg#bp-main-header {
+  box-shadow: none;
+}
+.new-bg #header-wrapper {
+  background: none;
+}
+.new-bg:before {
   content: "";
-  width: 100%;
-  height: 60px;
-  background: url("../images/header/header.png") no-repeat;
+  width: 50%;
+  height: 100%;
+  background: #220535;
   position: absolute;
   left: 0;
   top: 0;
+}
+.new-bg:after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #380b53;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.new-bg .container {
+  max-width: inherit;
+  width: 1323px;
+  height: 100%;
+  position: relative;
+}
+.new-bg .container:before {
+  content: "";
+  width: 1920px;
+  height: 60px;
+  background: url(../images/header/header.png) no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 0;
   display: inline-block;
+  margin-left: -960px;
 }
 /*---end-headeer---*/
