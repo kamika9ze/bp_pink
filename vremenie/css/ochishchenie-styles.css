@@ -883,15 +883,15 @@ div.Block .img-evening-right {
   display: inline-block;
   width: 100%;
   text-align: center;
-  margin-left: -53px;
-  margin-left: -3.5333vw;
+  /*margin-left: -53px;
+  margin-left: -3.5333vw;*/
   /*height: 360px;*/
   /*--Высоту лучше вычислять--*/
 }
 .box-want-product-item {
   display: inline-block;
   height: 100%;
-  vertical-align: middle;
+  vertical-align: bottom;
   /*position: relative;*/
   /*width: 200px;*/
 }
