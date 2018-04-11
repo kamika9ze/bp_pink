@@ -765,6 +765,8 @@ div.Block .img-evening-right {
   padding: 3.333vw 0 4.66vw;
   background-size: cover!important;
   box-sizing: border-box;
+  height: 355px;
+  height: 23.66vw;
 }
 .box-want-evening.popap:before, .box-want-morning.popap:before {
   content: "";
@@ -775,6 +777,9 @@ div.Block .img-evening-right {
   top: 0;
   z-index: 5;
 
+}
+.ico-pero {
+ 
 }
 .want-morning-evening .want-morning {
 }

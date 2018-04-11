@@ -43,7 +43,7 @@ jQuery(document).ready(function(){
     jQuery('.btn-reset-filter').show();
   });
   jQuery(document).on('click', '.btn-reset-filter', function() {
-    jQuery('.skin-type').show();
+    // jQuery('.skin-type').show();
     jQuery('.want-morning-evening').hide();
     jQuery('.btn-reset-filter').hide();
     jQuery('.nav-tabs li a.active').removeClass('active');
@@ -62,11 +62,13 @@ jQuery(document).ready(function(){
     jQuery('.tab-content').removeClass('popap');
   });
   jQuery(document).on('click', '.btn-norm', function() {
-    jQuery('.skin-type').slideUp('400', function() {});
+    // jQuery('.skin-type').slideUp('400', function() {});
+    jQuery('.want-morning-evening-such').slideUp('400', function() {});
     jQuery('.want-morning-evening-norm').slideDown('400', function() {});
   });
   jQuery(document).on('click', '.btn-such', function() {
-    jQuery('.skin-type').slideUp('400', function() {});
+    // jQuery('.skin-type').slideUp('400', function() {});
+    jQuery('.want-morning-evening-norm').slideUp('400', function() {});
     jQuery('.want-morning-evening-such').slideDown('400', function() {});
   });
   // Запуск видео
