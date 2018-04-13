@@ -78,6 +78,9 @@ div.Block2 button {
 div.Block2 > img {
   right: 0;
 }
+.Block2 {
+  border-left: 1px solid #fff;
+}
 #Blocks button {
   border: 0;
   position: absolute;
@@ -93,6 +96,16 @@ div.Block2 > img {
 }
 #Blocks .slick-next {
   background: url('../images/ochishchenie/btn-slider-right.png') no-repeat;
+  width: 65px;
+  height: 65px;
+}
+#Blocks .slick-prev.slick-btn {
+  background: url('../images/ochishchenie/btn-slider-left2.png') no-repeat;
+  width: 65px;
+  height: 65px;
+}
+#Blocks .slick-next.slick-btn {
+  background: url('../images/ochishchenie/btn-slider-right2.png') no-repeat;
   width: 65px;
   height: 65px;
 }
@@ -701,7 +714,7 @@ div.Block .img-evening-right {
   height: 0;
   border-style: solid;
   border-width: 18px 21.5px 0 21.5px;
-  border-color: #ffffff transparent transparent transparent;
+  border-color: #606086 transparent transparent transparent;
 }
 .want-morning-evening .nav-tabs {
   display: table;
@@ -750,13 +763,25 @@ div.Block .img-evening-right {
   padding-right: 10px;
   margin-bottom: 10px;
 }
+.want-title b {
+  font-weight: bold;
+}
 .want-morning .want-title {
   color: rgb(187, 57, 145);
 }
 .want-morning-evening > div {
   width: 50%;
-  display: inline-block;
-  float: left;
+  display: table-cell;
+}
+.block-ideal-means.popap .want-morning-evening > div:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
 }
 .want-morning-evening .want-morning .box-want-morning, .want-morning-evening .want-evening .box-want-evening {
   width: 100%;
@@ -767,6 +792,8 @@ div.Block .img-evening-right {
   box-sizing: border-box;
   height: 355px;
   height: 23.66vw;
+  position: relative;
+  z-index: 5;
 }
 .box-want-evening.popap:before, .box-want-morning.popap:before {
   content: "";
@@ -800,8 +827,7 @@ div.Block .img-evening-right {
   padding-right: 10.333vw;  
 }
 .box-want-morning-product {
-  padding: 45px 20px 55px 155px;
-  padding: 3vw 0.4vw 3.66vw 10.333vw;
+  
 }
 .box-want-morning .nav-tabs .nav-link {
   border-radius: 4px;
@@ -823,6 +849,9 @@ div.Block .img-evening-right {
   background: #e8aac6;
   color: #fff;
 }
+.nav-tabs .nav-link {
+  text-align: left;
+}
 .box-want-evening .nav-tabs .nav-link {
   border-radius: 4px;
   background: rgba(9,10,39,0.4);
@@ -842,7 +871,7 @@ div.Block .img-evening-right {
   background: rgba(139,143,241,0.4);
   color: #fff;
 }
-.box-want-morning-product:before {
+.want-morning-evening.active .box-want-morning-product:before {
   content: "";
   position: absolute;
   top: 0;
@@ -856,10 +885,10 @@ div.Block .img-evening-right {
   z-index: 6;
 }
 .box-want-evening-product {
-  padding: 45px 20px 55px 55px;
-  padding: 3vw 1.333vw 3.66vw 3.66vw;
+ /* padding: 45px 20px 55px 55px;
+  padding: 3vw 1.333vw 3.66vw 3.66vw;*/
 }
-.box-want-evening-product:before {
+.want-morning-evening.active .box-want-evening-product:before {
   content: "";
   position: absolute;
   top: 0;
@@ -876,6 +905,7 @@ div.Block .img-evening-right {
   font-size: 30px;
   font-size: 2vw;
   font-family: HelveticaNeueThin;
+  text-align: left;
 }
 .box-want-product-info {
   font-size: 16px;
@@ -883,11 +913,13 @@ div.Block .img-evening-right {
   margin-bottom: 50px;
   margin-bottom: 3.333vw;
   font-family: HelveticaNeue;
+  text-align: left;
 }
 .box-want-product-items {
   display: inline-block;
   width: 100%;
   text-align: center;
+  /*position: relative;*/
   /*margin-left: -53px;
   margin-left: -3.5333vw;*/
   /*height: 360px;*/
@@ -897,6 +929,7 @@ div.Block .img-evening-right {
   display: inline-block;
   height: 100%;
   vertical-align: bottom;
+  padding: 0 1vw;
   /*position: relative;*/
   /*width: 200px;*/
 }
@@ -908,12 +941,14 @@ div.Block .img-evening-right {
   line-height: 1.2;
   width: 100%;
   text-align: center;
+  margin-top: 15px;
+  margin-top: 1vw;
 }
 /*.box-want-product-item img {
   position: absolute;
   bottom: 0;
 }*/
-.box-want-product-item > a {
+.box-want-product-item > a.open_popap {
   width: 60px;
   width: 4vw;
   height: 60px;
@@ -923,14 +958,20 @@ div.Block .img-evening-right {
   background: url('../images/ochishchenie/ico-btn-want-morning-evening.png') center no-repeat;
   position: absolute;
 }
-.want-morning .box-want-product-item > a {
+.want-morning .box-want-product-item > a.open_popap {
   background-color: rgba(255,146,191,0.6);
 }
-.want-evening .box-want-product-item > a {
+.want-evening .box-want-product-item > a.open_popap {
   background-color: rgba(104,105,161,0.6);
 }
 .tab-content {
   position: relative;
+  vertical-align: top;
+  
+  width: 100%;  
+}
+.want-morning-evening.active .tab-content {
+  display: inline-block;
 }
 .tab-content.popap:after {
   content: "";
@@ -944,13 +985,18 @@ div.Block .img-evening-right {
 }
 .tab-pane {
   position: relative;
+  margin: 3vw 1.333vw 3.66vw 3.66vw;
+}
+.tab-pane.fade.show {
+  display: block;
+  width: auto;
 }
 .box-want-product-item-popap {
   display: none;
   position: absolute;
   z-index: 50;
   background: #fff;
-  top: 12%;
+  top: 9%;
   left: 0;
   width: 100%;
   padding: 37px 50px 30px 0;
@@ -978,7 +1024,9 @@ div.Block .img-evening-right {
   width: 41%;
 }
 .product-popap-img img {
-  width: 66%;
+  /*width: 66%;*/
+  max-height: 223px;
+  max-height: 14.8666vw;
 }
 .product-popap-text {
   width: 59%;
@@ -1155,10 +1203,8 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     width: 100vw;
   }
 }
-
 /*---headeer---*/
   .new-bg {
-    position: relative;
   }
   header.new-bg#bp-main-header {
     box-shadow: none;
@@ -1184,12 +1230,12 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     right: 0;
     top: 0;
   }
-  .new-bg .container {
+  /*.new-bg .container {
     max-width: inherit;
     width: 1323px;
     height: 100%;
     position: relative;
-  }
+  }*/
   .new-bg #header-wrapper .container:before {
     content: "";
     width: 1920px;
@@ -1211,11 +1257,13 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     /*display: none;*/
   }
   .new-bg #bp-logo {}
-  .indicator {
+  .new-bg .indicator {
     color: #712b90;
     background: #fff;
   }
-  .new-bg .icon-hamburger:before {
-    color: #fff;
+  @media (min-width: 1230px) {
+    .new-bg .container {
+      width: 1343px;
+    }
   }
 /*---end-headeer---*/

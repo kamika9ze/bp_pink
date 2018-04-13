@@ -41,25 +41,29 @@
 jQuery(document).ready(function(){
   jQuery(document).on('click', '.nav-tabs li a', function() {
     jQuery('.btn-reset-filter').show();
+    jQuery(this).parents('.want-morning-evening').addClass('active');
   });
   jQuery(document).on('click', '.btn-reset-filter', function() {
     // jQuery('.skin-type').show();
     jQuery('.want-morning-evening').hide();
     jQuery('.btn-reset-filter').hide();
-    jQuery('.nav-tabs li a.active').removeClass('active');
     jQuery('.nav-tabs li a.active').removeClass('show');
-    jQuery('.tab-pane.active').removeClass('active');
+    jQuery('.nav-tabs li a.active').removeClass('active');
     jQuery('.tab-pane.active').removeClass('show');
+    jQuery('.tab-pane.active').removeClass('active');
+    jQuery('.want-morning-evening').removeClass('active');
+    jQuery('.box-want-product-item-popap').hide();
+    jQuery('.box-want-morning, .box-want-evening, .block-ideal-means').removeClass('popap');
   });
-  jQuery(document).on('click', '.box-want-product-item a', function() {
-    jQuery('.tab-content').addClass('popap');
-    jQuery('.box-want-morning, .box-want-evening').addClass('popap');
+  jQuery(document).on('click', '.box-want-product-item a.open_popap', function() {
+    // jQuery('.tab-content').addClass('popap');
+    jQuery('.box-want-morning, .box-want-evening, .block-ideal-means').addClass('popap');
     jQuery(this).parents('.box-want-product-item').find('.box-want-product-item-popap').show();
   });
   jQuery(document).on('click', '.product-popap-close', function() {
     jQuery(this).parents('.box-want-product-item-popap').hide();
-    jQuery('.box-want-morning, .box-want-evening').removeClass('popap');
-    jQuery('.tab-content').removeClass('popap');
+    jQuery('.box-want-morning, .box-want-evening, .block-ideal-means').removeClass('popap');
+    // jQuery('.tab-content').removeClass('popap');
   });
   jQuery(document).on('click', '.btn-norm', function() {
     // jQuery('.skin-type').slideUp('400', function() {});
@@ -96,7 +100,7 @@ jQuery(document).ready(function(){
         jQuery(".Block button").removeClass('slick-btn');
         jQuery('.img-morning').fadeIn();
         jQuery('.slider-morning-right.slider-product2').delay(2000).fadeIn('400');
-      jQuery('#1').width('95%');
+      jQuery('#1').width('94%');
     }
     else {
       jQuery('.slick-next').fadeOut();
@@ -107,7 +111,7 @@ jQuery(document).ready(function(){
             jQuery('.slick-prev').delay(2000).show();
             jQuery('.img-morning').delay(2000).fadeIn();
             jQuery('.Block1 > div ').delay(2000).fadeIn('400');
-          jQuery('#1').width('95%');
+          jQuery('#1').width('94%');
         }, 200);
     }
   });
@@ -115,7 +119,7 @@ jQuery(document).ready(function(){
     jQuery('.slider-morning-left.slider-product1').fadeOut('400');
     if (jQuery(this).hasClass('slick-btn')) {
       jQuery(".slider-block2").fadeOut('400');  
-      jQuery('#2').width('95%');
+      jQuery('#2').width('94%');
       jQuery('#1').width('5%');
         jQuery('.slick-prev').delay(2000).fadeOut();
         jQuery('.img-evening').delay(2000).fadeIn();
@@ -132,7 +136,7 @@ jQuery(document).ready(function(){
             jQuery('.slick-next').delay(2000).show();
             jQuery('.img-evening').delay(2000).fadeIn();
             jQuery('.Block2 > div ').delay(2000).fadeIn('400');
-          jQuery('#2').width('95%');
+          jQuery('#2').width('94%');
         }, 200);
     }
   });
@@ -140,7 +144,7 @@ jQuery(document).ready(function(){
         dots: true, 
         arrows: true, 
         slidesToShow: 3, 
-        slidesToScroll: 1, 
+        slidesToScroll: 3,
         infinite: false, 
         responsive:[
         {
