@@ -1,0 +1,101 @@
+@media (max-width: 990px) {
+	#Blocks {
+		width: 100%;
+		height: 659px;
+	}
+	.slider {
+		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
+		background-size: contain;		
+	}
+	.slider-top {
+		background: none;
+	}
+	.slider-face_name {
+	    width: 100%;
+	    display: inline-block;
+	    text-align: center;
+	    left: 0;
+	    position: initial;
+        text-transform: initial;
+        font-size: 50px;
+        line-height: 1.2;
+	}
+	.slider-face_name span {
+		font-size: 50px;
+	}
+	.slider-top-btn-next {
+		position: absolute;
+	    bottom: 45px;
+	    width: 448px;
+	    margin: 0 auto;
+	    left: 50%;
+	    margin: 0 0 0 -224px;
+	    font-size: 24px;
+	    padding: 27px 10px;
+	    border-radius: 10px;
+		background-color: #691b83;
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.slider-top-btn-next:before {
+		display: none;
+	}
+	.slider-top-title {
+	    width: 100%;
+		display: inline-block;
+		font-size: 34px!important;
+		position: absolute;
+		bottom: 170px;
+		left: 0;
+		top: initial;
+		margin: 0;
+		right: initial;
+		text-align: center;
+	    text-transform: lowercase;
+	    line-height: 1.2;
+	}
+	.slider-top-title span {
+		width: 100%;
+		text-align: center;
+		font-size: 34px!important;
+	}
+	.slider-top-title .slider-top-title2 {
+		display: none!important;
+	}
+	.slider-face_surname {
+		display: none;
+	}
+	.slider-top:after {
+		display: none;
+	}
+	.not-mobile {
+		display: none!important;
+	}
+	div.Block .img-slider-polina {
+		display: none;
+	}
+	div.Block .slick-arrow1 {
+		display: none!important;
+	}
+	div.Block {
+		height: 100%;
+	}
+	.slider-product1 {
+		display: table;
+		height: auto;
+	    top: initial!important;
+	    bottom: 150px;
+	}
+	.slider-product1 > img {
+		position: relative;
+	    left: initial!important;
+		bottom: initial!important;
+	}
+	.slider-block-img-title, .slider-block-img-text {
+		display: none;
+	}
+	/*каталог- пока скрыт*/
+	.promo-catalog-carousel {
+		display: none;
+	}
+}

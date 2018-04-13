@@ -135,6 +135,7 @@ div.Block2 > img {
   font-weight: 300;
   text-align: left;
   font-family: HelveticaNeueThin;
+  text-transform: uppercase;
 }
 .slider-face_name span {
   font-size: 25px;
@@ -175,7 +176,7 @@ div.Block2 > img {
 .slider-face_surname span {
   color: #fff;
 }
-.slider-top-title span {
+.slider-top-title span:not(.not-mobile) {
   font-size: 35px;
   font-size: 2.33vw;
   display: table;
@@ -790,8 +791,8 @@ div.Block .img-evening-right {
   padding: 3.333vw 0 4.66vw;
   background-size: cover!important;
   box-sizing: border-box;
-  height: 355px;
-  height: 23.66vw;
+  min-height: 355px;
+  min-height: 23.66vw;
   position: relative;
   z-index: 5;
 }
@@ -1260,10 +1261,5 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
   .new-bg .indicator {
     color: #712b90;
     background: #fff;
-  }
-  @media (min-width: 1230px) {
-    .new-bg .container {
-      width: 1343px;
-    }
   }
 /*---end-headeer---*/
