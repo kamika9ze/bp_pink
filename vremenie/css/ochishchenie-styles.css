@@ -641,7 +641,7 @@ div.Block .img-evening-right {
 .skin-type:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 50%;
   margin-left: -21.5px;
   width: 0;

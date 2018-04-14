@@ -1,9 +1,61 @@
 @media (max-width: 990px) {
 	#Blocks {
-		width: 100%;
-		height: 659px;
+		height: 100%;
+	}
+	.slider-active #Blocks {
+		display: none;
+	}
+	.slider-active .slider-mobile-swipe {
+		display: inline-block;
+		width: 340px;
+		width: 53.125vw;
+		height: 72px;
+		height: 11.25vw;
+	    border-radius: 40px;
+	    border-radius: 6.25vw;
+		border: solid 1.2px #ffffff;
+		position: absolute;
+		bottom: 70px;
+		bottom: 10.9375vq;
+		left: 50%;
+		margin-left: -170px;
+		margin-left: -26.5625vw;
+	}
+	.slider-active .slider-mobile-swipe span {
+		position: absolute;
+		font-size: 22px;
+  		font-weight: bold;
+  		top: 20px;
+  		color: #fff;
+  		text-transform: uppercase;
+	}
+	.slider-active .slider-mobile-swipe span.text1 {
+		left: -76px;
+	}
+	.slider-active .slider-mobile-swipe span.text2 {
+		right: -94px;
+	}
+	.slider-active .slider-mobile-swipe span {}
+	.ico-swipe-luna {
+		width: 29px;
+		height: 33px;
+		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
+	}
+	.btn-swipe {
+		display: inline-block;
+		width: 71px;
+		width: 11.09375vw;
+		height: 71px;
+		height: 11.09375vw;
+		background-color: #ffffff;
+		border-radius: 50%;
+		position: absolute;
+		left: 135px;
+		left: 21.09375vw;
 	}
 	.slider {
+		width: 100%;
+		height: 659px;
 		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
 	    background-size: cover;	
 	}
