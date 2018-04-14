@@ -5,7 +5,7 @@
 	}
 	.slider {
 		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
-		background-size: contain;		
+	    background-size: cover;	
 	}
 	.slider-top {
 		background: none;
@@ -84,7 +84,7 @@
 		display: table;
 		height: auto;
 	    top: initial!important;
-	    bottom: 150px;
+	    bottom: 159px;
 	}
 	.slider-product1 > img {
 		position: relative;
@@ -94,6 +94,123 @@
 	.slider-block-img-title, .slider-block-img-text {
 		display: none;
 	}
+	.Block2 {
+		border: 0;
+	}
+	.slider-img-evening-left.slider-img-evening {
+		height: 46.66vw!important;
+	}
+	.slider-img-morning-left.slider-img-morning {
+		height: 31vw!important;
+	}
+	.slider-morning-left {
+		left: 6.333vw;
+	}
+	.slider-evening-right.slider-product1 {
+		right: -0.34vw;
+	    bottom: 134px;
+	}
+	.slider-top-btn-video {
+		display: none;
+	}
+	/*---block-filter---*/
+	.ideal-means-title {
+		font-size: 36px;
+	}
+	.skin-type-title {
+		font-size: 40px;
+		font-weight: 100;
+	    padding: 0 60px;
+	}
+	.skin-type-item img {
+		width: 137px;
+		height: 137px;
+	}
+	.skin-type-item span {
+		font-size: 22px;
+	}
+	.skin-type:before {
+    	border-width: 55px 63px 0 63px;
+    	margin-left: -63px;
+	}
+	.skin-type {
+	    padding: 9vw 0;
+	}
+	.want-morning-evening:before {
+		z-index: 10;
+		border-width: 55px 63px 0 63px;
+		margin-left: -63px;
+	    border-color: #55577c transparent transparent transparent;
+	}
+	.want-morning-evening .want-title {
+		font-size: 40px;
+	}
+	.want-morning-evening .want-morning .box-want-morning, .want-morning-evening .want-evening .box-want-evening {
+	    padding: 65px 96px 63px;
+	}
+	.want-morning-evening .nav-tabs li {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 18px;
+	    position: relative;
+	}
+	.box-want-morning .nav-tabs .nav-link, .box-want-evening .nav-tabs .nav-link {
+		font-size: 30px;
+	    line-height: 76px;
+	    padding-left: 146px;
+	}
+	.box-want-morning .nav-tabs .nav-link:hover {
+		border-radius: 4px;
+		background: #e8aac6;
+		color: #fff;
+	}
+	.box-want-evening .nav-tabs .nav-link:hover {}
+	.want-morning-evening li .nav-link img {
+	    height: 7.666vw;
+	    position: absolute;
+	    left: 39px;	
+	    top: 50%;
+    	margin-top: -3.6vw;
+	}
+	.box-want-product-title {
+		font-size: 40px;
+		text-align: center;
+		margin-bottom: 23px;
+	}
+	.box-want-product-info {
+		font-size: 30px;
+  		font-weight: normal;
+	}
+	.box-want-product-item > a.open_popap {
+		width: 103px;
+		height: 103px;
+		left: -20px;
+    	top: -33px;
+	}
+	.box-want-product-item {
+		position: relative;
+	}
+	.box-want-product-item > span {
+		font-size: 22px;
+	    text-decoration: underline;
+	    margin-top: 15px;
+	}
+	.tab-pane {
+		padding: 55px 0 0;
+		margin: 0;
+	}
+	.btn-reset-filter {
+		font-size: 22px;
+		line-height: 75px;
+		width: 448px;
+		border-radius: 10px;
+		margin: 35px 0;
+	}
+	.want-morning-evening.active .box-want-morning-product:before {
+		border-width: 55px 63px 0 63px;
+		margin-left: -63px;
+	}
+	/*---end-block-filter---*/
 	/*каталог- пока скрыт*/
 	.promo-catalog-carousel {
 		display: none;
