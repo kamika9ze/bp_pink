@@ -16,18 +16,20 @@
 		border: solid 1.2px #ffffff;
 		position: absolute;
 		bottom: 70px;
-		bottom: 10.9375vq;
+		bottom: 10.9375vw;
 		left: 50%;
 		margin-left: -170px;
 		margin-left: -26.5625vw;
+		overflow: hidden;
 	}
 	.slider-active .slider-mobile-swipe span {
-		position: absolute;
 		font-size: 22px;
   		font-weight: bold;
-  		top: 20px;
+		position: absolute;
+  		top: 17px;
   		color: #fff;
   		text-transform: uppercase;
+  		z-index: 4;
 	}
 	.slider-active .slider-mobile-swipe span.text1 {
 		left: -76px;
@@ -36,10 +38,37 @@
 		right: -94px;
 	}
 	.slider-active .slider-mobile-swipe span {}
+	.ico-swipe-star {
+		width: 35px;
+		height: 32px;
+		background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAMAAACvkzHFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAQNI9bAAAAO3RSTlMAAZ1QAtLVWAPW2QRg3AVmaAbibG8jSOgHK01xlbjd/Jz+rZ+QgHD9Uvp7eqgxX4yYHo2656AfFCQWPw8iTv0AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAA+klEQVQ4y4XS1wKCMAwF0CIOUByACA5UcO898///ZZGhpLTcp47zkDQlBEUqSCQvMsh5pFiCcjHHVACgIiaKSk21JjQaBNFEpFb/mnpDYJoQpsUnuhEZQ+caE+K0M+8bVse0E2ObHeuvKKfb6w/c4QhwRkN30O91HULGHojjjYnu5xif1q9MhGSiBAVJUwGZxj9lxiWzX29zDkk9k7bIEAs02+WKIaslfw5xTGYWa8ZsGLNlzJYxKmNUTJyMmTrI7DJ63yGzTzp2k1fYI3OIxPFETsdInZG5xCJIpC7IXGmNNyvZ3m+0BztNHlQ8UydPql6pkzcSoXqHiw8fVW/bkz54UAAAAABJRU5ErkJggg==') no-repeat;
+		left: 18px;
+	}
 	.ico-swipe-luna {
 		width: 29px;
 		height: 33px;
-		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
+		background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAMAAAAS9VDrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABDlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAvYQfQAAAAWHRSTlMAaY8kA8b8nxUv/utNqP1xOXPbVZLwH68rPA+t+xdiojfR8qkH8V/6At5gshjteAS+LgGaBmQhCXf0RyWD6ZSFhmd9pNy7CnyeO9XlVtPhDDOAuuPowopAZsiFWQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADySURBVCjPfdDnUgJBEATgOyWIIAgoAoqAEQ8JyoGAAcwBc6Lf/0l0YS/tzdA/56upmmlNU6PPzWt8AsFQeIHnyCKiMZ6XgHiC1WX8J8lySnCa0xWhqxlG00Kxxmh2osjRmp/qOrM81Y3CLMUmiQWpRVJLUsuk6lK3SN2WCgp3dmfpnoX7BFbKlh4QaliIqh8Pa7bWfdho2ogjFY9bDvrKMMMOoq1gJ+jCVMNjJ92eC9EX31l2enbuNlyI4aA61I3Lq+sbeHNrCg0UQaV5J3+4j/vxwbSveXxSbPTs6cd4cdlr902t4f3j8ysEfP/8jivO9A8mzW0Fyn19MgAAAABJRU5ErkJggg==") no-repeat;
+
+		right: 26px;
+		background-size: 29px 33px;
+	}
+	.slider-swipe-active .btn-swipe:before {
+		position: absolute;
+  		top: 17px;
+		content: "";
+	}
+	.slider-swipe-morning .btn-swipe:before {
+		content: "";
+		width: 35px;
+		height: 32px;
+		left: 18px;
+		background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAMAAACvkzHFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAilBMVEUAAADfOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo8AAACkK6PkAAAALXRSTlMAPyBmAVRVI1ZXAiZYKSpaKywOHV0DER8tPEplPkVAOjMhZDFDFDg9DFwICRnXuv5pAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAOtJREFUOMuF0usWQkAUBeDJUWQUidLIndLl/Z+vkUs5w8z+hfWtbY6DEJwVUUYDTUX0NWx0hTEAwFDUmNxsLamh0IbKiGV/jS0r2kGXvaTG6Y2zXOTCkMN8h3d0/dH47tH76wpO5/DC7AhwIptdwvMpIOQKqlyJFStIzN+pJ1KSdNtLJSQdjp0tkuw3W7hAJp+JRjMiQrvNC4EU+fIehrjCLkrBlIKpBFMJxhSMiUkws9MAmXpm9hoZOk7Mxq+Af/1bL+4Nae69uiHDBtGmVwyZBz9j4o23TcJn8KfkORFtPK5ekydvJDr17i4+Tm0Q1kyS8yMAAAAASUVORK5CYII=');
+	}
+	.slider-swipe-evening .btn-swipe:before {
+		width: 29px;
+		height: 33px;
+		left: 18px;
+		background: url('../images/ochishchenie/mobile/vector-smart-object000.png');
 	}
 	.btn-swipe {
 		display: inline-block;
@@ -52,6 +81,7 @@
 		position: absolute;
 		left: 135px;
 		left: 21.09375vw;
+		z-index: 6;
 	}
 	.slider {
 		width: 100%;

@@ -194,6 +194,7 @@ jQuery(document).ready(function(){
   });
   var obj = document.getElementById('sat');
   var width_box_swipe = $('.slider-mobile-swipe').outerWidth();
+  var width_box_btn_swipe = $('.btn-swipe').outerWidth();
   var initialPoint;
   var finalPoint;
   /*Ловим касание*/
@@ -210,50 +211,33 @@ jQuery(document).ready(function(){
   obj.addEventListener('touchmove', function(event) {
     if (event.targetTouches.length == 1) {
       var touch = event.targetTouches[0];
-      // if (true) {}
-      // console.log(touch.pageX);
-      obj.style.left = touch.pageX-touchOffsetX + 'px';
+      if ((touch.pageX-touchOffsetX)>=(-5) && (touch.pageX-touchOffsetX+width_box_btn_swipe)<=$('.slider-mobile-swipe').outerWidth()+5) {
+      }
+      $('.container-promo').removeClass('slider-swipe-active');
+        obj.style.left = touch.pageX-touchOffsetX + 'px';
     }
   }, false);
-  // obj.addEventListener('touchend', function(event) {
-  //     var touch = event.targetTouches[0];
-  //     // console.log(width_box_swipe/2);
-  //     if (finalPoint.pageX < initialPoint.pageX){
-  //       console.log('влево');
-  //     }
-  //     else{
-  //       console.log('вправо');
-  //     }
-  //     // if ((width_box_swipe/4)>parseInt($('#sat').css('left'))) {
-  //     //   console.log($('.slider-mobile-swipe').outerWidth()/4);
-  //     //   console.log($('#sat').css('left'));        
-  //     //   obj.style.left = '0px';
-  //     // }
-  //     // else if ((width_box_swipe/4)<parseInt($('#sat').css('left')<(width_box_swipe/2))) {
-  //     //   obj.style.left = width_box_swipe/2 + 'px';
-  //     // }
-  // }, false);
-  
+  /*отпустили объект*/
   obj.addEventListener('touchend', function(event) {
     event.preventDefault();
     event.stopPropagation();
     finalPoint=event.changedTouches[0];
     var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
     var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
-    if (xAbs > 20 || yAbs > 20) {
+      $('.container-promo').addClass('slider-swipe-active');
       if (xAbs > yAbs) {
-        if (finalPoint.pageX < initialPoint.pageX){
-          console.log('влево');
-          if ((width_box_swipe/4)>parseInt($('#sat').css('left'))) {
-              console.log($('.slider-mobile-swipe').outerWidth()/4);
-              console.log($('#sat').css('left'));        
-              obj.style.left = '0px';
-          }
+        if (finalPoint.pageX < initialPoint.pageX) {
+          obj.style.left = '0px';
+          $('.container-promo').addClass('slider-swipe-morning');
+          $('.container-promo').removeClass('slider-swipe-evening');
         }
-        else{
-          console.log('вправо');
+        else {
+          $('.container-promo').removeClass('slider-swipe-morning');
+          $('.container-promo').addClass('slider-swipe-evening');
+          obj.style.left = $('.slider-mobile-swipe').outerWidth()-width_box_btn_swipe + 'px';
         }
       }
+    if (xAbs > 20 || yAbs > 20) {
     }
   }, false);
 });
