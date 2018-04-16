@@ -5,6 +5,28 @@
 	.slider-active #Blocks {
 		display: none;
 	}
+	.slider-hint {
+	  position: absolute;
+	  width: 100%;
+	  top: 0;
+	  bottom: 0;
+	  text-align: center;
+      background-color: rgba(23, 23, 41, 0.74);
+	  /*display: inline-block;*/
+	  z-index: 10;
+	  padding-top: 156px;
+	}
+	.slider-hint p {
+		font-size: 30px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+		margin-bottom: 45px;
+	}
 	.slider-active .slider-mobile-swipe {
 		display: inline-block;
 		width: 340px;
@@ -52,6 +74,16 @@
 		left: 18px;
 		left: 2.8125vw;
 	}
+	.slider-swipe-evening .ico-swipe-star {
+		width: 35px;
+		width: 5.46875vw;
+		height: 32px;
+		height: 5vw;
+		background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAMAAACvkzHFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAilBMVEUAAADfOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo8AAACkK6PkAAAALXRSTlMAPyBmAVRVI1ZXAiZYKSpaKywOHV0DER8tPEplPkVAOjMhZDFDFDg9DFwICRnXuv5pAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAOtJREFUOMuF0usWQkAUBeDJUWQUidLIndLl/Z+vkUs5w8z+hfWtbY6DEJwVUUYDTUX0NWx0hTEAwFDUmNxsLamh0IbKiGV/jS0r2kGXvaTG6Y2zXOTCkMN8h3d0/dH47tH76wpO5/DC7AhwIptdwvMpIOQKqlyJFStIzN+pJ1KSdNtLJSQdjp0tkuw3W7hAJp+JRjMiQrvNC4EU+fIehrjCLkrBlIKpBFMJxhSMiUkws9MAmXpm9hoZOk7Mxq+Af/1bL+4Nae69uiHDBtGmVwyZBz9j4o23TcJn8KfkORFtPK5ekydvJDr17i4+Tm0Q1kyS8yMAAAAASUVORK5CYII=');
+		background-size: contain;
+		left: 18px;
+		left: 2.8125vw;
+	}
 	.ico-swipe-luna {
 		width: 29px;
 		width: 4.53125vw;
@@ -78,8 +110,18 @@
 		height: 5vw;
 		left: 18px;
 		left: 2.8125vw;
-		background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAMAAACvkzHFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAilBMVEUAAADfOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo8AAACkK6PkAAAALXRSTlMAPyBmAVRVI1ZXAiZYKSpaKywOHV0DER8tPEplPkVAOjMhZDFDFDg9DFwICRnXuv5pAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAOtJREFUOMuF0usWQkAUBeDJUWQUidLIndLl/Z+vkUs5w8z+hfWtbY6DEJwVUUYDTUX0NWx0hTEAwFDUmNxsLamh0IbKiGV/jS0r2kGXvaTG6Y2zXOTCkMN8h3d0/dH47tH76wpO5/DC7AhwIptdwvMpIOQKqlyJFStIzN+pJ1KSdNtLJSQdjp0tkuw3W7hAJp+JRjMiQrvNC4EU+fIehrjCLkrBlIKpBFMJxhSMiUkws9MAmXpm9hoZOk7Mxq+Af/1bL+4Nae69uiHDBtGmVwyZBz9j4o23TcJn8KfkORFtPK5ekydvJDr17i4+Tm0Q1kyS8yMAAAAASUVORK5CYII=');
+		background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAMAAACvkzHFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAQNI9bAAAAO3RSTlMAAZ1QAtLVWAPW2QRg3AVmaAbibG8jSOgHK01xlbjd/Jz+rZ+QgHD9Uvp7eqgxX4yYHo2656AfFCQWPw8iTv0AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAA+klEQVQ4y4XS1wKCMAwF0CIOUByACA5UcO898///ZZGhpLTcp47zkDQlBEUqSCQvMsh5pFiCcjHHVACgIiaKSk21JjQaBNFEpFb/mnpDYJoQpsUnuhEZQ+caE+K0M+8bVse0E2ObHeuvKKfb6w/c4QhwRkN30O91HULGHojjjYnu5xif1q9MhGSiBAVJUwGZxj9lxiWzX29zDkk9k7bIEAs02+WKIaslfw5xTGYWa8ZsGLNlzJYxKmNUTJyMmTrI7DJ63yGzTzp2k1fYI3OIxPFETsdInZG5xCJIpC7IXGmNNyvZ3m+0BztNHlQ8UydPql6pkzcSoXqHiw8fVW/bkz54UAAAAABJRU5ErkJggg==') no-repeat;
 		background-size: contain;
+	}
+	.slider-swipe-morning .ico-swipe-luna {
+		width: 29px;
+		width: 4.53125vw;
+		height: 33px;
+		height: 5.15625vw;
+		right: 18px;
+		right: 2.8125vw;
+		background: url('../images/ochishchenie/mobile/vector-smart-object000.png');
+	    background-size: contain;
 	}
 	.slider-swipe-evening .btn-swipe:before {
 		width: 29px;
@@ -88,7 +130,7 @@
 		height: 5.15625vw;
 		left: 18px;
 		left: 2.8125vw;
-		background: url('../images/ochishchenie/mobile/vector-smart-object000.png');
+		background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAMAAAAS9VDrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABDlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAvYQfQAAAAWHRSTlMAaY8kA8b8nxUv/utNqP1xOXPbVZLwH68rPA+t+xdiojfR8qkH8V/6At5gshjteAS+LgGaBmQhCXf0RyWD6ZSFhmd9pNy7CnyeO9XlVtPhDDOAuuPowopAZsiFWQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADySURBVCjPfdDnUgJBEATgOyWIIAgoAoqAEQ8JyoGAAcwBc6Lf/0l0YS/tzdA/56upmmlNU6PPzWt8AsFQeIHnyCKiMZ6XgHiC1WX8J8lySnCa0xWhqxlG00Kxxmh2osjRmp/qOrM81Y3CLMUmiQWpRVJLUsuk6lK3SN2WCgp3dmfpnoX7BFbKlh4QaliIqh8Pa7bWfdho2ogjFY9bDvrKMMMOoq1gJ+jCVMNjJ92eC9EX31l2enbuNlyI4aA61I3Lq+sbeHNrCg0UQaV5J3+4j/vxwbSveXxSbPTs6cd4cdlr902t4f3j8ysEfP/8jivO9A8mzW0Fyn19MgAAAABJRU5ErkJggg==") no-repeat;
 	    background-size: contain;
 	}
 	.btn-swipe {
@@ -110,6 +152,21 @@
 		height: 102.9687vw;
 		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
 	    background-size: cover;	
+	}
+	.not-slider-swipe .slider {
+		background: none;
+		height: 139px;
+		padding-top: 30px;
+	}
+	.not-slider-swipe .slider-active .slider-mobile-swipe {
+		border: solid 1px #abaaaa;
+		top: 30px;
+	}
+	.slider-swipe-morning .btn-swipe {
+		background-color: #df3a8f;
+	}
+	.slider-swipe-evening .btn-swipe {
+		background-color: #202131;
 	}
 	.slider-top {
 		background: none;
@@ -230,6 +287,10 @@
 		display: none;
 	}
 	/*---block-filter---*/
+	.block-ideal-means {
+		display: none;
+		box-shadow: none;
+	}
 	.ideal-means-title {
 		font-size: 36px;
 		font-size: 5.625vw;
@@ -272,6 +333,7 @@
 		border-width: 8.59vw 9.84375vw 0 9.84375vw;
     	margin-left: -63px;
     	margin-left: -9.84375vw;
+	    border-color: #3d3d61 transparent transparent transparent;
 	}
 	.want-morning-evening .want-title {
 		font-size: 40px;

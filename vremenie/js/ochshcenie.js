@@ -90,6 +90,13 @@ jQuery(document).ready(function(){
     jQuery(".slider-block2").fadeIn('400');    
     jQuery('.slider-product1').fadeIn('400');
     jQuery('.slider').addClass('slider-active');
+    // добавить подсказку в мобилы
+    jQuery('.slider-hint').fadeIn('400');
+    // убрать подсказку из мобилы
+    setTimeout(function() {
+      jQuery('.slider-hint').fadeOut('400');
+    }, 2000);
+
   });
   jQuery('.slick-next').click(function(eventObject){
     jQuery('.slider-evening-right.slider-product1').fadeOut('400');
@@ -225,6 +232,8 @@ jQuery(document).ready(function(){
     var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
     var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
       jQuery('.container-promo').addClass('slider-swipe-active');
+      jQuery('.container-promo').addClass('not-slider-swipe');
+      jQuery('.block-ideal-means').fadeIn('400');
       if (xAbs > yAbs) {
         if (finalPoint.pageX < initialPoint.pageX) {
           obj.style.left = '0px';
