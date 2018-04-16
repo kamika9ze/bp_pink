@@ -24,51 +24,72 @@
 	}
 	.slider-active .slider-mobile-swipe span {
 		font-size: 22px;
+		font-size: 3.4375vw;
   		font-weight: bold;
 		position: absolute;
   		top: 17px;
+  		top: 2.65625vw;
   		color: #fff;
   		text-transform: uppercase;
   		z-index: 4;
 	}
 	.slider-active .slider-mobile-swipe span.text1 {
 		left: -76px;
+		left: -11.875vw;
 	}
 	.slider-active .slider-mobile-swipe span.text2 {
 		right: -94px;
+		right: -14.6875vw;
 	}
 	.slider-active .slider-mobile-swipe span {}
 	.ico-swipe-star {
 		width: 35px;
+		width: 5.46875vw;
 		height: 32px;
+		height: 5vw;
 		background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAMAAACvkzHFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAQNI9bAAAAO3RSTlMAAZ1QAtLVWAPW2QRg3AVmaAbibG8jSOgHK01xlbjd/Jz+rZ+QgHD9Uvp7eqgxX4yYHo2656AfFCQWPw8iTv0AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAA+klEQVQ4y4XS1wKCMAwF0CIOUByACA5UcO898///ZZGhpLTcp47zkDQlBEUqSCQvMsh5pFiCcjHHVACgIiaKSk21JjQaBNFEpFb/mnpDYJoQpsUnuhEZQ+caE+K0M+8bVse0E2ObHeuvKKfb6w/c4QhwRkN30O91HULGHojjjYnu5xif1q9MhGSiBAVJUwGZxj9lxiWzX29zDkk9k7bIEAs02+WKIaslfw5xTGYWa8ZsGLNlzJYxKmNUTJyMmTrI7DJ63yGzTzp2k1fYI3OIxPFETsdInZG5xCJIpC7IXGmNNyvZ3m+0BztNHlQ8UydPql6pkzcSoXqHiw8fVW/bkz54UAAAAABJRU5ErkJggg==') no-repeat;
+		background-size: contain;
 		left: 18px;
+		left: 2.8125vw;
 	}
 	.ico-swipe-luna {
 		width: 29px;
+		width: 4.53125vw;
 		height: 33px;
+		height: 5.15625vw;
 		background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAhCAMAAAAS9VDrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABDlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAvYQfQAAAAWHRSTlMAaY8kA8b8nxUv/utNqP1xOXPbVZLwH68rPA+t+xdiojfR8qkH8V/6At5gshjteAS+LgGaBmQhCXf0RyWD6ZSFhmd9pNy7CnyeO9XlVtPhDDOAuuPowopAZsiFWQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAADySURBVCjPfdDnUgJBEATgOyWIIAgoAoqAEQ8JyoGAAcwBc6Lf/0l0YS/tzdA/56upmmlNU6PPzWt8AsFQeIHnyCKiMZ6XgHiC1WX8J8lySnCa0xWhqxlG00Kxxmh2osjRmp/qOrM81Y3CLMUmiQWpRVJLUsuk6lK3SN2WCgp3dmfpnoX7BFbKlh4QaliIqh8Pa7bWfdho2ogjFY9bDvrKMMMOoq1gJ+jCVMNjJ92eC9EX31l2enbuNlyI4aA61I3Lq+sbeHNrCg0UQaV5J3+4j/vxwbSveXxSbPTs6cd4cdlr902t4f3j8ysEfP/8jivO9A8mzW0Fyn19MgAAAABJRU5ErkJggg==") no-repeat;
 
 		right: 26px;
+		right: 4.0625vw;
 		background-size: 29px 33px;
+		background-size: 4.53125vw 5.15625vw;
 	}
 	.slider-swipe-active .btn-swipe:before {
 		position: absolute;
   		top: 17px;
+  		top: 2.65625vw;
 		content: "";
 	}
 	.slider-swipe-morning .btn-swipe:before {
 		content: "";
 		width: 35px;
+		width: 5.46875vw;
 		height: 32px;
+		height: 5vw;
 		left: 18px;
+		left: 2.8125vw;
 		background: url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAMAAACvkzHFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAilBMVEUAAADfOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo/fOo8AAACkK6PkAAAALXRSTlMAPyBmAVRVI1ZXAiZYKSpaKywOHV0DER8tPEplPkVAOjMhZDFDFDg9DFwICRnXuv5pAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAOtJREFUOMuF0usWQkAUBeDJUWQUidLIndLl/Z+vkUs5w8z+hfWtbY6DEJwVUUYDTUX0NWx0hTEAwFDUmNxsLamh0IbKiGV/jS0r2kGXvaTG6Y2zXOTCkMN8h3d0/dH47tH76wpO5/DC7AhwIptdwvMpIOQKqlyJFStIzN+pJ1KSdNtLJSQdjp0tkuw3W7hAJp+JRjMiQrvNC4EU+fIehrjCLkrBlIKpBFMJxhSMiUkws9MAmXpm9hoZOk7Mxq+Af/1bL+4Nae69uiHDBtGmVwyZBz9j4o23TcJn8KfkORFtPK5ekydvJDr17i4+Tm0Q1kyS8yMAAAAASUVORK5CYII=');
+		background-size: contain;
 	}
 	.slider-swipe-evening .btn-swipe:before {
 		width: 29px;
+		width: 4.53125vw;
 		height: 33px;
+		height: 5.15625vw;
 		left: 18px;
+		left: 2.8125vw;
 		background: url('../images/ochishchenie/mobile/vector-smart-object000.png');
+	    background-size: contain;
 	}
 	.btn-swipe {
 		display: inline-block;
@@ -86,6 +107,7 @@
 	.slider {
 		width: 100%;
 		height: 659px;
+		height: 102.9687vw;
 		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
 	    background-size: cover;	
 	}
@@ -100,24 +122,31 @@
 	    position: initial;
         text-transform: initial;
         font-size: 50px;
+        font-size: 7.8125vw;
         line-height: 1.2;
 	}
 	.slider-face_name span {
 		font-size: 50px;
+		font-size: 7.8125vw;
 	}
 	.slider-top-btn-next {
 		position: absolute;
 	    bottom: 45px;
+	    bottom: 7.03125vw;
 	    width: 448px;
+	    width: 70vw;
 	    margin: 0 auto;
 	    left: 50%;
 	    margin: 0 0 0 -224px;
+	    margin: 0 0 0 -35vw;
 	    font-size: 24px;
+	    font-size: 3.75vw;
 	    padding: 27px 10px;
+	    padding: 4.21875vw 1.5625vw;
 	    border-radius: 10px;
+	    border-radius: 1.5625vw;
 		background-color: #691b83;
 		text-transform: uppercase;
-		font-size: 24px;
 	}
 	.slider-top-btn-next:before {
 		display: none;
@@ -126,8 +155,10 @@
 	    width: 100%;
 		display: inline-block;
 		font-size: 34px!important;
+		font-size: 5.3125vw!important;
 		position: absolute;
 		bottom: 170px;
+		bottom: 26.5625vw;
 		left: 0;
 		top: initial;
 		margin: 0;
@@ -140,6 +171,7 @@
 		width: 100%;
 		text-align: center;
 		font-size: 34px!important;
+		font-size: 5.3125vw!important;
 	}
 	.slider-top-title .slider-top-title2 {
 		display: none!important;
@@ -167,6 +199,7 @@
 		height: auto;
 	    top: initial!important;
 	    bottom: 159px;
+	    bottom: 24.84375vw;
 	}
 	.slider-product1 > img {
 		position: relative;
@@ -191,6 +224,7 @@
 	.slider-evening-right.slider-product1 {
 		right: -0.34vw;
 	    bottom: 134px;
+	    bottom: 20.9375vw;
 	}
 	.slider-top-btn-video {
 		display: none;
@@ -198,22 +232,29 @@
 	/*---block-filter---*/
 	.ideal-means-title {
 		font-size: 36px;
+		font-size: 5.625vw;
 	}
 	.skin-type-title {
 		font-size: 40px;
+		font-size: 6.25vw;
 		font-weight: 100;
-	    padding: 0 60px;
+	    padding: 0 9.375vw;
 	}
 	.skin-type-item img {
 		width: 137px;
+		width: 21.40625vw;
 		height: 137px;
+		height: 21.40625vw;
 	}
 	.skin-type-item span {
 		font-size: 22px;
+		font-size: 3.4375vw;
 	}
 	.skin-type:before {
     	border-width: 55px 63px 0 63px;
+    	border-width: 8.59vw 9.84375vw 0 9.84375vw;
     	margin-left: -63px;
+    	margin-left: -9.84375vw;
 	}
 	.skin-type {
 	    padding: 9vw 0;
@@ -221,25 +262,39 @@
 	.want-morning-evening:before {
 		z-index: 10;
 		border-width: 55px 63px 0 63px;
-		margin-left: -63px;
+		border-width: 8.59vw 9.84375vw 0 9.84375vw;
+    	margin-left: -63px;
+    	margin-left: -9.84375vw;
 	    border-color: #55577c transparent transparent transparent;
+	}
+	.want-morning-evening.active .box-want-evening-product:before {
+		border-width: 55px 63px 0 63px;
+		border-width: 8.59vw 9.84375vw 0 9.84375vw;
+    	margin-left: -63px;
+    	margin-left: -9.84375vw;
 	}
 	.want-morning-evening .want-title {
 		font-size: 40px;
+		font-size: 6.25vw;
 	}
 	.want-morning-evening .want-morning .box-want-morning, .want-morning-evening .want-evening .box-want-evening {
 	    padding: 65px 96px 63px;
+	    padding: 10.15625vw 15vw 9.84375vw;
 	}
 	.want-morning-evening .nav-tabs li {
 		width: 100%;
 		padding: 0;
 		margin-bottom: 18px;
+		margin-bottom: 2.8125vw;
 	    position: relative;
 	}
 	.box-want-morning .nav-tabs .nav-link, .box-want-evening .nav-tabs .nav-link {
 		font-size: 30px;
+		font-size: 4.6875vw;
 	    line-height: 76px;
+	    line-height: 11.875vw;
 	    padding-left: 146px;
+	    padding-left: 22.8125vw;
 	}
 	.box-want-morning .nav-tabs .nav-link:hover {
 		border-radius: 4px;
@@ -251,31 +306,41 @@
 	    height: 7.666vw;
 	    position: absolute;
 	    left: 39px;	
+	    left: 6.09375vw;	
 	    top: 50%;
     	margin-top: -3.6vw;
 	}
 	.box-want-product-title {
 		font-size: 40px;
+		font-size: 6.25vw;
 		text-align: center;
 		margin-bottom: 23px;
+		margin-bottom: 3.59vw;
 	}
 	.box-want-product-info {
 		font-size: 30px;
+		font-size: 4.6875vw;
   		font-weight: normal;
 	}
 	.box-want-product-item > a.open_popap {
 		width: 103px;
+		width: 16.09vw;
 		height: 103px;
+		height: 16.09vw;
 		left: -20px;
+		left: -3.125vw;
     	top: -33px;
+    	top: -5.15625vw;
 	}
 	.box-want-product-item {
 		position: relative;
 	}
 	.box-want-product-item > span {
 		font-size: 22px;
+		font-size: 3.4375vw;
 	    text-decoration: underline;
 	    margin-top: 15px;
+	    margin-top: 2.34375vw;
 	}
 	.tab-pane {
 		padding: 55px 0 0;
@@ -283,14 +348,31 @@
 	}
 	.btn-reset-filter {
 		font-size: 22px;
+		font-size: 3.4375vw;
 		line-height: 75px;
+		line-height: 11.71875vw;
 		width: 448px;
+		width: 70vw;
 		border-radius: 10px;
+		border-radius: 1.5625vw;
 		margin: 35px 0;
+		margin: 5.46875vw 0;
 	}
 	.want-morning-evening.active .box-want-morning-product:before {
 		border-width: 55px 63px 0 63px;
-		margin-left: -63px;
+		border-width: 8.59vw 9.84375vw 0 9.84375vw;
+    	margin-left: -63px;
+    	margin-left: -9.84375vw;
+	}
+	.want-evening, .want-morning {
+		display: none!important;
+		width: 100%!important;
+	}
+	.slider-swipe-morning .want-morning {
+		display: inline-block!important;
+	}
+	.slider-swipe-evening .want-evening {
+		display: inline-block!important;
 	}
 	/*---end-block-filter---*/
 	/*каталог- пока скрыт*/

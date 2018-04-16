@@ -13,7 +13,7 @@
     player = new YT.Player('player', {
       height: '100%',
       width: '100%',
-      videoId: 'M1OCdbC7nJ4',
+      videoId: 'aiJYzJvx_Sc',
       playerVars: { 'autoplay': 0, 'controls': 0, 'disablekb':0, 'iv_load_policy':3, 'modestbranding':1, 'showinfo':0, 'border':0},
       events: {
         'onStateChange': onPlayerStateChange
@@ -193,8 +193,8 @@ jQuery(document).ready(function(){
       jQuery('#bp-carousel-new').slick('slickUnfilter');
   });
   var obj = document.getElementById('sat');
-  var width_box_swipe = $('.slider-mobile-swipe').outerWidth();
-  var width_box_btn_swipe = $('.btn-swipe').outerWidth();
+  var width_box_swipe = jQuery('.slider-mobile-swipe').outerWidth();
+  var width_box_btn_swipe = jQuery('.btn-swipe').outerWidth();
   var initialPoint;
   var finalPoint;
   /*Ловим касание*/
@@ -211,9 +211,9 @@ jQuery(document).ready(function(){
   obj.addEventListener('touchmove', function(event) {
     if (event.targetTouches.length == 1) {
       var touch = event.targetTouches[0];
-      if ((touch.pageX-touchOffsetX)>=(-5) && (touch.pageX-touchOffsetX+width_box_btn_swipe)<=$('.slider-mobile-swipe').outerWidth()+5) {
+      if ((touch.pageX-touchOffsetX)>=(-5) && (touch.pageX-touchOffsetX+width_box_btn_swipe)<=jQuery('.slider-mobile-swipe').outerWidth()+5) {
       }
-      $('.container-promo').removeClass('slider-swipe-active');
+      jQuery('.container-promo').removeClass('slider-swipe-active');
         obj.style.left = touch.pageX-touchOffsetX + 'px';
     }
   }, false);
@@ -224,17 +224,17 @@ jQuery(document).ready(function(){
     finalPoint=event.changedTouches[0];
     var xAbs = Math.abs(initialPoint.pageX - finalPoint.pageX);
     var yAbs = Math.abs(initialPoint.pageY - finalPoint.pageY);
-      $('.container-promo').addClass('slider-swipe-active');
+      jQuery('.container-promo').addClass('slider-swipe-active');
       if (xAbs > yAbs) {
         if (finalPoint.pageX < initialPoint.pageX) {
           obj.style.left = '0px';
-          $('.container-promo').addClass('slider-swipe-morning');
-          $('.container-promo').removeClass('slider-swipe-evening');
+          jQuery('.container-promo').addClass('slider-swipe-morning');
+          jQuery('.container-promo').removeClass('slider-swipe-evening');
         }
         else {
-          $('.container-promo').removeClass('slider-swipe-morning');
-          $('.container-promo').addClass('slider-swipe-evening');
-          obj.style.left = $('.slider-mobile-swipe').outerWidth()-width_box_btn_swipe + 'px';
+          jQuery('.container-promo').removeClass('slider-swipe-morning');
+          jQuery('.container-promo').addClass('slider-swipe-evening');
+          obj.style.left = jQuery('.slider-mobile-swipe').outerWidth()-width_box_btn_swipe + 'px';
         }
       }
     if (xAbs > 20 || yAbs > 20) {
