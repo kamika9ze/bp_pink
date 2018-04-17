@@ -454,6 +454,62 @@
 	.promo-catalog-carousel {
 		display: none;
 	}
+	.slider-baner {}
+	.slider-baner > div {
+		height: 520px;
+		background-size: contain;
+	}
+	.slider-baner-morning {
+		background: url('../images/ochishchenie/mobile/baner-morning.png');
+	}
+	.slider-baner-evening {
+		background: url('../images/ochishchenie/mobile/baner-evening.png');		
+	}
+	.slider-baner-proc {
+		font-size: 73.9px;
+		font-weight: 100;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 0.33;
+		letter-spacing: normal;
+		text-align: center;
+		color: #fff;
+		text-align: center;
+		display: inline-block;
+	}
+	.slider-baner-proc span {
+		font-size: 30px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.09;
+		letter-spacing: 0.8px;
+		text-align: center;
+		display: table;
+		padding: 20px 0 0;
+	}
+	.slider-baner-title {
+		font-size: 30px;
+		font-weight: 100;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.slider-baner-title span {
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		display: table;
+		margin-top: 12px;
+	}
 }
 @media (max-width: 450px) {
 	.btn-swipe {
