@@ -15,9 +15,17 @@
 	  /*display: inline-block;*/
 	  z-index: 10;
 	  padding-top: 156px;
+	  padding-top: 24.375vw;
+	}
+	.slider-hint img {
+		width: 96px;
+		width: 15vw;
+		height: 116px;
+		height: 18.125vw;
 	}
 	.slider-hint p {
 		font-size: 30px;
+		font-size: 4.6875vw;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
@@ -26,6 +34,7 @@
 		text-align: center;
 		color: #ffffff;
 		margin-bottom: 45px;
+		margin-bottom: 7.03125vw;
 	}
 	.slider-active .slider-mobile-swipe {
 		display: inline-block;
@@ -156,11 +165,14 @@
 	.not-slider-swipe .slider {
 		background: none;
 		height: 139px;
+		height: 21.71875vw;
 		padding-top: 30px;
+		padding-top: 4.6875vw;
 	}
 	.not-slider-swipe .slider-active .slider-mobile-swipe {
 		border: solid 1px #abaaaa;
 		top: 30px;
+		top: 4.6875vw;
 	}
 	.slider-swipe-morning .btn-swipe {
 		background-color: #df3a8f;
@@ -406,6 +418,7 @@
 	}
 	.tab-pane {
 		padding: 55px 0 0;
+		padding: 8.59375vw 0 0;
 		margin: 0;
 	}
 	.btn-reset-filter {
@@ -440,5 +453,21 @@
 	/*каталог- пока скрыт*/
 	.promo-catalog-carousel {
 		display: none;
+	}
+}
+@media (max-width: 450px) {
+	.btn-swipe {
+	    display: inline-block;
+	    width: 71px;
+	    width: 10.5vw;
+	    height: 71px;
+	    height: 10.5vw;
+	    background-color: #ffffff;
+	    border-radius: 50%;
+	    position: absolute;
+	    left: 135px;
+	    left: 21.09375vw;
+	    z-index: 6;
+	    top: 0;
 	}
 }
