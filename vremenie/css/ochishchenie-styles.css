@@ -19,6 +19,9 @@ div.slider{
   width: 100%;  
   position: relative;
 }
+.box-slider-mobile-swipe {
+  display: none;
+}
 .slider-mobile-swipe {
   display: none;
 }

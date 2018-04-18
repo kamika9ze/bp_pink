@@ -36,6 +36,15 @@
 		margin-bottom: 45px;
 		margin-bottom: 7.03125vw;
 	}
+	.slider-active .box-slider-mobile-swipe {
+		position: absolute;
+		bottom: 70px;
+		bottom: 10.9375vw;
+		left: 50%;
+		margin-left: -170px;
+		margin-left: -26.5625vw;
+		display: inline-block;
+	}
 	.slider-active .slider-mobile-swipe {
 		display: inline-block;
 		width: 340px;
@@ -45,15 +54,10 @@
 	    border-radius: 40px;
 	    border-radius: 6.25vw;
 		border: solid 1.2px #ffffff;
-		position: absolute;
-		bottom: 70px;
-		bottom: 10.9375vw;
-		left: 50%;
-		margin-left: -170px;
-		margin-left: -26.5625vw;
 		overflow: hidden;
+		position: relative;
 	}
-	.slider-active .slider-mobile-swipe span {
+	.slider-active .box-slider-mobile-swipe span {
 		font-size: 22px;
 		font-size: 3.4375vw;
   		font-weight: bold;
@@ -64,11 +68,11 @@
   		text-transform: uppercase;
   		z-index: 4;
 	}
-	.slider-active .slider-mobile-swipe span.text1 {
+	.slider-active .box-slider-mobile-swipe span.text1 {
 		left: -76px;
 		left: -11.875vw;
 	}
-	.slider-active .slider-mobile-swipe span.text2 {
+	.slider-active .box-slider-mobile-swipe span.text2 {
 		right: -94px;
 		right: -14.6875vw;
 	}
@@ -282,10 +286,10 @@
 		border: 0;
 	}
 	.slider-img-evening-left.slider-img-evening {
-		height: 46.66vw!important;
+		height: 69.66vw!important;
 	}
 	.slider-img-morning-left.slider-img-morning {
-		height: 31vw!important;
+		height: 48vw!important;
 	}
 	.slider-morning-left {
 		left: 6.333vw;
@@ -306,6 +310,7 @@
 	.ideal-means-title {
 		font-size: 36px;
 		font-size: 5.625vw;
+		padding: 7.333vw 0 2.333vw;
 	}
 	.skin-type-title {
 		font-size: 40px;
@@ -458,24 +463,67 @@
 	.slider-baner > div {
 		height: 520px;
 		background-size: contain;
+		position: relative;
+		display: none;
+	    width: 100%;
+	}
+	.slider-baner > div:after {
+	    content: "";
+	    position: absolute;
+        bottom: -8.51vw;
+	    left: 50%;
+	    margin-left: -22px;
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+        border-width: 55px 63px 0 63px;
+	    border-width: 8.59vw 9.84375vw 0 9.84375vw;
+	    margin-left: -63px;
+	    margin-left: -9.84375vw;
+	    border-color: #606086 transparent transparent transparent;
+	}
+	.slider-swipe-morning .slider-baner-morning {
+		display: inline-block;
+	}
+	.slider-swipe-morning .slider-baner > div:after {
+	    border-color: #ede3e9 transparent transparent transparent;
+	}
+	.slider-swipe-evening .slider-baner-evening {
+		display: inline-block;
+	}
+	.slider-swipe-evening .slider-baner > div:after {
+	    border-color: #222239 transparent transparent transparent;
 	}
 	.slider-baner-morning {
 		background: url('../images/ochishchenie/mobile/baner-morning.png');
 	}
+	.slider-baner-morning img {
+		position: absolute;
+		top: 186px;
+		left: 46px;		
+	}
 	.slider-baner-evening {
-		background: url('../images/ochishchenie/mobile/baner-evening.png');		
+		background: url('../images/ochishchenie/mobile/baner-evening.png');	
+	}
+	.slider-baner-evening img {
+		position: absolute;
+	    top: 68px;
+    	left: -29px;
 	}
 	.slider-baner-proc {
 		font-size: 73.9px;
 		font-weight: 100;
 		font-style: normal;
 		font-stretch: normal;
-		line-height: 0.33;
+		line-height: 0.63;
 		letter-spacing: normal;
 		text-align: center;
 		color: #fff;
 		text-align: center;
 		display: inline-block;
+	    position: absolute;
+    	top: 185px;
+    	right: 92px;
 	}
 	.slider-baner-proc span {
 		font-size: 30px;
@@ -499,6 +547,10 @@
 		color: #fff;
 		text-transform: uppercase;
 		text-align: center;
+		display: inline-block;
+		position: absolute;
+		top: 351px;
+		right: 54px;
 	}
 	.slider-baner-title span {
 		font-weight: normal;
@@ -508,7 +560,72 @@
 		letter-spacing: normal;
 		text-align: center;
 		display: table;
-		margin-top: 12px;
+		margin-top: 3px;
+		width: 100%;
+		text-transform: none;
+	}
+	.slider-baner-morning .slider-baner-proc, .slider-baner-morning .slider-baner-title {
+		color: #df3a8f;
+	}
+	.box-want-product-item-popap {
+		padding: 15px 77px 65px;
+		position: fixed;
+		top: 0%;
+	    height: 100%;
+    	width: 100%;
+    	border-radius: 0;
+    	overflow-y: scroll;
+	}
+	.product-popap-close {
+		background: url('../images/ochishchenie/mobile/close.svg');
+		width: 57px;
+  		height: 57px;
+  		position: absolute;
+  		right: 75px;
+  		top: 34px;
+	}
+	.box-want-product-item-popap > div {
+		width: 100%;
+	}
+	.product-popap-title {
+		font-size: 30px;
+		font-weight: bold;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: 0.8px;
+		text-align: left;
+		color: #000000;
+		margin-bottom: 6.066vw;
+	}
+	.product-popap-text ul li {
+		font-size: 30px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: left;
+		color: #000000;
+	    margin-bottom: 8vw;
+	}
+	.product-popap-text ul li img {
+		width: 11vw;
+		margin: 0 48px 30px 34px;
+	}
+	.product-popap-img img {
+	    /* width: 66%; */
+	    max-height: inherit;
+	    height: 67.8666vw;
+	}
+	.popap-more-product {
+		font-size: 24px;
+	}
+	.popap-more-product:before {
+	    width: 7px;
+	    height: 13px;
+	    right: -17px;
+	    top: 9px;
 	}
 }
 @media (max-width: 450px) {
@@ -526,4 +643,4 @@
 	    z-index: 6;
 	    top: 0;
 	}
-}
+}306
