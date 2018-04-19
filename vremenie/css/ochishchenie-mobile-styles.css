@@ -1,4 +1,4 @@
-@media (max-width: 990px) {
+	@media (max-width: 990px) {
 	#Blocks {
 		height: 100%;
 	}
@@ -75,6 +75,22 @@
 	.slider-active .box-slider-mobile-swipe span.text2 {
 		right: -94px;
 		right: -14.6875vw;
+	}
+	.not-slider-swipe .box-slider-mobile-swipe > span {
+		opacity: 0.4;
+	    top: 7.65625vw;
+	}
+	.not-slider-swipe .box-slider-mobile-swipe span.text1 {
+		color: #df3a8f;
+	}
+	.slider-swipe-morning .box-slider-mobile-swipe span.text1 {
+		opacity: 1;
+	}
+	.slider-swipe-evening .box-slider-mobile-swipe span.text2 {
+		opacity: 1;
+	}
+	.not-slider-swipe .box-slider-mobile-swipe span.text2 {
+		color: #1e1f36;
 	}
 	.slider-active .slider-mobile-swipe span {}
 	.ico-swipe-star {
@@ -159,14 +175,14 @@
 		left: 21.09375vw;
 		z-index: 6;
 	}
-	.slider {
+	.slider-polina {
 		width: 100%;
 		height: 659px;
 		height: 102.9687vw;
 		background: url('../images/ochishchenie/mobile/polina-mobile.jpg') no-repeat;
 	    background-size: cover;	
 	}
-	.not-slider-swipe .slider {
+	.not-slider-swipe .slider-polina {
 		background: none;
 		height: 139px;
 		height: 21.71875vw;
@@ -286,9 +302,15 @@
 		border: 0;
 	}
 	.slider-img-evening-left.slider-img-evening {
-		height: 69.66vw!important;
+		height: 46.66vw!important;
 	}
 	.slider-img-morning-left.slider-img-morning {
+		height: 31vw!important;
+	}
+	.slider-baner .slider-img-evening-left.slider-img-evening {
+		height: 69.66vw!important;
+	}
+	.slider-baner .slider-img-morning-left.slider-img-morning {
 		height: 48vw!important;
 	}
 	.slider-morning-left {
@@ -457,7 +479,7 @@
 	/*---end-block-filter---*/
 	/*каталог- пока скрыт*/
 	.promo-catalog-carousel {
-		display: none;
+		/*display: none;*/
 	}
 	.slider-baner {}
 	.slider-baner > div {
@@ -627,6 +649,37 @@
 	    right: -17px;
 	    top: 9px;
 	}
+	body.popap {
+		overflow: hidden;
+	}
+	/*---catalog-products---*/
+	.bg-carousel-wrapper {
+		padding: 0 77px;
+	}
+	.bg-carousel-wrapper .product-item {
+		width: 50%;	
+	}
+	.col-12 .teasers-wrapper .title-normal {
+		font-size: 50px;
+	}
+	.ochishchenie-product-filter {
+		padding: 0 18px;
+	}
+	.ochishchenie-product-filter li {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.ochishchenie-product-filter li a {
+		font-size: 22px;
+		width: 100%;
+		padding: 15px;
+		text-transform: uppercase;
+		border-radius: 10px;
+	}
+	.ochishchenie-product-filter li a img {
+		display: none;
+	}
+	/*---end-catalog-products---*/
 }
 @media (max-width: 450px) {
 	.btn-swipe {
@@ -643,4 +696,4 @@
 	    z-index: 6;
 	    top: 0;
 	}
-}306
+}

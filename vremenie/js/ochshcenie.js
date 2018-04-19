@@ -54,9 +54,11 @@ jQuery(document).ready(function(){
     jQuery('.want-morning-evening').removeClass('active');
     jQuery('.box-want-product-item-popap').hide();
     jQuery('.box-want-morning, .box-want-evening, .block-ideal-means').removeClass('popap');
+    jQuery('body').removeClass('popap');
   });
   jQuery(document).on('click', '.box-want-product-item a.open_popap', function() {
     // jQuery('.tab-content').addClass('popap');
+    jQuery('body').addClass('popap');
     jQuery('.box-want-morning, .box-want-evening, .block-ideal-means').addClass('popap');
     jQuery(this).parents('.box-want-product-item').find('.box-want-product-item-popap').show();
   });
@@ -64,6 +66,7 @@ jQuery(document).ready(function(){
     jQuery(this).parents('.box-want-product-item-popap').hide();
     jQuery('.box-want-morning, .box-want-evening, .block-ideal-means').removeClass('popap');
     // jQuery('.tab-content').removeClass('popap');
+    jQuery('body').removeClass('popap');
   });
   jQuery(document).on('click', '.btn-norm', function() {
     // jQuery('.skin-type').slideUp('400', function() {});
@@ -175,23 +178,8 @@ jQuery(document).ready(function(){
         },
         {
             breakpoint: 767,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: true
-            }
-        },
-        {
-            breakpoint: 568,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: true
-            }
-        }
-    ]});
+            settings: "unslick"
+        }    ]});
 
   jQuery('.ochishchenie-new-product').on('click', function(){
       jQuery('#bp-carousel-new').slick('slickFilter','.product-carousel-new');
