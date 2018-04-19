@@ -1,4 +1,4 @@
-	@media (max-width: 990px) {
+@media (max-width: 990px) {
 	#Blocks {
 		height: 100%;
 	}
@@ -44,6 +44,7 @@
 		margin-left: -170px;
 		margin-left: -26.5625vw;
 		display: inline-block;
+		z-index: 2;
 	}
 	.slider-active .slider-mobile-swipe {
 		display: inline-block;
@@ -484,6 +485,7 @@
 	.slider-baner {}
 	.slider-baner > div {
 		height: 520px;
+		height: 81.25vw;
 		background-size: contain;
 		position: relative;
 		display: none;
@@ -495,6 +497,7 @@
         bottom: -8.51vw;
 	    left: 50%;
 	    margin-left: -22px;
+	    margin-left: -3.4375vw;
 	    width: 0;
 	    height: 0;
 	    border-style: solid;
@@ -522,7 +525,9 @@
 	.slider-baner-morning img {
 		position: absolute;
 		top: 186px;
+		top: 29.0625vw;
 		left: 46px;		
+		left: 7.1875vw;		
 	}
 	.slider-baner-evening {
 		background: url('../images/ochishchenie/mobile/baner-evening.png');	
@@ -530,10 +535,13 @@
 	.slider-baner-evening img {
 		position: absolute;
 	    top: 68px;
+	    top: 10.625vw;
     	left: -29px;
+    	left: -4.53125vw;
 	}
 	.slider-baner-proc {
 		font-size: 73.9px;
+		font-size: 11.54687vw;
 		font-weight: 100;
 		font-style: normal;
 		font-stretch: normal;
@@ -545,10 +553,13 @@
 		display: inline-block;
 	    position: absolute;
     	top: 185px;
+    	top: 28.9vw;
     	right: 92px;
+    	right: 14.375vw;
 	}
 	.slider-baner-proc span {
 		font-size: 30px;
+		font-size: 4.6875vw;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
@@ -557,9 +568,11 @@
 		text-align: center;
 		display: table;
 		padding: 20px 0 0;
+		padding: 3.125vw 0 0;
 	}
 	.slider-baner-title {
 		font-size: 30px;
+		font-size: 4.6875vw;
 		font-weight: 100;
 		font-style: normal;
 		font-stretch: normal;
@@ -572,7 +585,9 @@
 		display: inline-block;
 		position: absolute;
 		top: 351px;
+		top: 54.84375vw;
 		right: 54px;
+		right: 8.4375vw;
 	}
 	.slider-baner-title span {
 		font-weight: normal;
@@ -583,6 +598,7 @@
 		text-align: center;
 		display: table;
 		margin-top: 3px;
+		margin-top: 0.46875vw;
 		width: 100%;
 		text-transform: none;
 	}
@@ -591,6 +607,7 @@
 	}
 	.box-want-product-item-popap {
 		padding: 15px 77px 65px;
+		padding: 17.34375vw 12.03125vw 10.15625vw;
 		position: fixed;
 		top: 0%;
 	    height: 100%;
@@ -600,17 +617,23 @@
 	}
 	.product-popap-close {
 		background: url('../images/ochishchenie/mobile/close.svg');
+	    background-size: contain;
 		width: 57px;
+		width: 8.90625vw;
   		height: 57px;
+  		height: 8.90625vw;
   		position: absolute;
   		right: 75px;
+  		right: 11.71875vw;
   		top: 34px;
+  		top: 18.3125vw;
 	}
 	.box-want-product-item-popap > div {
 		width: 100%;
 	}
 	.product-popap-title {
 		font-size: 30px;
+		font-size: 4.6875vw;
 		font-weight: bold;
 		font-style: normal;
 		font-stretch: normal;
@@ -622,6 +645,7 @@
 	}
 	.product-popap-text ul li {
 		font-size: 30px;
+		font-size: 4.6875vw;
 		font-weight: normal;
 		font-style: normal;
 		font-stretch: normal;
@@ -634,6 +658,7 @@
 	.product-popap-text ul li img {
 		width: 11vw;
 		margin: 0 48px 30px 34px;
+		margin: 0 7.5vw 4.6875vw 5.3125vw;
 	}
 	.product-popap-img img {
 	    /* width: 66%; */
@@ -642,43 +667,56 @@
 	}
 	.popap-more-product {
 		font-size: 24px;
+		font-size: 3.75vw;
 	}
 	.popap-more-product:before {
 	    width: 7px;
+	    width: 1.09375vw;
 	    height: 13px;
+	    height: 2.03125vw;
 	    right: -17px;
+	    right: -2.65625vw;
 	    top: 9px;
+	    top: 1.40625vw;
 	}
 	body.popap {
 		overflow: hidden;
 	}
 	/*---catalog-products---*/
-	.bg-carousel-wrapper {
-		padding: 0 77px;
-	}
-	.bg-carousel-wrapper .product-item {
-		width: 50%;	
-	}
-	.col-12 .teasers-wrapper .title-normal {
-		font-size: 50px;
-	}
-	.ochishchenie-product-filter {
-		padding: 0 18px;
-	}
-	.ochishchenie-product-filter li {
-		width: 100%;
-		margin-top: 20px;
-	}
-	.ochishchenie-product-filter li a {
-		font-size: 22px;
-		width: 100%;
-		padding: 15px;
-		text-transform: uppercase;
-		border-radius: 10px;
-	}
-	.ochishchenie-product-filter li a img {
-		display: none;
-	}
+		#bg-carousel-wrapper {
+			padding: 0 77px;
+			padding: 0 12.03125vw;
+		}
+		#bg-carousel-wrapper .product-item {
+			width: 50%;	
+		}
+		.col-12 .teasers-wrapper .title-normal {
+			font-size: 50px;
+			font-size: 7.8125vw;
+		}
+		.ochishchenie-product-filter {
+			padding: 0 18px;
+			padding: 0 2.8125vw;
+		}
+		.ochishchenie-product-filter li {
+			width: 100%;
+			margin-top: 20px;
+			margin-top: 3.125vw;
+		}
+		.ochishchenie-product-filter li a {
+			font-size: 22px;
+			font-size: 3.4375vw;
+			width: 100%;
+			padding: 15px;
+			padding: 2.34375vw;
+			text-transform: uppercase;
+			border-radius: 10px;
+			border-radius: 1.5625vw;
+		    line-height: 3.66vw;
+		}
+		.ochishchenie-product-filter li a img {
+			display: none;
+		}
 	/*---end-catalog-products---*/
 }
 @media (max-width: 450px) {

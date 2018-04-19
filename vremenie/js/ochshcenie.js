@@ -94,7 +94,9 @@ jQuery(document).ready(function(){
     jQuery('.slider-product1').fadeIn('400');
     jQuery('.slider').addClass('slider-active');
     // добавить подсказку в мобилы
-    jQuery('.slider-hint').fadeIn('400');
+    if (jQuery(window).width()<768) {
+      jQuery('.slider-hint').fadeIn('400');      
+    }
     // убрать подсказку из мобилы
     setTimeout(function() {
       jQuery('.slider-hint').fadeOut('400');
@@ -151,13 +153,13 @@ jQuery(document).ready(function(){
         }, 200);
     }
   });
-  jQuery('#bp-carousel-new').slick({
-        dots: true, 
-        arrows: true, 
-        slidesToShow: 3, 
-        slidesToScroll: 3,
-        infinite: false, 
-        responsive:[
+    jQuery('#bp-carousel-new').slick({
+      dots: true, 
+      arrows: true, 
+      slidesToShow: 3, 
+      slidesToScroll: 3,
+      infinite: false, 
+      responsive:[
         {
             breakpoint: 1200,
             settings: {
@@ -179,7 +181,18 @@ jQuery(document).ready(function(){
         {
             breakpoint: 767,
             settings: "unslick"
-        }    ]});
+        }   
+      ]
+    });
+  var sld = function() {
+    if ($(window).width() > 767) {
+    } else {
+      // jQuery('#bp-carousel-new').destroySlider();
+    }
+  };
+  sld();
+  jQuery(window).resize(sld);
+
 
   jQuery('.ochishchenie-new-product').on('click', function(){
       jQuery('#bp-carousel-new').slick('slickFilter','.product-carousel-new');
