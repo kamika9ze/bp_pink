@@ -153,37 +153,39 @@ jQuery(document).ready(function(){
         }, 200);
     }
   });
-    jQuery('#bp-carousel-new').slick({
-      dots: true, 
-      arrows: true, 
-      slidesToShow: 3, 
-      slidesToScroll: 3,
-      infinite: false, 
-      responsive:[
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                dots: true,
-                arrows: true
-            }
-        },
-        {
-            breakpoint: 992,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                dots: true,
-                arrows: true
-            }
-        },
-        {
-            breakpoint: 767,
-            settings: "unslick"
-        }   
-      ]
-    });
+  setTimeout(function() {
+    // jQuery('#bp-carousel-new').slick({
+    //   dots: true, 
+    //   arrows: true, 
+    //   slidesToShow: 3, 
+    //   slidesToScroll: 3,
+    //   infinite: false, 
+    //   responsive:[
+    //     {
+    //         breakpoint: 1200,
+    //         settings: {
+    //             slidesToShow: 3,
+    //             slidesToScroll: 3,
+    //             dots: true,
+    //             arrows: true
+    //         }
+    //     },
+    //     {
+    //         breakpoint: 992,
+    //         settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2,
+    //             dots: true,
+    //             arrows: true
+    //         }
+    //     },
+    //     {
+    //         breakpoint: 767,
+    //         settings: "unslick"
+    //     }   
+    //   ]
+    // });
+  }, 2000);
   var sld = function() {
     if ($(window).width() > 767) {
     } else {

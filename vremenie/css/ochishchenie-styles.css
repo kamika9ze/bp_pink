@@ -891,7 +891,7 @@ div.Block .img-evening-right {
 .want-morning-evening.active .box-want-morning-product:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 50%;
   margin-left: -21.5px;
   width: 0;
@@ -908,7 +908,7 @@ div.Block .img-evening-right {
 .want-morning-evening.active .box-want-evening-product:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 50%;
   margin-left: -21.5px;
   width: 0;
@@ -947,6 +947,7 @@ div.Block .img-evening-right {
   height: 100%;
   vertical-align: bottom;
   padding: 0 1vw;
+  padding: 0 0;
   /*position: relative;*/
   /*width: 200px;*/
 }
@@ -960,6 +961,7 @@ div.Block .img-evening-right {
   text-align: center;
   margin-top: 15px;
   margin-top: 1vw;
+  position: relative;
 }
 /*.box-want-product-item img {
   position: absolute;
