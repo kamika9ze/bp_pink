@@ -197,7 +197,7 @@ jQuery(document).ready(function(){
 
 
   jQuery('.ochishchenie-new-product').on('click', function(){
-      jQuery('#bp-carousel-new').slick('slickFilter','.product-carousel-new');
+      jQuery('#bp-carousel-new').slick('slickFilter','.new-product-teaser');
   });
   jQuery('.ochishchenie-all-product').on('click', function(){
       jQuery('#bp-carousel-new').slick('slickUnfilter');
