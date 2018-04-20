@@ -1252,12 +1252,12 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     right: 0;
     top: 0;
   }
-  /*.new-bg .container {
+  .new-bg .container {
     max-width: inherit;
     width: 1323px;
     height: 100%;
     position: relative;
-  }*/
+  }
   .new-bg #header-wrapper .container:before {
     content: "";
     width: 1920px;
