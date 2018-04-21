@@ -614,6 +614,8 @@
     	width: 100%;
     	border-radius: 0;
     	overflow-y: scroll;
+    	bottom: initial;
+    	left: 0;
 	}
 	.product-popap-close {
 		background: url('../images/ochishchenie/mobile/close.svg');
@@ -682,6 +684,21 @@
 	body.popap {
 		overflow: hidden;
 	}
+	#evening2-1 .box-want-product-items div:nth-child(1) img {
+		width: 33.733vw!important;
+	}
+	#evening2-1 .box-want-product-items div:nth-child(2) img {
+		width: 26.933vw!important;
+	}
+	#evening2-1 .box-want-product-items div:nth-child(3) img {
+		width: 22.066vw!important;
+	}
+	.tab-pane.fade.show {
+	    display: block;
+	    width: auto;
+	    height: 820px;
+	    height: 107.66vw;
+	}
 	/*---catalog-products---*/
 		#bg-carousel-wrapper {
 			padding: 0 77px;
@@ -701,7 +718,7 @@
 		.ochishchenie-product-filter li {
 			width: 100%;
 			margin-top: 20px;
-			margin-top: 3.125vw;
+			margin: 3.125vw 0 0;
 		}
 		.ochishchenie-product-filter li a {
 			font-size: 22px;
@@ -716,6 +733,9 @@
 		}
 		.ochishchenie-product-filter li a img {
 			display: none;
+		}
+		.slick-dots {
+		    margin: 2vw 0;
 		}
 	/*---end-catalog-products---*/
 }

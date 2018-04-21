@@ -20,7 +20,6 @@
       }
     });
   }
-
   // 4. The API will call this function when the video player is ready.
   function onPlayerReady(event) {
     event.target.playVideo();
@@ -70,13 +69,13 @@ jQuery(document).ready(function(){
   });
   jQuery(document).on('click', '.btn-norm', function() {
     // jQuery('.skin-type').slideUp('400', function() {});
-    jQuery('.want-morning-evening-such').slideUp('400', function() {});
-    jQuery('.want-morning-evening-norm').slideDown('400', function() {});
+    jQuery('.want-morning-evening-such').fadeIn('400', function() {});
+    jQuery('.want-morning-evening-norm').fadeOut('400', function() {});
   });
   jQuery(document).on('click', '.btn-such', function() {
     // jQuery('.skin-type').slideUp('400', function() {});
-    jQuery('.want-morning-evening-norm').slideUp('400', function() {});
-    jQuery('.want-morning-evening-such').slideDown('400', function() {});
+    jQuery('.want-morning-evening-norm').fadeIn('400', function() {});
+    jQuery('.want-morning-evening-such').fadeOut('400', function() {});
   });
   // Запуск видео
   jQuery(document).on('click', '.player-btn-close', function() {
@@ -154,46 +153,46 @@ jQuery(document).ready(function(){
     }
   });
   setTimeout(function() {
-    // jQuery('#bp-carousel-new').slick({
-    //   dots: true, 
-    //   arrows: true, 
-    //   slidesToShow: 3, 
-    //   slidesToScroll: 3,
-    //   infinite: false, 
-    //   responsive:[
-    //     {
-    //         breakpoint: 1200,
-    //         settings: {
-    //             slidesToShow: 3,
-    //             slidesToScroll: 3,
-    //             dots: true,
-    //             arrows: true
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 992,
-    //         settings: {
-    //             slidesToShow: 2,
-    //             slidesToScroll: 2,
-    //             dots: true,
-    //             arrows: true
-    //         }
-    //     },
-    //     {
-    //         breakpoint: 767,
-    //         settings: "unslick"
-    //     }   
-    //   ]
-    // });
+    jQuery('#bp-carousel-new').slick({
+      dots: true, 
+      arrows: true, 
+      slidesToShow: 3, 
+      slidesToScroll: 3,
+      infinite: false, 
+      responsive:[
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+                arrows: true
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true,
+                arrows: true
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: "unslick"
+        }   
+      ]
+    });
   }, 2000);
-  var sld = function() {
-    if ($(window).width() > 767) {
-    } else {
-      // jQuery('#bp-carousel-new').destroySlider();
-    }
-  };
-  sld();
-  jQuery(window).resize(sld);
+  // var sld = function() {
+  //   if ($(window).width() > 767) {
+  //   } else {
+  //     // jQuery('#bp-carousel-new').destroySlider();
+  //   }
+  // };
+  // sld();
+  // jQuery(window).resize(sld);
 
 
   jQuery('.ochishchenie-new-product').on('click', function(){
@@ -252,4 +251,24 @@ jQuery(document).ready(function(){
     if (xAbs > 20 || yAbs > 20) {
     }
   }, false);
+  function width_windows() {
+    jQuery('.Block > img').width(jQuery(window).width());
+  }
+  width_windows();
+  // скрипт выравнивания изображений продукта в фильтре
+  // jQuery('.nav-tabs .nav-link').on('click', function(){
+  //   if (jQuery(window).width()>767) {
+  //     // jQuery('.box-want-product-item a img').width(jQuery('.box-want-product-item a img').width());
+  //     var width_windows = jQuery(window).width();
+  //     console.log($(this).parents('.want-evening'));
+  //     setTimeout(function() {  
+  //       $(this).parents('.want-evening').find('.box-want-product-item > a > img').each(function(i,elem) {
+  //         console.log(jQuery(this).width()/(15));    
+  //         jQuery(this).css('max-widrh', jQuery(this).width());
+  //         jQuery(this).width(jQuery(this).width()/(15)+'vw') ;
+  //       });
+  //     }, 200);
+  //   }  
+  // });
+  
 });
