@@ -255,6 +255,9 @@ jQuery(document).ready(function(){
     jQuery('.Block > img').width(jQuery(window).width());
   }
   width_windows();
+  jQuery( window ).resize(function() {
+    width_windows();    
+  });
   // скрипт выравнивания изображений продукта в фильтре
   // jQuery('.nav-tabs .nav-link').on('click', function(){
   //   if (jQuery(window).width()>767) {
