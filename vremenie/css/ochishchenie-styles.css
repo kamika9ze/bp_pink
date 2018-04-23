@@ -1228,6 +1228,10 @@ div.Block .img-evening-right {
 .slider-baner {
   display: none;
 }
+#block-ideal-means-top {
+  height: 0;
+  width: 100%;
+}
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
 only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),

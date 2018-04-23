@@ -189,6 +189,9 @@
 		height: 21.71875vw;
 		padding-top: 30px;
 		padding-top: 4.6875vw;
+		position: fixed;
+		z-index: 5;
+		background: #fff;
 	}
 	.not-slider-swipe .slider-active .slider-mobile-swipe {
 		border: solid 1px #abaaaa;
@@ -486,7 +489,7 @@
 	.slider-baner > div {
 		height: 520px;
 		height: 81.25vw;
-		background-size: contain;
+		background-size: cover;
 		position: relative;
 		display: none;
 	    width: 100%;
@@ -607,7 +610,7 @@
 	}
 	.box-want-product-item-popap {
 		padding: 15px 77px 65px;
-		padding: 17.34375vw 12.03125vw 10.15625vw;
+		padding: 6.34375vw 12.03125vw 10.15625vw;
 		position: fixed;
 		top: 0%;
 	    height: 100%;
@@ -628,7 +631,7 @@
   		right: 75px;
   		right: 11.71875vw;
   		top: 34px;
-  		top: 18.3125vw;
+  		top: 6.3125vw;
 	}
 	.box-want-product-item-popap > div {
 		width: 100%;
@@ -685,10 +688,10 @@
 		overflow: hidden;
 	}
 	#evening2-1 .box-want-product-items div:nth-child(1) img {
-		width: 33.733vw!important;
+		width: 32.733vw!important;
 	}
 	#evening2-1 .box-want-product-items div:nth-child(2) img {
-		width: 26.933vw!important;
+		width: 25.933vw!important;
 	}
 	#evening2-1 .box-want-product-items div:nth-child(3) img {
 		width: 22.066vw!important;
@@ -697,7 +700,7 @@
 	    display: block;
 	    width: auto;
 	    height: 820px;
-	    height: 107.66vw;
+	    height: auto;
 	}
 	/*---catalog-products---*/
 		#bg-carousel-wrapper {
@@ -744,7 +747,40 @@
 		.slick-dots {
 		    margin: 2vw 0;
 		}
+		.box-want-product-items {
+			position: relative;
+		}
 	/*---end-catalog-products---*/
+	.teaser-normal .teaser-image {
+	    display: table;
+	    width: 100%;
+	    height: auto;
+	}
+	.teaser-normal .teaser-inner {
+	    height: auto;
+	}
+	#bg-carousel-wrapper > div {
+		width: 100%!important;
+	}
+	#bg-carousel-wrapper .product-controls {
+		display: none;
+	}
+	.teaser-normal .title a, .teaser-item {
+		font-size: 16px;
+		font-size: 2.5vw;
+	}
+	.teaser .teaser-img {
+	    padding: 40px 0 20px;
+	    padding: 6.25vw 0 3.125vw;
+	}
+	.not-slider-swipe .slider-baner {
+		display: inline-block!important;
+		width: 100%;
+		margin-top: 21.71875vw;
+	}
+	.popap .not-slider-swipe .slider-polina {
+		position: relative;
+	}
 }
 @media (max-width: 450px) {
 	.btn-swipe {
