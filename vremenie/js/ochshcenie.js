@@ -69,13 +69,13 @@ jQuery(document).ready(function(){
   });
   jQuery(document).on('click', '.btn-norm', function() {
     // jQuery('.skin-type').slideUp('400', function() {});
-    jQuery('.want-morning-evening-such').fadeIn('400', function() {});
-    jQuery('.want-morning-evening-norm').fadeOut('400', function() {});
+    jQuery('.want-morning-evening-such').fadeOut('400', function() {});
+    jQuery('.want-morning-evening-norm').fadeIn('400', function() {});
   });
   jQuery(document).on('click', '.btn-such', function() {
     // jQuery('.skin-type').slideUp('400', function() {});
-    jQuery('.want-morning-evening-norm').fadeIn('400', function() {});
-    jQuery('.want-morning-evening-such').fadeOut('400', function() {});
+    jQuery('.want-morning-evening-norm').fadeOut('400', function() {});
+    jQuery('.want-morning-evening-such').fadeIn('400', function() {});
   });
   // Запуск видео
   jQuery(document).on('click', '.player-btn-close', function() {
@@ -196,9 +196,15 @@ jQuery(document).ready(function(){
 
 
   jQuery('.ochishchenie-new-product').on('click', function(){
+      if (jQuery(window).width()<767) {
+        jQuery('#bp-carousel-new .product-item:not(.new-product-teaser)').hide();
+      }
       jQuery('#bp-carousel-new').slick('slickFilter','.new-product-teaser');
   });
   jQuery('.ochishchenie-all-product').on('click', function(){
+    if (jQuery(window).width()<767) {
+      jQuery('#bp-carousel-new .product-item:not(.new-product-teaser)').show();
+    }
       jQuery('#bp-carousel-new').slick('slickUnfilter');
   });
   var obj = document.getElementById('sat');
@@ -257,6 +263,12 @@ jQuery(document).ready(function(){
   width_windows();
   jQuery( window ).resize(function() {
     width_windows();    
+  });
+  jQuery('.want-morning-evening-norm .nav-tabs li a').on('click', function(){
+      jQuery('html, body').animate({ scrollTop: $('#myTab1').offset().top }, 500);
+  });
+  jQuery('.want-morning-evening-such .nav-tabs li a').on('click', function(){
+      jQuery('html, body').animate({ scrollTop: $('#myTab2').offset().top }, 500);
   });
   // скрипт выравнивания изображений продукта в фильтре
   // jQuery('.nav-tabs .nav-link').on('click', function(){
