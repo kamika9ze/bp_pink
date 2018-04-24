@@ -1245,6 +1245,18 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
     width: 100vw;
   }
 }
+/*---product-filter---*/
+  .voda-micelyar {}
+  .uhazhivayushchiy-tonik-komfort-dlya-suhoy-i-chuvstvitelnoy-kozhi {}
+  .skrab-dlya-lica-dlya-normalnoy-i-kombinirovannoy-kozhi {}
+  .penka-muss-dlya-umyvaniya {}
+  .penka-muss-dlya-umyvaniya-2v1-dlya-normalnoy-i-kombinirovannoy-kozhi {}
+  .osvezhayushchiy-tonik-dlya-normalnoy-i-kombinirovannoy-kozhi {}
+  .osvezhayushchiy-gel-dlya-umyvaniya-dlya-normalnoy-i-kombinirovannoy-kozhi {}
+  .micellyarnaya-voda-dlya-lica-vek-i-gub {}
+  .krem-gel-dlya-umyvaniya-dlya-suhoy-i-chuvstvitelnoy-kozhi {}
+  .bio-maslo-dlya-umyvaniya {}
+/*---end-product-filter---*/
 /*---headeer---*/
   .new-bg {
   }
