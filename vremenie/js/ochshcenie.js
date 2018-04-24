@@ -185,14 +185,6 @@ jQuery(document).ready(function(){
       ]
     });
   }, 2000);
-  // var sld = function() {
-  //   if ($(window).width() > 767) {
-  //   } else {
-  //     // jQuery('#bp-carousel-new').destroySlider();
-  //   }
-  // };
-  // sld();
-  // jQuery(window).resize(sld);
 
 
   jQuery('.ochishchenie-new-product').on('click', function(){
@@ -264,18 +256,30 @@ jQuery(document).ready(function(){
   jQuery( window ).resize(function() {
     width_windows();    
   });
-  jQuery('.want-morning-evening-norm .nav-tabs li a').on('click', function(){
+  jQuery('.want-morning-evening-norm .nav-tabs li a, .btn-norm').on('click', function(){
+    if (jQuery(window).width()<767) {
       jQuery('#myTab1').scrollTop(0);
-      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 500);
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 500);      
+      console.log('norm1');
+    }
+    else {
+      jQuery('#myTab1').scrollTop(0);
+      console.log('norm2');
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()+jQuery('.want-title').outerHeight()) }, 500);      
+    }
   });
-  jQuery('.want-morning-evening-such .nav-tabs li a').on('click', function(){
-      // jQuery('html, body').animate({ scrollTop: (0) }, 200);
-      console.log('sdfsdf');
-      // jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 0);
-      jQuery('#block-ideal-means-top').scrollTop();
-      console.log(jQuery('#block-ideal-means-top').position());
-      jQuery('#block-ideal-means-top').scrollTop(jQuery('#block-ideal-means-top').position({top:30}));
-      // jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)) }, 0);
+  jQuery('.want-morning-evening-such .nav-tabs li a, .btn-such').on('click', function(){
+      if (jQuery(window).width()<767) {
+      jQuery('#myTab1').scrollTop(0);
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 500);      
+      console.log('norm1');
+    }
+    else {
+      jQuery('#myTab1').scrollTop(0);
+      console.log('norm2');
+      console.log(jQuery('.want-title').height());
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()+jQuery('.want-morning-evening-such .want-title').outerHeight()) }, 500);      
+    }
   });
   // jQuery('.want-morning-evening-such .nav-tabs li a').on('click', function(){
   //     jQuery('#myTab2').scrollTop(0);
