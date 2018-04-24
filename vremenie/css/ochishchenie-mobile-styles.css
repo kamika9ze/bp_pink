@@ -781,9 +781,16 @@
 	.popap .not-slider-swipe .slider-polina, .popap header#bp-main-header {
 		position: relative;
 	}
+	.new-bg #header-wrapper .container:before {
+	    left: -306px;
+		margin-left: 0; 
+	}
 }
 @media (max-width: 450px) {
-	.btn-swipe {
+	#evening2-1 .box-want-product-items div:nth-child(3) {
+		marker-top: 30px;
+	}
+	/*.btn-swipe {
 	    display: inline-block;
 	    width: 71px;
 	    width: 10.5vw;
@@ -796,5 +803,5 @@
 	    left: 21.09375vw;
 	    z-index: 6;
 	    top: 0;
-	}
+	}*/
 }
