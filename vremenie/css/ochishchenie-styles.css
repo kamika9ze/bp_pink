@@ -1279,7 +1279,24 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
       height: 32.5vh;    
   }
 /*---end-product-filter---*/
+.teaser-overlay-top {
+  top: 26px;
+}
 .teaser-overlay-top.label-new .bp-card-label {
+  background: none;
+  width: auto;
+  height: auto;
+  position: relative;
+  font-size: 10px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.05;
+  letter-spacing: normal;
+  text-align: center;
+  color: #712b90;
+}
+.teaser-overlay-top.label-new .bp-card-label:before {
   background: url("../images/ochishchenie/catalog-product-ico-new.png") no-repeat;
   width: 40px;
   height: 40px;
