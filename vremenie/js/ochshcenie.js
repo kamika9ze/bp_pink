@@ -69,10 +69,14 @@ jQuery(document).ready(function(){
   });
   jQuery(document).on('click', '.btn-norm', function() {
     // jQuery('.skin-type').slideUp('400', function() {});
+    jQuery('.skin-type-items > div a').removeClass('active');
+    jQuery(this).addClass('active');
     jQuery('.want-morning-evening-norm').fadeIn('400', function() {});
     jQuery('.want-morning-evening-such').fadeOut('200', function() {});
   });
   jQuery(document).on('click', '.btn-such', function() {
+    jQuery('.skin-type-items > div a').removeClass('active');
+    jQuery(this).addClass('active');
     // jQuery('.skin-type').slideUp('400', function() {});
     jQuery('.want-morning-evening-such').fadeIn('400', function() {});
     jQuery('.want-morning-evening-norm').fadeOut('200', function() {});

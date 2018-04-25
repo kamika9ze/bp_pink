@@ -687,7 +687,7 @@
 	body.popap {
 		overflow: hidden;
 	}
-	#evening2-1 .box-want-product-items div:nth-child(1) a > img {
+	/*#evening2-1 .box-want-product-items div:nth-child(1) a > img {
 		width: 30.733vw!important;
 	}
 	#evening2-1 .box-want-product-items div:nth-child(2) a > img {
@@ -695,6 +695,10 @@
 	}
 	#evening2-1 .box-want-product-items div:nth-child(3) a > img {
 		width: 20.066vw!important;
+	}*/
+	#evening2-1 .box-want-product-items div:nth-child(3) a > img {
+		margin-top: 50px;
+		margin-top: 7.8125vw;
 	}
 	.tab-pane.fade.show {
 	    display: block;
@@ -785,6 +789,41 @@
 	    left: -306px;
 		margin-left: 0; 
 	}
+	/*---product-filter---*/
+		.box-want-product-item img {
+			width: auto!important;
+		}
+	  .voda-micelyar {
+	    height: 74.375vw;
+	  }
+	  .uhazhivayushchiy-tonik-komfort-dlya-suhoy-i-chuvstvitelnoy-kozhi {
+	    height: 46.71875vw;
+	  }
+	  .skrab-dlya-lica-dlya-normalnoy-i-kombinirovannoy-kozhi {
+	    height: 54.375vw;
+	  }
+	  .penka-muss-dlya-umyvaniya {
+	    height: 41.71875vw;
+	  }
+	  .penka-muss-dlya-umyvaniya-2v1-dlya-normalnoy-i-kombinirovannoy-kozhi {
+	    height: 40.78125vw;
+	  }
+	  .osvezhayushchiy-tonik-dlya-normalnoy-i-kombinirovannoy-kozhi {
+	    height: 54.6875vw;
+	  }
+	  .osvezhayushchiy-gel-dlya-umyvaniya-dlya-normalnoy-i-kombinirovannoy-kozhi {
+	    height: 46.71875vw;
+	  }
+	  .micellyarnaya-voda-dlya-lica-vek-i-gub {
+	    height: 66.40625vw;
+	  }
+	  .krem-gel-dlya-umyvaniya-dlya-suhoy-i-chuvstvitelnoy-kozhi {
+	    height: 46.71875vw;
+	  }
+	  .bio-maslo-dlya-umyvaniya {
+	      height: 60.15625vw;    
+	  }
+	/*---end-product-filter---*/
 }
 @media (max-width: 450px) {
 	#evening2-1 .box-want-product-items div:nth-child(3) {

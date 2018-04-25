@@ -684,7 +684,7 @@ div.Block .img-evening-right {
   padding: 0 5.333vw;
   text-decoration: none;
 }
-.skin-type-item a:hover img {
+.skin-type-item a:hover img, .skin-type-item a.active img {
   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=31, Direction=0, Color=#FFFFFF)";/*IE 8*/
   -moz-box-shadow: 0 0 31px 6px rgba(255,255,255,0.8);/*FF 3.5+*/
   -webkit-box-shadow: 0 0 31px 6px rgba(255,255,255,0.8);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
