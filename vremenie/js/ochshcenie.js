@@ -253,6 +253,7 @@ jQuery(document).ready(function(){
     if (xAbs > 20 || yAbs > 20) {
     }
   }, false);
+  // размер главного банера 
   function width_windows() {
     jQuery('.Block > img').width(jQuery(window).width());
   }
@@ -260,7 +261,8 @@ jQuery(document).ready(function(){
   jQuery( window ).resize(function() {
     width_windows();    
   });
-  jQuery('.want-morning-evening-norm .nav-tabs li a, .btn-norm').on('click', function(){
+  // скролл при выборе свойст 
+  jQuery('.want-morning-evening-norm .nav-tabs li a').on('click', function(){
     if (jQuery(window).width()<767) {
       jQuery('#myTab1').scrollTop(0);
       jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 500);
@@ -270,7 +272,28 @@ jQuery(document).ready(function(){
       jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()+jQuery('.want-title').outerHeight()) }, 500);      
     }
   });
-  jQuery('.want-morning-evening-such .nav-tabs li a, .btn-such').on('click', function(){
+  jQuery('.want-morning-evening-such .nav-tabs li a').on('click', function(){
+      if (jQuery(window).width()<767) {
+      jQuery('#myTab1').scrollTop(0);
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 500);
+    }
+    else {
+      jQuery('#myTab1').scrollTop(0);
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()+jQuery('.want-morning-evening-such .want-title').outerHeight()) }, 500);      
+    }
+  });
+  // скролл при выборе кожи
+  jQuery('.btn-norm').on('click', function(){
+    if (jQuery(window).width()<767) {
+      jQuery('#myTab1').scrollTop(0);
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 500);
+    }
+    else {
+      jQuery('#myTab1').scrollTop(0);
+      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()+jQuery('.want-title').outerHeight()) }, 500);      
+    }
+  });
+  jQuery('.btn-such').on('click', function(){
       if (jQuery(window).width()<767) {
       jQuery('#myTab1').scrollTop(0);
       jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()-jQuery('.not-slider-swipe .slider-polina').height()) }, 500);

@@ -709,12 +709,12 @@
 	/*---catalog-products---*/
 		#bg-carousel-wrapper {
 			padding: 0 77px;
-			padding: 0 12.03125vw;
+			padding: 0 2.03125vw;
 		}
 		#bg-carousel-wrapper .product-item {
 			width: 50%;	
 			display: inline-block;
-			padding: 18px 9px;
+			padding: 9px 9px;
 		}
 		.col-12 .teasers-wrapper .title-normal {
 			font-size: 50px;
@@ -754,6 +754,10 @@
 		.box-want-product-items {
 			position: relative;
 		}
+		.teaser-normal .teaser-inner {
+		    padding-left: 1vw;
+		    padding-right: 1vw;
+		}
 	/*---end-catalog-products---*/
 	.teaser-normal .teaser-image {
 	    display: table;
@@ -790,7 +794,7 @@
 		margin-left: 0; 
 	}
 	/*---product-filter---*/
-		.box-want-product-item img {
+		.box-want-product-item > a > img {
 			width: auto!important;
 		}
 	  .voda-micelyar {
