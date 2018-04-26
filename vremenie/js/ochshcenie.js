@@ -290,7 +290,7 @@ jQuery(document).ready(function(){
     }
     else {
       jQuery('#myTab1').scrollTop(0);
-      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()+jQuery('.want-title').outerHeight()) }, 500);      
+      jQuery('html, body').animate({ scrollTop: ((jQuery('.skin-type').offset().top)-jQuery('header').height()+1) }, 500);      
     }
   });
   jQuery('.btn-such').on('click', function(){
@@ -300,7 +300,7 @@ jQuery(document).ready(function(){
     }
     else {
       jQuery('#myTab1').scrollTop(0);
-      jQuery('html, body').animate({ scrollTop: ((jQuery('#block-ideal-means-top').offset().top)-jQuery('header').height()+jQuery('.want-morning-evening-such .want-title').outerHeight()) }, 500);      
+      jQuery('html, body').animate({ scrollTop: ((jQuery('.skin-type').offset().top)-jQuery('header').height()+1) }, 500);      
     }
   });
   // jQuery('.want-morning-evening-such .nav-tabs li a').on('click', function(){
