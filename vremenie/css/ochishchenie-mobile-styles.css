@@ -206,6 +206,8 @@
 	}
 	.slider-top {
 		background: none;
+	    padding-top: 9px;
+	    padding-top: 1.40625vw;
 	}
 	.slider-face_name {
 	    width: 100%;
