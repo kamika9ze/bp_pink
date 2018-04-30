@@ -322,10 +322,40 @@
 	.slider-morning-left {
 		left: 6.333vw;
 	}
+	.slider-morning-left:after {
+		content: "";
+		width: 120px;
+		width: 18.75vw;
+		height: 176px;
+		height: 27.5vw;
+		position: absolute;
+		top: 100%;
+		left: -2px;
+		left: -0.3125vw;
+    	margin-top: -5px;
+    	margin-top: -0.78125vw;
+		background: url('../images/ochishchenie/mobile/1.png');	
+		background-size: contain;
+	}
 	.slider-evening-right.slider-product1 {
 		right: -0.34vw;
 	    bottom: 134px;
 	    bottom: 20.9375vw;
+	}
+	.slider-evening-right.slider-product1:after {
+		content: "";
+		width: 159px;
+		width: 24.84375vw;
+		height: 269px;
+		height: 42.03125vw;
+		position: absolute;
+		top: 100%;
+		right: 16px;
+		right: 2.5vw;
+    	margin-top: -24px;
+    	margin-top: -3.75vw;
+		background: url('../images/ochishchenie/mobile/2.png');	
+		background-size: contain;
 	}
 	.slider-top-btn-video {
 		display: none;
