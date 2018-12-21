@@ -21,10 +21,6 @@
   text-align: center;
   display: inline-block;
 }
-.img-product-ban-ochischenie {}
-.img-mobile-product-ban-ochischenie {
-  display: none;
-}
 .filter-ban {
   position: relative;
 }
@@ -163,14 +159,5 @@
     color: rgb(255, 255, 255);
     text-align: center;
     display: inline-block;
-  }
-  .img-product-ban-ochischenie {
-    display: none;
-  }
-  .img-mobile-product-ban-ochischenie {
-    display: inline-block;
-  }
-  .btn-product-ban-ochischenie {
-    display: none;
   }
 }
